@@ -1,0 +1,15 @@
+[Unit]
+Description=Open Scholarships API (free CC BY 4.0 scholarship directory)
+After=network.target
+
+[Service]
+Type=simple
+User=grudged
+WorkingDirectory=/home/grudged/open-scholarships/api
+ExecStart=/home/grudged/open-scholarships/api/venv/bin/uvicorn app.main:app --host 0.0.0.0 --port 8932
+Restart=always
+RestartSec=5
+Environment=HOME=/home/grudged
+
+[Install]
+WantedBy=multi-user.target

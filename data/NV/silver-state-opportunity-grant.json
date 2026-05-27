@@ -1,0 +1,60 @@
+{
+  "id": "nv-silver-state-opportunity-grant",
+  "name": "Silver State Opportunity Grant",
+  "sponsor": "Nevada System of Higher Education (NSHE)",
+  "sponsor_type": "state",
+  "type": "grant",
+  "summary": "Nevada's state-funded need-based grant for low-income, college-ready students attending an NSHE community or state college.",
+  "award": {
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "basis": "need",
+    "renewable": null,
+    "notes": "Need-based; helps cover a portion of the cost of attendance. Award amounts vary by institution and need."
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Apply via FAFSA and your NSHE institution's financial aid office; verify the current cycle's deadline."
+  },
+  "eligibility": {
+    "residency": [
+      "NV"
+    ],
+    "education_level": [
+      "undergraduate",
+      "community-college"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Demonstrated financial need via FAFSA",
+      "Enroll at an eligible NSHE community college or state college",
+      "Meet enrollment / college-ready credit requirements (verify current rules)"
+    ],
+    "tags": [
+      "nevada",
+      "need-based",
+      "nshe"
+    ]
+  },
+  "geo": {
+    "state": "NV",
+    "scope": "statewide",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://nshe.nevada.edu/system-administration/departments/asa/students/financial-aid/silver-state-opportunity-grant/",
+    "apply_url": null
+  },
+  "provenance": {
+    "source_url": "https://nshe.nevada.edu/system-administration/departments/asa/students/financial-aid/silver-state-opportunity-grant/",
+    "source_name": "NSHE System Administration \u2014 State Financial Aid",
+    "last_verified": "2026-05-26",
+    "verification_method": "manual",
+    "added": "2026-05-26"
+  },
+  "status": "active"
+}

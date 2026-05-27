@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Grudged/open-scholarships/blob/main/schema/scholarship.schema.json",
+  "title": "Scholarship",
+  "description": "One scholarship / grant / waiver record in the Open Scholarships commons. Facts only, gathered from primary or official sources (never copied from a proprietary aggregator's compiled list). Licensed CC BY 4.0.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "sponsor", "sponsor_type", "type", "eligibility", "links", "provenance", "status"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$",
+      "description": "Stable kebab-case slug, unique across the whole dataset."
+    },
+    "name": { "type": "string", "minLength": 3 },
+    "sponsor": { "type": "string", "minLength": 2 },
+    "sponsor_type": { "enum": ["state", "federal", "institution", "foundation", "civic", "employer", "private", "other"] },
+    "type": { "enum": ["scholarship", "grant", "waiver", "fellowship", "loan-forgiveness", "prize"] },
+    "summary": { "type": "string", "description": "1-2 sentence plain-English description." },
+    "award": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "amount_min": { "type": ["number", "null"] },
+        "amount_max": { "type": ["number", "null"] },
+        "currency": { "type": "string", "default": "USD" },
+        "basis": { "enum": ["merit", "need", "merit-need", "identity", "field", "service", "other", null] },
+        "renewable": { "type": ["boolean", "null"] },
+        "notes": { "type": ["string", "null"] }
+      }
+    },
+    "deadline": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": { "enum": ["fixed", "annual", "rolling", "varies", "unknown"] },
+        "date": { "type": ["string", "null"], "description": "ISO date (YYYY-MM-DD) of the next known deadline, when applicable." },
+        "notes": { "type": ["string", "null"] }
+      }
+    },
+    "eligibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "residency": { "type": "array", "items": { "type": "string" }, "description": "USPS state codes (e.g. 'NV') or 'US'." },
+        "education_level": {
+          "type": "array",
+          "items": { "enum": ["middle-school", "high-school", "high-school-senior", "ged", "undergraduate", "community-college", "graduate", "vocational", "adult-returning", "any"] }
+        },
+        "fields_of_study": { "type": "array", "items": { "type": "string" }, "description": "Empty array = any field of study." },
+        "gpa_min": { "type": ["number", "null"] },
+        "citizenship": { "type": "array", "items": { "type": "string" } },
+        "other": { "type": "array", "items": { "type": "string" } },
+        "tags": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "geo": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "state": { "type": ["string", "null"] },
+        "scope": { "enum": ["national", "statewide", "regional", "county", "institution", null] },
+        "counties": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "links": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["info_url"],
+      "properties": {
+        "info_url": { "type": "string", "format": "uri" },
+        "apply_url": { "type": ["string", "null"], "format": "uri" }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_url", "source_name", "last_verified", "verification_method", "added"],
+      "properties": {
+        "source_url": { "type": "string", "format": "uri", "description": "The primary/official page the facts were taken from." },
+        "source_name": { "type": "string" },
+        "last_verified": { "type": "string", "description": "ISO date the facts were last confirmed against source_url." },
+        "verification_method": { "enum": ["manual", "gemma-extract", "gemma-recheck", "research-summary"] },
+        "added": { "type": "string" }
+      }
+    },
+    "status": {
+      "enum": ["active", "needs-review", "expired", "archived"],
+      "description": "Only 'active' records are served by default; records start 'needs-review' until a human verifies them against the source."
+    }
+  }
+}

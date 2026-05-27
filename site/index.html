@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Open Scholarships — a free, open directory of student aid</title>
+<meta name="description" content="A free, openly-licensed (CC BY 4.0), machine-readable directory of scholarships and student aid. Nevada first. Facts from official sources.">
+<link rel="canonical" href="https://scholarships.grudged.io/">
+<meta property="og:title" content="Open Scholarships">
+<meta property="og:description" content="A free, open, machine-readable directory of scholarships and student aid. Nevada first.">
+<meta property="og:type" content="website">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root { --ink:#1c1a17; --muted:#6b6358; --line:#ddd6c9; --paper:#faf7f0; --accent:#7a5c1e; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink); font:16px/1.65 ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 64px 24px 80px; }
+  h1 { font-family:"Instrument Serif",Georgia,serif; font-weight:400; font-size:58px; line-height:1.0; letter-spacing:-.01em; margin:0 0 6px; }
+  .lede { font-family:"Instrument Serif",Georgia,serif; font-style:italic; font-size:23px; color:var(--muted); margin:0 0 40px; }
+  h2 { font-family:"Instrument Serif",Georgia,serif; font-weight:400; font-size:30px; margin:48px 0 12px; }
+  p { margin: 0 0 16px; }
+  a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--line); }
+  a:hover { border-color: var(--accent); }
+  hr { border:0; border-top:1px solid var(--line); margin: 40px 0; }
+  code, pre { font-family:"JetBrains Mono",ui-monospace,monospace; font-size:13.5px; }
+  pre { background:#f1ece0; border:1px solid var(--line); border-radius:8px; padding:14px 16px; overflow-x:auto; line-height:1.5; }
+  .stat { display:flex; gap:28px; margin:8px 0 0; }
+  .stat b { font-family:"Instrument Serif",serif; font-size:34px; font-weight:400; display:block; line-height:1; }
+  .stat span { font-size:12px; text-transform:uppercase; letter-spacing:.06em; color:var(--muted); }
+  .demo { border:1px solid var(--line); border-radius:8px; padding:4px 18px; background:#fff; margin-top:14px; }
+  .demo .row { border-bottom:1px solid var(--line); padding:12px 0; }
+  .demo .row:last-child { border-bottom:0; }
+  .demo .n { font-family:"Instrument Serif",serif; font-size:19px; }
+  .demo .m { font-size:13px; color:var(--muted); }
+  .demo .m a { font-size:12px; }
+  footer { margin-top:56px; padding-top:20px; border-top:1px solid var(--line); font-size:13px; color:var(--muted); }
+  .pill { display:inline-block; font-size:11px; letter-spacing:.04em; text-transform:uppercase; color:var(--accent); border:1px solid var(--line); border-radius:999px; padding:3px 10px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <span class="pill">CC BY 4.0 · open data</span>
+  <h1>Open Scholarships</h1>
+  <p class="lede">A free, open, machine-readable directory of scholarships and student aid. Nevada first.</p>
+
+  <p>There is no free, openly-licensed source of scholarship data — the big aggregators keep it
+  proprietary because the listings <em>are</em> the business. This is the missing public version:
+  facts gathered from primary, official sources (state agencies, public universities, foundations),
+  each record carrying the source it was verified against. Use it freely; just attribute it.</p>
+
+  <div class="stat">
+    <div><b id="stat-count">—</b><span>scholarships</span></div>
+    <div><b id="stat-states">—</b><span>states</span></div>
+    <div><b>CC&nbsp;BY&nbsp;4.0</b><span>license</span></div>
+  </div>
+
+  <h2>The API</h2>
+  <p>No key, no signup. CORS-open, CDN-served, returns JSON.</p>
+  <pre>GET  /scholarships.json                         # the full dataset (one fetch)
+GET  /api/scholarships?state=NV&level=high-school-senior
+GET  /api/scholarships?q=nursing&amount_min=5000
+     filters: state · level · field · basis · type · sponsor_type
+              deadline_after · amount_min · q · limit · offset</pre>
+
+  <h2 id="live">Live — Nevada</h2>
+  <div class="demo" id="demo"><div class="row"><span class="m">Loading…</span></div></div>
+
+  <h2>Using the data</h2>
+  <p>Licensed <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. You may use,
+  remix, and redistribute it — including commercially — as long as you credit it. Suggested
+  attribution:</p>
+  <pre>Open Scholarships by Grudged LLC — https://github.com/Grudged/open-scholarships (CC BY 4.0)</pre>
+  <p>The data is facts about publicly-offered aid, gathered from official sources — never copied
+  from a proprietary aggregator's compiled list. Always confirm details against each record's
+  <code>provenance.source_url</code> before relying on them.</p>
+
+  <h2>Contribute</h2>
+  <p>The dataset lives in the open on
+  <a href="https://github.com/Grudged/open-scholarships">GitHub</a> — one JSON file per
+  scholarship, validated against a published schema. Corrections and new records (from official
+  sources, with provenance) are welcome.</p>
+
+  <footer>
+    An open data commons by <a href="https://grudged.io">Grudged LLC</a>.
+    Built to route students to aid that already exists.
+  </footer>
+</div>
+
+<script>
+  // Live counts + a sample of the dataset, straight from the API this page documents.
+  fetch('/meta.json').then(r => r.json()).then(m => {
+    document.getElementById('stat-count').textContent = m.count;
+    document.getElementById('stat-states').textContent = m.states.length;
+  }).catch(() => {});
+
+  fetch('/api/scholarships?state=NV').then(r => r.json()).then(d => {
+    const el = document.getElementById('demo');
+    if (!d.results || !d.results.length) { el.innerHTML = '<div class="row"><span class="m">No records yet.</span></div>'; return; }
+    el.innerHTML = d.results.map(r => {
+      const a = r.award || {}, L = r.links || {};
+      const amt = a.amount_max ? '$' + Number(a.amount_max).toLocaleString() : (a.basis ? a.basis + '-based' : '');
+      const go = L.apply_url || L.info_url;
+      return `<div class="row">
+        <div class="n">${r.name}</div>
+        <div class="m">${r.sponsor}${amt ? ' · ' + amt : ''}${go ? ' · <a href="'+go+'" target="_blank" rel="noopener">details ↗</a>' : ''}</div>
+      </div>`;
+    }).join('');
+  }).catch(() => {
+    document.getElementById('demo').innerHTML = '<div class="row"><span class="m">API warming up — refresh in a moment.</span></div>';
+  });
+</script>
+</body>
+</html>

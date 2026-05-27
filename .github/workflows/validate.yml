@@ -1,0 +1,18 @@
+name: validate
+
+# Gate: every record must pass the JSON Schema (+ unique ids) before it can land on main. This is
+# what keeps bad data out of the published commons — a malformed record fails CI, never deploys.
+on:
+  push:
+  pull_request:
+
+jobs:
+  schema:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install jsonschema pytest
+      - run: python -m pytest tests -q

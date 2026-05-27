@@ -1,0 +1,23 @@
+# Netlify build + CDN config for the public Open Scholarships commons (scholarships.grudged.io).
+# `node scripts/build.mjs` compiles the dataset into public/; the edge function (declared in
+# netlify/edge-functions/scholarships.ts via its own config.path) serves /api/scholarships.
+
+[build]
+  command = "node scripts/build.mjs"
+  publish = "public"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Static dataset bundle: CDN-cached, CORS-open so any site can fetch it directly.
+[[headers]]
+  for = "/scholarships.json"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Cache-Control = "public, max-age=300, stale-while-revalidate=86400"
+
+[[headers]]
+  for = "/meta.json"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Cache-Control = "public, max-age=300, stale-while-revalidate=86400"

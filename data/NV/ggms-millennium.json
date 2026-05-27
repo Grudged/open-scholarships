@@ -1,0 +1,60 @@
+{
+  "id": "nv-ggms-millennium",
+  "name": "Governor Guinn Millennium Scholarship",
+  "sponsor": "State of Nevada \u2014 Office of the State Treasurer",
+  "sponsor_type": "state",
+  "type": "scholarship",
+  "summary": "Merit award (up to $10,000 lifetime) for Nevada high school graduates who meet GPA/coursework requirements and attend an eligible Nevada college or university.",
+  "award": {
+    "amount_min": null,
+    "amount_max": 10000,
+    "currency": "USD",
+    "basis": "merit",
+    "renewable": true,
+    "notes": "Lifetime maximum; disbursed per enrolled credit at eligible NSHE institutions."
+  },
+  "deadline": {
+    "type": "varies",
+    "date": null,
+    "notes": "Eligibility is based on Nevada high school graduation plus GPA/coursework rather than a single application deadline \u2014 verify current criteria against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "NV"
+    ],
+    "education_level": [
+      "high-school-senior",
+      "undergraduate",
+      "community-college"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Graduate from a Nevada high school and meet the GPA / core-coursework requirements (verify current thresholds)",
+      "Enroll at an eligible NSHE (Nevada System of Higher Education) institution"
+    ],
+    "tags": [
+      "nevada",
+      "merit",
+      "statewide"
+    ]
+  },
+  "geo": {
+    "state": "NV",
+    "scope": "statewide",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://www.nevadatreasurer.gov/ggms/ggms_home/",
+    "apply_url": "https://www.nevadatreasurer.gov/GGMS/Forms/Forms/"
+  },
+  "provenance": {
+    "source_url": "https://www.nevadatreasurer.gov/ggms/ggms_home/",
+    "source_name": "Nevada State Treasurer",
+    "last_verified": "2026-05-26",
+    "verification_method": "manual",
+    "added": "2026-05-26"
+  },
+  "status": "active"
+}

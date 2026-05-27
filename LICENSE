@@ -1,0 +1,28 @@
+DATA LICENSE — Open Scholarships dataset
+SPDX-License-Identifier: CC-BY-4.0
+
+The data in this repository (everything under data/, plus the schema) is licensed under the
+Creative Commons Attribution 4.0 International License (CC BY 4.0).
+
+You are free to:
+  - Share — copy and redistribute the data in any medium or format
+  - Adapt — remix, transform, and build upon the data for any purpose, even commercially
+
+Under one condition:
+  - Attribution — You must give appropriate credit, provide a link to the license, and indicate
+    if changes were made. You may do so in any reasonable manner, but not in any way that
+    suggests the licensor endorses you or your use.
+
+Required attribution (suggested form):
+  "Open Scholarships by Grudged LLC — https://github.com/Grudged/open-scholarships (CC BY 4.0)"
+
+Full legal code: https://creativecommons.org/licenses/by/4.0/legalcode
+Human-readable summary: https://creativecommons.org/licenses/by/4.0/
+
+NOTE: The data consists of FACTS about publicly offered scholarships and student aid, gathered
+from primary and official sources (state agencies, NSHE institutions, foundations, .gov/.edu
+pages). It is not copied from any proprietary aggregator's compiled database. Always verify
+details against each record's `provenance.source_url` before relying on them.
+
+The API source code under api/ and tools/ is licensed separately under the MIT License — see
+LICENSE-CODE.
