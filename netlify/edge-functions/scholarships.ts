@@ -7,6 +7,12 @@ import type { Config, Context } from "https://edge.netlify.com";
 let cache: { at: number; data: any } | null = null;
 const TTL = 60_000;
 
+// Usage analytics into the same self-hosted Umami site Mission Control reads. The website id is
+// public (it ships in the browser tracking script too), so it's fine inline. Events are fired
+// non-blocking via context.waitUntil so they never slow or break the API response.
+const UMAMI = "https://analytics.grudged.io";
+const UMAMI_WEBSITE = "592dc95d-e6da-4432-ad7c-06fb06636ab0";
+
 async function bundle(origin: string): Promise<any> {
   if (cache && Date.now() - cache.at < TTL) return cache.data;
   const res = await fetch(new URL("/scholarships.json", origin));
@@ -60,7 +66,7 @@ function matches(rec: any, q: URLSearchParams): boolean {
   return true;
 }
 
-export default async (request: Request, _context: Context): Promise<Response> => {
+export default async (request: Request, context: Context): Promise<Response> => {
   const url = new URL(request.url);
   const q = url.searchParams;
   const data = await bundle(url.origin);
@@ -70,6 +76,30 @@ export default async (request: Request, _context: Context): Promise<Response> =>
   const limit = Math.min(Math.max(Number(q.get("limit") ?? 50), 1), 500);
   const offset = Math.max(Number(q.get("offset") ?? 0), 0);
   results = results.slice(offset, offset + limit);
+
+  // Record the API call in Umami (non-blocking). Programmatic hits have no browser, so this is the
+  // only way they show up alongside docs page views. Forward the caller IP so visitors aren't all
+  // collapsed into the edge node.
+  context.waitUntil(
+    fetch(`${UMAMI}/api/send`, {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+        "user-agent": request.headers.get("user-agent") ?? "open-scholarships-edge",
+        "x-forwarded-for": context.ip ?? request.headers.get("x-nf-client-connection-ip") ?? "",
+      },
+      body: JSON.stringify({
+        type: "event",
+        payload: {
+          website: UMAMI_WEBSITE,
+          hostname: "scholarships.grudged.io",
+          url: url.pathname + url.search,
+          name: "api_query",
+          data: { state: q.get("state"), level: q.get("level"), q: q.get("q"), results: total },
+        },
+      }),
+    }).catch(() => {}),
+  );
 
   const body = {
     total,
