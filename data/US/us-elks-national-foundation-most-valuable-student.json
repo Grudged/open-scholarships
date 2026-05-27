@@ -1,0 +1,54 @@
+{
+  "id": "us-elks-national-foundation-most-valuable-student",
+  "name": "Elks National Foundation Most Valuable Student",
+  "sponsor": "Elks National Foundation",
+  "sponsor_type": "civic",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "basis": "merit-need",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "high-school-senior"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "U.S. high school seniors; leadership + financial need"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://www.elks.org/scholars/scholarships/mvs.cfm",
+    "apply_url": null
+  },
+  "provenance": {
+    "source_url": "https://www.elks.org/scholars/scholarships/mvs.cfm",
+    "source_name": "Elks National Foundation",
+    "last_verified": "2026-05-27",
+    "verification_method": "research-summary",
+    "added": "2026-05-27"
+  },
+  "status": "needs-review"
+}

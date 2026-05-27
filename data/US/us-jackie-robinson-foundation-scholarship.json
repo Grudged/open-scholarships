@@ -1,0 +1,54 @@
+{
+  "id": "us-jackie-robinson-foundation-scholarship",
+  "name": "Jackie Robinson Foundation Scholarship",
+  "sponsor": "Jackie Robinson Foundation",
+  "sponsor_type": "foundation",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "basis": "identity",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "high-school-senior"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Minority high school seniors with financial need and leadership"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://www.jackierobinson.org/apply/",
+    "apply_url": null
+  },
+  "provenance": {
+    "source_url": "https://www.jackierobinson.org/apply/",
+    "source_name": "Jackie Robinson Foundation",
+    "last_verified": "2026-05-27",
+    "verification_method": "research-summary",
+    "added": "2026-05-27"
+  },
+  "status": "needs-review"
+}

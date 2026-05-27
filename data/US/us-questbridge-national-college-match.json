@@ -1,0 +1,55 @@
+{
+  "id": "us-questbridge-national-college-match",
+  "name": "QuestBridge National College Match",
+  "sponsor": "QuestBridge",
+  "sponsor_type": "foundation",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "basis": "need",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "high-school-senior"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "High-achieving high school seniors from low-income households",
+      "Full four-year scholarships to partner colleges"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://www.questbridge.org/high-school-students/national-college-match",
+    "apply_url": null
+  },
+  "provenance": {
+    "source_url": "https://www.questbridge.org/high-school-students/national-college-match",
+    "source_name": "QuestBridge",
+    "last_verified": "2026-05-27",
+    "verification_method": "research-summary",
+    "added": "2026-05-27"
+  },
+  "status": "needs-review"
+}

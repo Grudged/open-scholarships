@@ -1,0 +1,55 @@
+{
+  "id": "us-davidson-fellows-scholarship",
+  "name": "Davidson Fellows Scholarship",
+  "sponsor": "Davidson Institute",
+  "sponsor_type": "foundation",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "basis": "merit",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "high-school",
+      "undergraduate"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Students 18 or younger with a significant project in STEM, literature, music, or philosophy"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://www.davidsongifted.org/gifted-programs/fellows-scholarship/",
+    "apply_url": null
+  },
+  "provenance": {
+    "source_url": "https://www.davidsongifted.org/gifted-programs/fellows-scholarship/",
+    "source_name": "Davidson Institute",
+    "last_verified": "2026-05-27",
+    "verification_method": "research-summary",
+    "added": "2026-05-27"
+  },
+  "status": "needs-review"
+}

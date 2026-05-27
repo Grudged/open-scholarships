@@ -1,0 +1,54 @@
+{
+  "id": "us-jack-kent-cooke-foundation-college-scholarship",
+  "name": "Jack Kent Cooke Foundation College Scholarship",
+  "sponsor": "Jack Kent Cooke Foundation",
+  "sponsor_type": "foundation",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "basis": "merit-need",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "high-school-senior"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "High-achieving high school seniors with financial need"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://www.jkcf.org/our-scholarships/college-scholarship-program/",
+    "apply_url": null
+  },
+  "provenance": {
+    "source_url": "https://www.jkcf.org/our-scholarships/college-scholarship-program/",
+    "source_name": "Jack Kent Cooke Foundation",
+    "last_verified": "2026-05-27",
+    "verification_method": "research-summary",
+    "added": "2026-05-27"
+  },
+  "status": "needs-review"
+}

@@ -1,0 +1,55 @@
+{
+  "id": "us-the-gates-scholarship",
+  "name": "The Gates Scholarship",
+  "sponsor": "The Gates Scholarship",
+  "sponsor_type": "foundation",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "basis": "need",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "high-school-senior"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Pell-eligible high school seniors from minority backgrounds",
+      "Last-dollar; full cost of attendance"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://www.thegatesscholarship.org/scholarship",
+    "apply_url": null
+  },
+  "provenance": {
+    "source_url": "https://www.thegatesscholarship.org/scholarship",
+    "source_name": "The Gates Scholarship",
+    "last_verified": "2026-05-27",
+    "verification_method": "research-summary",
+    "added": "2026-05-27"
+  },
+  "status": "needs-review"
+}

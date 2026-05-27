@@ -1,0 +1,54 @@
+{
+  "id": "us-national-merit-scholarship-program",
+  "name": "National Merit Scholarship Program",
+  "sponsor": "National Merit Scholarship Corporation",
+  "sponsor_type": "foundation",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "basis": "merit",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "high-school-senior"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Qualify via the PSAT/NMSQT in the junior year"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://www.nationalmerit.org/",
+    "apply_url": null
+  },
+  "provenance": {
+    "source_url": "https://www.nationalmerit.org/",
+    "source_name": "National Merit Scholarship Corporation",
+    "last_verified": "2026-05-27",
+    "verification_method": "research-summary",
+    "added": "2026-05-27"
+  },
+  "status": "needs-review"
+}

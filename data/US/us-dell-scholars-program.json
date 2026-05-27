@@ -1,0 +1,55 @@
+{
+  "id": "us-dell-scholars-program",
+  "name": "Dell Scholars Program",
+  "sponsor": "Michael & Susan Dell Foundation",
+  "sponsor_type": "foundation",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "basis": "need",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "high-school-senior"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Students in approved college-readiness programs; grit-focused",
+      "Verify program participation requirement"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://www.dellscholars.org/scholarship/",
+    "apply_url": null
+  },
+  "provenance": {
+    "source_url": "https://www.dellscholars.org/scholarship/",
+    "source_name": "Michael & Susan Dell Foundation",
+    "last_verified": "2026-05-27",
+    "verification_method": "research-summary",
+    "added": "2026-05-27"
+  },
+  "status": "needs-review"
+}

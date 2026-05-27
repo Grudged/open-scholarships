@@ -52,7 +52,6 @@ Each array item has these keys:
   name, sponsor, sponsor_type (state|federal|institution|foundation|civic|employer|private|other;
     a private/nonprofit foundation scholarship is "foundation", NOT "federal"),
   type (scholarship|grant|waiver|fellowship|loan-forgiveness|prize),
-  summary (ONE plain sentence, max 200 characters: who it's for + the award),
   amount_max (number or null),
   basis (merit|need|merit-need|identity|field|service|other|null),
   deadline (text or null),
@@ -124,7 +123,7 @@ def gemma_extract(name: str, url: str, text: str) -> list[dict]:
     body = {
         "messages": [
             {"role": "system", "content": "You extract structured data. Output only valid JSON."},
-            {"role": "user", "content": EXTRACT_PROMPT.format(name=name, url=url, text=text[:14000])},
+            {"role": "user", "content": EXTRACT_PROMPT.format(name=name, url=url, text=text[:8000])},
         ],
         "temperature": 0.1,
         "max_tokens": 3000,
@@ -135,23 +134,19 @@ def gemma_extract(name: str, url: str, text: str) -> list[dict]:
         content = r.json()["choices"][0]["message"]["content"]
     except (httpx.HTTPError, KeyError, ValueError):
         return []
-    # Prefer a clean array parse; fall back to scraping individual {...} objects so a truncated or
-    # slightly-malformed array still yields its complete records instead of zero.
-    m = re.search(r"\[.*\]", content, re.S)
-    if m:
-        try:
-            data = json.loads(m.group(0))
-            if isinstance(data, list):
-                return data
-        except json.JSONDecodeError:
-            pass
-    objs = []
-    for om in re.finditer(r"\{[^{}]*\}", content, re.S):
-        try:
-            objs.append(json.loads(om.group(0)))
-        except json.JSONDecodeError:
-            pass
-    return objs
+    # Parse the first complete JSON value (array or single object) at/after the first bracket,
+    # ignoring surrounding prose or ```json fences. raw_decode tolerates trailing text and a
+    # single-object response (which we wrap into a list).
+    start = next((i for i, ch in enumerate(content) if ch in "[{"), None)
+    if start is None:
+        return []
+    try:
+        value, _ = json.JSONDecoder().raw_decode(content[start:])
+    except ValueError:
+        return []
+    if isinstance(value, dict):
+        return [value]
+    return value if isinstance(value, list) else []
 
 
 def _slug(s: str) -> str:
@@ -205,9 +200,6 @@ def to_record(item: dict, source: dict, page_url: str) -> dict | None:
         },
         "status": "needs-review",
     }
-    summary = (item.get("summary") or "").strip()
-    if summary:
-        rec["summary"] = summary[:300]
     errors = list(VALIDATOR.iter_errors(rec))
     return rec if not errors else None
 
