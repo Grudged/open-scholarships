@@ -1,0 +1,56 @@
+{
+  "id": "nv-nevada-womens-fund-scholarships",
+  "name": "Nevada Women's Fund Scholarships",
+  "sponsor": "Nevada Women's Fund",
+  "sponsor_type": "foundation",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "basis": "need",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "NV"
+    ],
+    "education_level": [
+      "undergraduate",
+      "graduate",
+      "community-college"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Students pursuing education in Nevada, with financial need and Nevada ties"
+    ],
+    "tags": [
+      "nevada"
+    ]
+  },
+  "geo": {
+    "state": "NV",
+    "scope": "statewide",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://www.nevadawomensfund.org/",
+    "apply_url": null
+  },
+  "provenance": {
+    "source_url": "https://www.nevadawomensfund.org/",
+    "source_name": "Nevada Women's Fund",
+    "last_verified": "2026-05-27",
+    "verification_method": "research-summary",
+    "added": "2026-05-27"
+  },
+  "status": "needs-review"
+}

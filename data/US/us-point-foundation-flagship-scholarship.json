@@ -1,0 +1,55 @@
+{
+  "id": "us-point-foundation-flagship-scholarship",
+  "name": "Point Foundation Flagship Scholarship",
+  "sponsor": "Point Foundation",
+  "sponsor_type": "foundation",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "basis": "identity",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "undergraduate",
+      "graduate"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "LGBTQ students with leadership and financial need"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://pointfoundation.org/",
+    "apply_url": null
+  },
+  "provenance": {
+    "source_url": "https://pointfoundation.org/",
+    "source_name": "Point Foundation",
+    "last_verified": "2026-05-27",
+    "verification_method": "research-summary",
+    "added": "2026-05-27"
+  },
+  "status": "needs-review"
+}

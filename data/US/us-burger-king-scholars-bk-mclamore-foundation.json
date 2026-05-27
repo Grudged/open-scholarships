@@ -1,0 +1,55 @@
+{
+  "id": "us-burger-king-scholars-bk-mclamore-foundation",
+  "name": "Burger King Scholars (BK McLamore Foundation)",
+  "sponsor": "Burger King Foundation",
+  "sponsor_type": "foundation",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "basis": "merit-need",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "high-school-senior"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Graduating high school seniors (US/Canada/Puerto Rico)",
+      "GPA + financial need + work/community involvement"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://www.burgerkingscholars.com/",
+    "apply_url": null
+  },
+  "provenance": {
+    "source_url": "https://www.burgerkingscholars.com/",
+    "source_name": "Burger King Foundation",
+    "last_verified": "2026-05-27",
+    "verification_method": "research-summary",
+    "added": "2026-05-27"
+  },
+  "status": "needs-review"
+}

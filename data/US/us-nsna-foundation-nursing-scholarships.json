@@ -1,0 +1,55 @@
+{
+  "id": "us-nsna-foundation-nursing-scholarships",
+  "name": "NSNA Foundation Nursing Scholarships",
+  "sponsor": "National Student Nurses' Association Foundation",
+  "sponsor_type": "foundation",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "basis": "field",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "undergraduate"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Enrolled nursing students",
+      "Academic achievement + financial need"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://www.nsna.org/",
+    "apply_url": null
+  },
+  "provenance": {
+    "source_url": "https://www.nsna.org/",
+    "source_name": "National Student Nurses' Association Foundation",
+    "last_verified": "2026-05-27",
+    "verification_method": "research-summary",
+    "added": "2026-05-27"
+  },
+  "status": "needs-review"
+}

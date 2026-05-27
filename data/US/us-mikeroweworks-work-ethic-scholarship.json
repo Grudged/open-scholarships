@@ -1,0 +1,55 @@
+{
+  "id": "us-mikeroweworks-work-ethic-scholarship",
+  "name": "mikeroweWORKS Work Ethic Scholarship",
+  "sponsor": "mikeroweWORKS Foundation",
+  "sponsor_type": "foundation",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "basis": "other",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "vocational"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Students pursuing skilled trades / technical training",
+      "Work-ethic essay + S.W.E.A.T. pledge"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://www.mikeroweworks.org/scholarship/",
+    "apply_url": null
+  },
+  "provenance": {
+    "source_url": "https://www.mikeroweworks.org/scholarship/",
+    "source_name": "mikeroweWORKS Foundation",
+    "last_verified": "2026-05-27",
+    "verification_method": "research-summary",
+    "added": "2026-05-27"
+  },
+  "status": "needs-review"
+}

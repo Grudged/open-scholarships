@@ -1,0 +1,56 @@
+{
+  "id": "us-taco-bell-live-m-s-scholarship",
+  "name": "Taco Bell Live M\u00e1s Scholarship",
+  "sponsor": "Taco Bell Foundation",
+  "sponsor_type": "foundation",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "basis": "other",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "high-school-senior",
+      "undergraduate"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Passion-driven video application (not GPA/test based)",
+      "Ages 16-26"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://www.tacobellfoundation.org/live-mas-scholarship/",
+    "apply_url": null
+  },
+  "provenance": {
+    "source_url": "https://www.tacobellfoundation.org/live-mas-scholarship/",
+    "source_name": "Taco Bell Foundation",
+    "last_verified": "2026-05-27",
+    "verification_method": "research-summary",
+    "added": "2026-05-27"
+  },
+  "status": "needs-review"
+}

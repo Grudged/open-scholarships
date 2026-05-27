@@ -1,0 +1,55 @@
+{
+  "id": "us-aauw-fellowships-grants",
+  "name": "AAUW Fellowships & Grants",
+  "sponsor": "American Association of University Women",
+  "sponsor_type": "foundation",
+  "type": "fellowship",
+  "award": {
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "basis": "merit-need",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "graduate"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Women pursuing graduate or postgraduate study",
+      "Several distinct fellowship tracks"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://www.aauw.org/resources/programs/fellowships-grants/",
+    "apply_url": null
+  },
+  "provenance": {
+    "source_url": "https://www.aauw.org/resources/programs/fellowships-grants/",
+    "source_name": "American Association of University Women",
+    "last_verified": "2026-05-27",
+    "verification_method": "research-summary",
+    "added": "2026-05-27"
+  },
+  "status": "needs-review"
+}

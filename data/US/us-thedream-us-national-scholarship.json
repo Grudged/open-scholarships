@@ -1,0 +1,56 @@
+{
+  "id": "us-thedream-us-national-scholarship",
+  "name": "TheDream.US National Scholarship",
+  "sponsor": "TheDream.US",
+  "sponsor_type": "foundation",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "basis": "need",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "high-school-senior",
+      "community-college"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Undocumented students with DACA or TPS (or eligible)",
+      "Attend a partner college"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://www.thedream.us/scholarships/",
+    "apply_url": null
+  },
+  "provenance": {
+    "source_url": "https://www.thedream.us/scholarships/",
+    "source_name": "TheDream.US",
+    "last_verified": "2026-05-27",
+    "verification_method": "research-summary",
+    "added": "2026-05-27"
+  },
+  "status": "needs-review"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "us-apia-scholars-scholarship",
+  "name": "APIA Scholars Scholarship",
+  "sponsor": "Asian & Pacific Islander American Scholarship Fund",
+  "sponsor_type": "foundation",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "basis": "identity",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "high-school-senior",
+      "undergraduate"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Students of Asian and/or Pacific Islander heritage",
+      "Financial need; first-gen prioritized"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://apiascholars.org/scholarship/",
+    "apply_url": null
+  },
+  "provenance": {
+    "source_url": "https://apiascholars.org/scholarship/",
+    "source_name": "Asian & Pacific Islander American Scholarship Fund",
+    "last_verified": "2026-05-27",
+    "verification_method": "research-summary",
+    "added": "2026-05-27"
+  },
+  "status": "needs-review"
+}

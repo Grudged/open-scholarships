@@ -1,0 +1,56 @@
+{
+  "id": "us-uncf-general-scholarship",
+  "name": "UNCF General Scholarship",
+  "sponsor": "United Negro College Fund",
+  "sponsor_type": "foundation",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "basis": "identity",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "high-school-senior",
+      "undergraduate"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Primarily African American students with financial need",
+      "One application matches to many UNCF programs"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://uncf.org/scholarships",
+    "apply_url": null
+  },
+  "provenance": {
+    "source_url": "https://uncf.org/scholarships",
+    "source_name": "United Negro College Fund",
+    "last_verified": "2026-05-27",
+    "verification_method": "research-summary",
+    "added": "2026-05-27"
+  },
+  "status": "needs-review"
+}

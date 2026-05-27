@@ -1,0 +1,55 @@
+{
+  "id": "nv-unlv-scholarships",
+  "name": "UNLV Scholarships",
+  "sponsor": "University of Nevada, Las Vegas",
+  "sponsor_type": "institution",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "basis": "merit-need",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "NV"
+    ],
+    "education_level": [
+      "undergraduate"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Admitted/enrolled UNLV students",
+      "Institutional + departmental awards"
+    ],
+    "tags": [
+      "nevada"
+    ]
+  },
+  "geo": {
+    "state": "NV",
+    "scope": "institution",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://www.unlv.edu/finaid/scholarships",
+    "apply_url": null
+  },
+  "provenance": {
+    "source_url": "https://www.unlv.edu/finaid/scholarships",
+    "source_name": "University of Nevada, Las Vegas",
+    "last_verified": "2026-05-27",
+    "verification_method": "research-summary",
+    "added": "2026-05-27"
+  },
+  "status": "needs-review"
+}

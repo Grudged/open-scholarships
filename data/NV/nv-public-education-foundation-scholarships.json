@@ -1,0 +1,57 @@
+{
+  "id": "nv-public-education-foundation-scholarships",
+  "name": "Public Education Foundation Scholarships",
+  "sponsor": "Public Education Foundation (Las Vegas)",
+  "sponsor_type": "foundation",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "basis": "merit-need",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "NV"
+    ],
+    "education_level": [
+      "high-school-senior"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Southern Nevada / Clark County students",
+      "One application matches to many local scholarships"
+    ],
+    "tags": [
+      "nevada"
+    ]
+  },
+  "geo": {
+    "state": "NV",
+    "scope": "county",
+    "counties": [
+      "Clark"
+    ]
+  },
+  "links": {
+    "info_url": "https://thepef.org/scholarships/",
+    "apply_url": null
+  },
+  "provenance": {
+    "source_url": "https://thepef.org/scholarships/",
+    "source_name": "Public Education Foundation (Las Vegas)",
+    "last_verified": "2026-05-27",
+    "verification_method": "research-summary",
+    "added": "2026-05-27"
+  },
+  "status": "needs-review"
+}
