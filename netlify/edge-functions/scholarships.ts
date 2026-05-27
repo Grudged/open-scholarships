@@ -28,8 +28,12 @@ function matches(rec: any, q: URLSearchParams): boolean {
 
   const state = q.get("state");
   if (state) {
+    const S = state.toUpperCase();
     const res = (elig.residency ?? []).map((r: string) => r.toUpperCase());
-    if ((geo.state ?? "").toUpperCase() !== state.toUpperCase() && !res.includes(state.toUpperCase())) return false;
+    // National scholarships (US-wide / scope national) are open to every state, so they always
+    // pass a state filter — a NV student should see NV-specific awards AND national ones.
+    const national = geo.scope === "national" || res.includes("US");
+    if (!national && (geo.state ?? "").toUpperCase() !== S && !res.includes(S)) return false;
   }
   const level = q.get("level");
   if (level && !levels.includes(level) && !levels.includes("any")) return false;

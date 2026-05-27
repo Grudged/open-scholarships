@@ -75,8 +75,11 @@ def _matches(rec: dict, *, state, level, field, basis, type_, sponsor_type,
     elig = rec.get("eligibility") or {}
     levels = elig.get("education_level") or []
     if state:
+        s = state.upper()
         residency = [r.upper() for r in elig.get("residency", [])]
-        if (geo.get("state") or "").upper() != state.upper() and state.upper() not in residency:
+        # National scholarships are open to every state, so they always pass a state filter.
+        national = (geo.get("scope") == "national") or ("US" in residency)
+        if not national and (geo.get("state") or "").upper() != s and s not in residency:
             return False
     if level and level not in levels and "any" not in levels:
         return False
