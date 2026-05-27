@@ -6,7 +6,7 @@
   "type": "scholarship",
   "award": {
     "amount_min": null,
-    "amount_max": 4.9,
+    "amount_max": null,
     "currency": "USD",
     "basis": "need",
     "renewable": null,
