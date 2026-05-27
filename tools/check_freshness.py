@@ -8,7 +8,7 @@ from __future__ import annotations
 
 import argparse
 import json
-from datetime import date
+from datetime import date, timedelta
 from pathlib import Path
 
 import httpx
@@ -48,6 +48,11 @@ def main() -> None:
             problems.append("dead apply_url")
         if dl.get("date") and dl["date"] < today:
             problems.append(f"deadline passed ({dl['date']})")
+        # Exact dates must be re-verified each cycle — flag any date not confirmed in ~11 months,
+        # so a stale "accurate" date can't quietly outlive its source. (Deadlines shift yearly.)
+        lv = prov.get("last_verified")
+        if dl.get("date") and lv and lv < (date.today() - timedelta(days=330)).isoformat():
+            problems.append(f"deadline date not re-verified since {lv} (annual recheck)")
         if problems:
             issues += 1
             print(f"[{rec['id']}] {', '.join(problems)}")

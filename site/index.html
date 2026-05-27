@@ -98,12 +98,16 @@ GET  /api/scholarships?q=nursing&amount_min=5000
     const el = document.getElementById('demo');
     if (!d.results || !d.results.length) { el.innerHTML = '<div class="row"><span class="m">No records yet.</span></div>'; return; }
     el.innerHTML = d.results.map(r => {
-      const a = r.award || {}, L = r.links || {};
+      const a = r.award || {}, L = r.links || {}, D = r.deadline || {}, P = r.provenance || {};
       const amt = a.amount_max ? '$' + Number(a.amount_max).toLocaleString() : (a.basis ? a.basis + '-based' : '');
       const go = L.apply_url || L.info_url;
+      // Show an EXACT date only when one is set (it's source-verified); otherwise the honest type.
+      const dl = D.date
+        ? 'apply by ' + D.date + (P.last_verified ? ' (verified ' + P.last_verified + ')' : '')
+        : ({ rolling: 'rolling deadline', annual: 'annual — verify at source', fixed: 'see source for date', varies: 'deadline varies', unknown: 'deadline not set' }[D.type] || '');
       return `<div class="row">
         <div class="n">${r.name}</div>
-        <div class="m">${r.sponsor}${amt ? ' · ' + amt : ''}${go ? ' · <a href="'+go+'" target="_blank" rel="noopener">details ↗</a>' : ''}</div>
+        <div class="m">${r.sponsor}${amt ? ' · ' + amt : ''}${dl ? ' · ' + dl : ''}${go ? ' · <a href="'+go+'" target="_blank" rel="noopener">details ↗</a>' : ''}</div>
       </div>`;
     }).join('');
   }).catch(() => {
