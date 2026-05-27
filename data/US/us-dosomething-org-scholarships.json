@@ -1,0 +1,55 @@
+{
+  "id": "us-dosomething-org-scholarships",
+  "name": "DoSomething.org Scholarships",
+  "sponsor": "DoSomething.org",
+  "sponsor_type": "foundation",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "basis": "service",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "high-school",
+      "undergraduate"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Earned by joining volunteer / social-action campaigns; no GPA or essay"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://www.dosomething.org/us/about/easy-scholarships",
+    "apply_url": null
+  },
+  "provenance": {
+    "source_url": "https://www.dosomething.org/us/about/easy-scholarships",
+    "source_name": "DoSomething.org",
+    "last_verified": "2026-05-27",
+    "verification_method": "research-summary",
+    "added": "2026-05-27"
+  },
+  "status": "needs-review"
+}

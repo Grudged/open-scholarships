@@ -1,0 +1,54 @@
+{
+  "id": "us-scholarship-america-dream-award",
+  "name": "Scholarship America Dream Award",
+  "sponsor": "Scholarship America",
+  "sponsor_type": "foundation",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "basis": "need",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "undergraduate"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Renewable, need-based award for students past their first year"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://scholarshipamerica.org/students/browse-scholarships/",
+    "apply_url": null
+  },
+  "provenance": {
+    "source_url": "https://scholarshipamerica.org/students/browse-scholarships/",
+    "source_name": "Scholarship America",
+    "last_verified": "2026-05-27",
+    "verification_method": "research-summary",
+    "added": "2026-05-27"
+  },
+  "status": "needs-review"
+}

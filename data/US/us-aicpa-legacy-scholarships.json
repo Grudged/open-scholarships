@@ -1,0 +1,55 @@
+{
+  "id": "us-aicpa-legacy-scholarships",
+  "name": "AICPA Legacy Scholarships",
+  "sponsor": "AICPA Foundation",
+  "sponsor_type": "foundation",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "basis": "field",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "undergraduate",
+      "graduate"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Accounting students; may require student-affiliate membership"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://www.aicpa-cima.com/membership/landing/scholarships-and-awards",
+    "apply_url": null
+  },
+  "provenance": {
+    "source_url": "https://www.aicpa-cima.com/membership/landing/scholarships-and-awards",
+    "source_name": "AICPA Foundation",
+    "last_verified": "2026-05-27",
+    "verification_method": "research-summary",
+    "added": "2026-05-27"
+  },
+  "status": "needs-review"
+}

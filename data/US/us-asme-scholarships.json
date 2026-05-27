@@ -1,0 +1,55 @@
+{
+  "id": "us-asme-scholarships",
+  "name": "ASME Scholarships",
+  "sponsor": "American Society of Mechanical Engineers",
+  "sponsor_type": "foundation",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "basis": "field",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "undergraduate",
+      "graduate"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "ASME student members in mechanical engineering"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://www.asme.org/asme-programs/students-and-faculty/scholarships",
+    "apply_url": null
+  },
+  "provenance": {
+    "source_url": "https://www.asme.org/asme-programs/students-and-faculty/scholarships",
+    "source_name": "American Society of Mechanical Engineers",
+    "last_verified": "2026-05-27",
+    "verification_method": "research-summary",
+    "added": "2026-05-27"
+  },
+  "status": "needs-review"
+}

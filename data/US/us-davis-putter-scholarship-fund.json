@@ -1,0 +1,55 @@
+{
+  "id": "us-davis-putter-scholarship-fund",
+  "name": "Davis-Putter Scholarship Fund",
+  "sponsor": "Davis-Putter Scholarship Fund",
+  "sponsor_type": "foundation",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "basis": "need",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "undergraduate",
+      "graduate"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Students active in movements for social and economic justice, with financial need"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://www.davisputter.org/",
+    "apply_url": null
+  },
+  "provenance": {
+    "source_url": "https://www.davisputter.org/",
+    "source_name": "Davis-Putter Scholarship Fund",
+    "last_verified": "2026-05-27",
+    "verification_method": "research-summary",
+    "added": "2026-05-27"
+  },
+  "status": "needs-review"
+}

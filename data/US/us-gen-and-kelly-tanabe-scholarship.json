@@ -1,0 +1,56 @@
+{
+  "id": "us-gen-and-kelly-tanabe-scholarship",
+  "name": "Gen and Kelly Tanabe Scholarship",
+  "sponsor": "Gen and Kelly Tanabe",
+  "sponsor_type": "private",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "basis": "merit",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "high-school",
+      "undergraduate",
+      "graduate"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Open to a wide range of students; short essay"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://www.genkellyscholarship.com/",
+    "apply_url": null
+  },
+  "provenance": {
+    "source_url": "https://www.genkellyscholarship.com/",
+    "source_name": "Gen and Kelly Tanabe",
+    "last_verified": "2026-05-27",
+    "verification_method": "research-summary",
+    "added": "2026-05-27"
+  },
+  "status": "needs-review"
+}

@@ -1,0 +1,55 @@
+{
+  "id": "us-discover-student-loans-scholarship",
+  "name": "Discover Student Loans Scholarship",
+  "sponsor": "Discover",
+  "sponsor_type": "employer",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "basis": "other",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "high-school-senior",
+      "undergraduate"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Recurring award with a quick entry; verify current terms"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://www.discover.com/student-loans/scholarships/",
+    "apply_url": null
+  },
+  "provenance": {
+    "source_url": "https://www.discover.com/student-loans/scholarships/",
+    "source_name": "Discover",
+    "last_verified": "2026-05-27",
+    "verification_method": "research-summary",
+    "added": "2026-05-27"
+  },
+  "status": "needs-review"
+}

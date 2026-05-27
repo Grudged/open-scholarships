@@ -1,0 +1,54 @@
+{
+  "id": "us-nacme-scholarships",
+  "name": "NACME Scholarships",
+  "sponsor": "National Action Council for Minorities in Engineering",
+  "sponsor_type": "foundation",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "basis": "identity",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "undergraduate"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Underrepresented-minority students in engineering at NACME partner schools"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://www.nacme.org/scholarships",
+    "apply_url": null
+  },
+  "provenance": {
+    "source_url": "https://www.nacme.org/scholarships",
+    "source_name": "National Action Council for Minorities in Engineering",
+    "last_verified": "2026-05-27",
+    "verification_method": "research-summary",
+    "added": "2026-05-27"
+  },
+  "status": "needs-review"
+}

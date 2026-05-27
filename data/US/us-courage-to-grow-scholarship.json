@@ -1,0 +1,55 @@
+{
+  "id": "us-courage-to-grow-scholarship",
+  "name": "Courage to Grow Scholarship",
+  "sponsor": "Courage to Grow",
+  "sponsor_type": "private",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "basis": "other",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "high-school-senior",
+      "undergraduate"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Recurring award; short essay, low barrier to entry"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://couragetogrowscholarship.com/",
+    "apply_url": null
+  },
+  "provenance": {
+    "source_url": "https://couragetogrowscholarship.com/",
+    "source_name": "Courage to Grow",
+    "last_verified": "2026-05-27",
+    "verification_method": "research-summary",
+    "added": "2026-05-27"
+  },
+  "status": "needs-review"
+}
