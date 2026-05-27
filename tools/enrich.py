@@ -40,6 +40,11 @@ Page text:
 APPLY_RE = re.compile(r'<a[^>]+href=["\']([^"\']+)["\'][^>]*>(.*?)</a>', re.I | re.S)
 
 
+def _plausible_amount(n: float) -> bool:
+    """A believable single-award max: $250–$350k, and not a bare year (1900–2100)."""
+    return 250 <= n <= 350_000 and not (1900 <= n <= 2100)
+
+
 def find_apply_link(html: str, base: str) -> str | None:
     for m in APPLY_RE.finditer(html):
         href, text = m.group(1), re.sub(r"<[^>]+>", "", m.group(2))
@@ -101,8 +106,10 @@ def enrich(rec: dict) -> list[str]:
 
     if award.get("amount_max") is None and g.get("amount_max") is not None:
         n = d._num(g.get("amount_max"))
-        if n:
-            award["amount_max"] = n; changed.append(f"amount_max={int(n)}")
+        # Sanity guard — Gemma readily grabs the wrong number (a year, a total fund, concatenated
+        # digits). Only accept a plausible single-award range; otherwise leave null for the human.
+        if n and _plausible_amount(n):
+            award["amount_max"] = int(n); changed.append(f"amount_max={int(n)}")
 
     # deadline: only set an EXACT date if it's a clearly-stated FUTURE date; otherwise keep it as a
     # candidate note for the human to verify (never auto-publish a stale/past date as the deadline).
