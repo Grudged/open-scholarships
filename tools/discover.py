@@ -47,14 +47,17 @@ BASIS_ENUM = SCHEMA["properties"]["award"]["properties"]["basis"]["enum"]
 
 EXTRACT_PROMPT = """From the official source page below, extract EVERY scholarship / grant / aid
 program it describes, as a JSON array. Use ONLY facts present on the page — NEVER guess amounts,
-GPAs, or deadlines (use null). Each array item has these keys:
-  name, sponsor, sponsor_type (state|federal|institution|foundation|civic|employer|private|other),
+GPAs, or deadlines (use null). Keep every field SHORT; do NOT copy navigation menus or headings.
+Each array item has these keys:
+  name, sponsor, sponsor_type (state|federal|institution|foundation|civic|employer|private|other;
+    a private/nonprofit foundation scholarship is "foundation", NOT "federal"),
   type (scholarship|grant|waiver|fellowship|loan-forgiveness|prize),
-  summary (one sentence), amount_max (number or null),
+  summary (ONE plain sentence, max 200 characters: who it's for + the award),
+  amount_max (number or null),
   basis (merit|need|merit-need|identity|field|service|other|null),
   deadline (text or null),
   education_level (array from: high-school-senior|undergraduate|community-college|graduate|vocational|any),
-  eligibility_notes (array of short strings).
+  eligibility_notes (array of up to 5 short strings).
 If the page describes no specific named scholarship, return []. Output ONLY the JSON array.
 
 Source: {name}
@@ -124,7 +127,7 @@ def gemma_extract(name: str, url: str, text: str) -> list[dict]:
             {"role": "user", "content": EXTRACT_PROMPT.format(name=name, url=url, text=text[:14000])},
         ],
         "temperature": 0.1,
-        "max_tokens": 2200,
+        "max_tokens": 3000,
     }
     try:
         r = httpx.post(f"{MLX_URL}/v1/chat/completions", json=body, timeout=180)
@@ -132,14 +135,23 @@ def gemma_extract(name: str, url: str, text: str) -> list[dict]:
         content = r.json()["choices"][0]["message"]["content"]
     except (httpx.HTTPError, KeyError, ValueError):
         return []
+    # Prefer a clean array parse; fall back to scraping individual {...} objects so a truncated or
+    # slightly-malformed array still yields its complete records instead of zero.
     m = re.search(r"\[.*\]", content, re.S)
-    if not m:
-        return []
-    try:
-        data = json.loads(m.group(0))
-        return data if isinstance(data, list) else []
-    except json.JSONDecodeError:
-        return []
+    if m:
+        try:
+            data = json.loads(m.group(0))
+            if isinstance(data, list):
+                return data
+        except json.JSONDecodeError:
+            pass
+    objs = []
+    for om in re.finditer(r"\{[^{}]*\}", content, re.S):
+        try:
+            objs.append(json.loads(om.group(0)))
+        except json.JSONDecodeError:
+            pass
+    return objs
 
 
 def _slug(s: str) -> str:
@@ -287,7 +299,7 @@ def main():
         print("(dry run — nothing written)")
         return
     for rec in new:
-        out = DATA / rec["geo"]["state"] / f"{rec['id']}.json"
+        out = DATA / (rec["geo"]["state"] or "US") / f"{rec['id']}.json"
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(json.dumps(rec, indent=2) + "\n")
     if new:
