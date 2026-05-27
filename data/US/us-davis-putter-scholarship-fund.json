@@ -6,7 +6,7 @@
   "type": "scholarship",
   "award": {
     "amount_min": null,
-    "amount_max": null,
+    "amount_max": 4.9,
     "currency": "USD",
     "basis": "need",
     "renewable": null,
@@ -15,7 +15,7 @@
   "deadline": {
     "type": "annual",
     "date": null,
-    "notes": "Verify the current cycle's deadline against the source."
+    "notes": "Verify the current cycle's deadline against the source. \u00b7 previously listed 2025-04-01 \u2014 verify current cycle"
   },
   "eligibility": {
     "residency": [
@@ -42,7 +42,7 @@
   },
   "links": {
     "info_url": "https://www.davisputter.org/",
-    "apply_url": null
+    "apply_url": "https://www.davisputter.org/apply"
   },
   "provenance": {
     "source_url": "https://www.davisputter.org/",

@@ -6,7 +6,7 @@
   "type": "scholarship",
   "award": {
     "amount_min": null,
-    "amount_max": null,
+    "amount_max": 2500.0,
     "currency": "USD",
     "basis": "identity",
     "renewable": null,
@@ -15,7 +15,7 @@
   "deadline": {
     "type": "annual",
     "date": null,
-    "notes": "Verify the current cycle's deadline against the source."
+    "notes": "Verify the current cycle's deadline against the source. \u00b7 previously listed 2026-04-15 \u2014 verify current cycle"
   },
   "eligibility": {
     "residency": [
@@ -43,7 +43,7 @@
   },
   "links": {
     "info_url": "https://apiascholars.org/scholarship/",
-    "apply_url": null
+    "apply_url": "https://apiascholars.org/scholarships/application-support/application-guide-tips/"
   },
   "provenance": {
     "source_url": "https://apiascholars.org/scholarship/",

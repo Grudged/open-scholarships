@@ -6,7 +6,7 @@
   "type": "scholarship",
   "award": {
     "amount_min": null,
-    "amount_max": null,
+    "amount_max": 50000.0,
     "currency": "USD",
     "basis": "field",
     "renewable": null,
@@ -15,7 +15,7 @@
   "deadline": {
     "type": "annual",
     "date": null,
-    "notes": "Verify the current cycle's deadline against the source."
+    "notes": "closes early December (auto-found \u2014 verify)"
   },
   "eligibility": {
     "residency": [
@@ -42,7 +42,7 @@
   },
   "links": {
     "info_url": "https://www.nsna.org/",
-    "apply_url": null
+    "apply_url": "https://www.nsna.org/"
   },
   "provenance": {
     "source_url": "https://www.nsna.org/",

@@ -6,7 +6,7 @@
   "type": "scholarship",
   "award": {
     "amount_min": null,
-    "amount_max": null,
+    "amount_max": 1000.0,
     "currency": "USD",
     "basis": "other",
     "renewable": null,
@@ -14,7 +14,7 @@
   },
   "deadline": {
     "type": "annual",
-    "date": null,
+    "date": "2026-06-30",
     "notes": "Verify the current cycle's deadline against the source."
   },
   "eligibility": {
@@ -42,7 +42,7 @@
   },
   "links": {
     "info_url": "https://couragetogrowscholarship.com/",
-    "apply_url": null
+    "apply_url": "https://couragetogrowscholarship.com/"
   },
   "provenance": {
     "source_url": "https://couragetogrowscholarship.com/",

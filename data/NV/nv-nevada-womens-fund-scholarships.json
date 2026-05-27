@@ -6,7 +6,7 @@
   "type": "scholarship",
   "award": {
     "amount_min": null,
-    "amount_max": null,
+    "amount_max": 525000.0,
     "currency": "USD",
     "basis": "need",
     "renewable": null,
@@ -15,7 +15,7 @@
   "deadline": {
     "type": "annual",
     "date": null,
-    "notes": "Verify the current cycle's deadline against the source."
+    "notes": "Verify the current cycle's deadline against the source. \u00b7 previously listed 2023-01-31 \u2014 verify current cycle"
   },
   "eligibility": {
     "residency": [
@@ -43,7 +43,7 @@
   },
   "links": {
     "info_url": "https://www.nevadawomensfund.org/",
-    "apply_url": null
+    "apply_url": "https://www.nevadawomensfund.org/"
   },
   "provenance": {
     "source_url": "https://www.nevadawomensfund.org/",

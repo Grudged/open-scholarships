@@ -6,7 +6,7 @@
   "type": "scholarship",
   "award": {
     "amount_min": null,
-    "amount_max": null,
+    "amount_max": 2.000098000800004e+20,
     "currency": "USD",
     "basis": "merit",
     "renewable": null,
@@ -15,7 +15,7 @@
   "deadline": {
     "type": "annual",
     "date": null,
-    "notes": "Verify the current cycle's deadline against the source."
+    "notes": "Verify the current cycle's deadline against the source. \u00b7 previously listed 2026-01-01 \u2014 verify current cycle"
   },
   "eligibility": {
     "residency": [
@@ -42,7 +42,7 @@
   },
   "links": {
     "info_url": "https://stampsscholars.org/",
-    "apply_url": null
+    "apply_url": "https://www.stampsscholars.org/our-program/how-to-apply/"
   },
   "provenance": {
     "source_url": "https://stampsscholars.org/",
