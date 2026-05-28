@@ -60,8 +60,11 @@
   <pre>GET  /scholarships.json                         # the full dataset (one fetch)
 GET  /api/scholarships?state=NV&level=high-school-senior
 GET  /api/scholarships?q=nursing&amount_min=5000
-     filters: state · level · field · basis · type · sponsor_type
-              deadline_after · amount_min · q · limit · offset</pre>
+     filters: state · level · field · basis · type · sponsor_type · availability
+              deadline_after · amount_min · q · limit · offset
+GET  /api/scholarships?availability=open          # only those open right now
+     every record includes  availability: open | upcoming | closed | rolling | unknown
+     (computed from the application window — closed-this-cycle awards stay listed)</pre>
 
   <h2 id="live">Live — Nevada</h2>
   <div class="demo" id="demo"><div class="row"><span class="m">Loading…</span></div></div>
@@ -105,8 +108,11 @@ GET  /api/scholarships?q=nursing&amount_min=5000
       const dl = D.date
         ? 'apply by ' + D.date + (P.last_verified ? ' (verified ' + P.last_verified + ')' : '')
         : ({ rolling: 'rolling deadline', annual: 'annual — verify at source', fixed: 'see source for date', varies: 'deadline varies', unknown: 'deadline not set' }[D.type] || '');
+      // Computed cycle status from the API — a closed-this-cycle award still shows, just labeled.
+      const AV = { open:['open now','#dcfce7','#166534'], upcoming:['opens '+(D.opens||'soon'),'#dbeafe','#1e40af'], closed:['closed this cycle','#f3f4f6','#6b7280'], rolling:['rolling','#dcfce7','#166534'] }[r.availability];
+      const pill = AV ? ` <span style="font-size:11px;padding:1px 7px;border-radius:999px;background:${AV[1]};color:${AV[2]}">${AV[0]}</span>` : '';
       return `<div class="row">
-        <div class="n">${r.name}</div>
+        <div class="n">${r.name}${pill}</div>
         <div class="m">${r.sponsor}${amt ? ' · ' + amt : ''}${dl ? ' · ' + dl : ''}${go ? ' · <a href="'+go+'" target="_blank" rel="noopener">details ↗</a>' : ''}</div>
       </div>`;
     }).join('');

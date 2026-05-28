@@ -9,7 +9,7 @@ from __future__ import annotations
 
 import os
 from contextlib import asynccontextmanager
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 from pathlib import Path
 
 from fastapi import FastAPI, HTTPException, Query
@@ -46,8 +46,30 @@ async def license_headers(request, call_next):
     return resp
 
 
+def _availability(rec: dict) -> str:
+    """Cycle availability, computed fresh from the deadline window vs today — never stored, so it
+    can't go stale. open = accepting applications now; upcoming = opens on a future date;
+    closed = this cycle's deadline has passed (annual/fixed awards still recur — they stay served,
+    just aren't open right now); rolling = always open; unknown = no dates on record (see
+    deadline.notes for any free-text cycle info)."""
+    dl = rec.get("deadline") or {}
+    today = date.today().isoformat()
+    opens, closes = dl.get("opens"), dl.get("date")
+    if dl.get("type") == "rolling":
+        return "rolling"
+    if opens and opens > today:
+        return "upcoming"
+    if closes and closes < today:
+        return "closed"
+    if (opens and opens <= today) or (closes and closes >= today):
+        return "open"
+    return "unknown"
+
+
 def _public(rec: dict) -> dict:
-    return {k: v for k, v in rec.items() if not k.startswith("_")}
+    out = {k: v for k, v in rec.items() if not k.startswith("_")}
+    out["availability"] = _availability(rec)  # computed, not stored — see _availability()
+    return out
 
 
 def _active() -> list[dict]:
@@ -95,6 +117,7 @@ def list_scholarships(
     basis: str | None = None,
     type: str | None = None,
     sponsor_type: str | None = None,
+    availability: str | None = Query(None, description="filter by computed cycle status: open | upcoming | closed | rolling | unknown"),
     deadline_after: str | None = Query(None, description="ISO date; undated (rolling) records always match"),
     amount_min: float | None = None,
     q: str | None = Query(None, description="free-text over name/summary/sponsor"),
@@ -107,6 +130,8 @@ def list_scholarships(
         sponsor_type=sponsor_type, deadline_after=deadline_after, amount_min=amount_min,
         q=q, status=None,
     )
+    if availability:
+        results = [r for r in results if _availability(r) == availability]
     page = results[offset: offset + limit]
     return {
         "total": len(results), "limit": limit, "offset": offset,
