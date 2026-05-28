@@ -48,10 +48,10 @@
     "source_url": "https://couragetogrowscholarship.com/",
     "source_name": "Courage to Grow",
     "last_verified": "2026-05-27",
-    "verification_method": "research-summary",
+    "verification_method": "manual",
     "added": "2026-05-27"
   },
-  "status": "needs-review",
+  "status": "active",
   "review_flags": [
     "No distinct application link on the source page \u2014 applicants apply via the info page.",
     "Geography: \"U.S. citizens only\" \u2014 verify scope/counties (stub scope=national)."
