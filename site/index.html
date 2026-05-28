@@ -9,6 +9,38 @@
 <meta property="og:title" content="Open Scholarships">
 <meta property="og:description" content="A free, open, machine-readable directory of scholarships and student aid. Nevada first.">
 <meta property="og:type" content="website">
+<!-- schema.org Dataset markup → indexed by Google Dataset Search (passive discovery). Static on purpose; the count is fetched live below but Dataset Search doesn't require it. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Dataset",
+  "name": "Open Scholarships",
+  "alternateName": "Open Scholarships API",
+  "description": "A free, openly-licensed (CC BY 4.0), machine-readable directory of scholarships and student financial aid in the United States, gathered from primary official sources — state agencies, public universities, and foundations. Each record carries the source it was verified against. Served through a no-key, CORS-open JSON API with filtering by state, education level, field of study, award basis, amount, deadline, and availability.",
+  "url": "https://scholarships.grudged.io/",
+  "sameAs": "https://github.com/Grudged/open-scholarships",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "isAccessibleForFree": true,
+  "keywords": ["scholarships", "student aid", "financial aid", "college", "grants", "education", "Nevada", "open data"],
+  "creator": { "@type": "Organization", "name": "Grudged LLC", "url": "https://grudged.io" },
+  "publisher": { "@type": "Organization", "name": "Grudged LLC", "url": "https://grudged.io" },
+  "spatialCoverage": { "@type": "Place", "name": "United States" },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "name": "Full dataset",
+      "encodingFormat": "application/json",
+      "contentUrl": "https://scholarships.grudged.io/scholarships.json"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Filtered query API",
+      "encodingFormat": "application/json",
+      "contentUrl": "https://scholarships.grudged.io/api/scholarships"
+    }
+  ]
+}
+</script>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <script defer src="https://analytics.grudged.io/script.js" data-website-id="592dc95d-e6da-4432-ad7c-06fb06636ab0"></script>
 <style>
