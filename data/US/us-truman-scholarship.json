@@ -48,10 +48,10 @@
     "source_url": "https://www.truman.gov/",
     "source_name": "Harry S. Truman Scholarship Foundation",
     "last_verified": "2026-05-27",
-    "verification_method": "research-summary",
+    "verification_method": "manual",
     "added": "2026-05-27"
   },
-  "status": "needs-review",
+  "status": "active",
   "review_flags": [
     "Source basis looks like 'merit'; stub says 'service' \u2014 verify."
   ]
