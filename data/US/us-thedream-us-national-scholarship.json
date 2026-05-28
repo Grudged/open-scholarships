@@ -6,7 +6,7 @@
   "type": "scholarship",
   "award": {
     "amount_min": null,
-    "amount_max": null,
+    "amount_max": 33000,
     "currency": "USD",
     "basis": "need",
     "renewable": null,
@@ -43,7 +43,7 @@
   },
   "links": {
     "info_url": "https://www.thedream.us/scholarships/",
-    "apply_url": null
+    "apply_url": "https://www.thedream.us/scholarships/national-scholarship/"
   },
   "provenance": {
     "source_url": "https://www.thedream.us/scholarships/",
@@ -52,5 +52,8 @@
     "verification_method": "research-summary",
     "added": "2026-05-27"
   },
-  "status": "needs-review"
+  "status": "needs-review",
+  "review_flags": [
+    "Geography: \"undocumented students; not available in California or Washington; eligibility based on state of resi\" \u2014 verify scope/counties (stub scope=national)."
+  ]
 }

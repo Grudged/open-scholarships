@@ -15,7 +15,7 @@
   "deadline": {
     "type": "annual",
     "date": null,
-    "notes": "Verify the current cycle's deadline against the source."
+    "notes": "Priority deadline for admission and application submission required; specific da (auto-found \u2014 verify)"
   },
   "eligibility": {
     "residency": [
@@ -25,7 +25,7 @@
       "undergraduate"
     ],
     "fields_of_study": [],
-    "gpa_min": null,
+    "gpa_min": 2.0,
     "citizenship": [],
     "other": [
       "Admitted/enrolled UNLV students",
@@ -42,7 +42,7 @@
   },
   "links": {
     "info_url": "https://www.unlv.edu/finaid/scholarships",
-    "apply_url": null
+    "apply_url": "https://www.unlv.edu/finaid/apply"
   },
   "provenance": {
     "source_url": "https://www.unlv.edu/finaid/scholarships",

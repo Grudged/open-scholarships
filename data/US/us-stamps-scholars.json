@@ -6,7 +6,7 @@
   "type": "scholarship",
   "award": {
     "amount_min": null,
-    "amount_max": null,
+    "amount_max": 98000,
     "currency": "USD",
     "basis": "merit",
     "renewable": null,
@@ -42,7 +42,7 @@
   },
   "links": {
     "info_url": "https://stampsscholars.org/",
-    "apply_url": null
+    "apply_url": "https://www.stampsscholars.org/our-program/how-to-apply/"
   },
   "provenance": {
     "source_url": "https://stampsscholars.org/",

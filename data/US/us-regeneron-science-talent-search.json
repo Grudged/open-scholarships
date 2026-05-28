@@ -6,7 +6,7 @@
   "type": "prize",
   "award": {
     "amount_min": null,
-    "amount_max": null,
+    "amount_max": 250000,
     "currency": "USD",
     "basis": "merit",
     "renewable": null,
@@ -15,7 +15,8 @@
   "deadline": {
     "type": "annual",
     "date": null,
-    "notes": "Verify the current cycle's deadline against the source."
+    "notes": "2026 application period now closed; 2027 application opens June 1, 2026 (auto-found \u2014 verify)",
+    "opens": "2026-06-01"
   },
   "eligibility": {
     "residency": [
@@ -41,7 +42,7 @@
   },
   "links": {
     "info_url": "https://www.societyforscience.org/regeneron-sts/",
-    "apply_url": null
+    "apply_url": "https://www.societyforscience.org/regeneron-sts/application-requirements/"
   },
   "provenance": {
     "source_url": "https://www.societyforscience.org/regeneron-sts/",

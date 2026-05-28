@@ -6,7 +6,7 @@
   "type": "scholarship",
   "award": {
     "amount_min": null,
-    "amount_max": null,
+    "amount_max": 6500,
     "currency": "USD",
     "basis": "identity",
     "renewable": null,
@@ -15,7 +15,7 @@
   "deadline": {
     "type": "annual",
     "date": null,
-    "notes": "Verify the current cycle's deadline against the source."
+    "notes": "Multiple scholarships with varying deadlines (April 30, May 30, August 15) (auto-found \u2014 verify)"
   },
   "eligibility": {
     "residency": [
@@ -26,7 +26,7 @@
       "graduate"
     ],
     "fields_of_study": [],
-    "gpa_min": null,
+    "gpa_min": 2.0,
     "citizenship": [],
     "other": [
       "Native American / Indigenous students in STEM"
@@ -42,7 +42,7 @@
   },
   "links": {
     "info_url": "https://aises.org/students/scholarships/",
-    "apply_url": null
+    "apply_url": "https://aises.org/scholarship-application/"
   },
   "provenance": {
     "source_url": "https://aises.org/students/scholarships/",
@@ -51,5 +51,8 @@
     "verification_method": "research-summary",
     "added": "2026-05-27"
   },
-  "status": "needs-review"
+  "status": "needs-review",
+  "review_flags": [
+    "Source basis looks like 'merit'; stub says 'identity' \u2014 verify."
+  ]
 }

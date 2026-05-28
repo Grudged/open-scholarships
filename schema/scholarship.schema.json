@@ -34,7 +34,8 @@
       "additionalProperties": false,
       "properties": {
         "type": { "enum": ["fixed", "annual", "rolling", "varies", "unknown"] },
-        "date": { "type": ["string", "null"], "description": "ISO date (YYYY-MM-DD) of the next known deadline, when applicable." },
+        "opens": { "type": ["string", "null"], "description": "ISO date (YYYY-MM-DD) applications OPEN, when the source states a window. null if not stated." },
+        "date": { "type": ["string", "null"], "description": "ISO date (YYYY-MM-DD) the application CLOSES (the deadline), when applicable." },
         "notes": { "type": ["string", "null"] }
       }
     },
@@ -87,6 +88,11 @@
     "status": {
       "enum": ["active", "needs-review", "expired", "archived"],
       "description": "Only 'active' records are served by default; records start 'needs-review' until a human verifies them against the source."
+    },
+    "review_flags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Auto-detected conflicts/notes for the human reviewer (e.g. the live page says 'women only' but the stub did not). Surfaced in the Mission Control review queue; clear them as you verify, before flipping to 'active'."
     }
   }
 }

@@ -6,7 +6,7 @@
   "type": "scholarship",
   "award": {
     "amount_min": null,
-    "amount_max": null,
+    "amount_max": 1000,
     "currency": "USD",
     "basis": "other",
     "renewable": null,
@@ -14,7 +14,7 @@
   },
   "deadline": {
     "type": "annual",
-    "date": null,
+    "date": "2026-06-30",
     "notes": "Verify the current cycle's deadline against the source."
   },
   "eligibility": {
@@ -26,7 +26,7 @@
       "undergraduate"
     ],
     "fields_of_study": [],
-    "gpa_min": null,
+    "gpa_min": 2.5,
     "citizenship": [],
     "other": [
       "Recurring award; short essay, low barrier to entry"
@@ -51,5 +51,9 @@
     "verification_method": "research-summary",
     "added": "2026-05-27"
   },
-  "status": "needs-review"
+  "status": "needs-review",
+  "review_flags": [
+    "No distinct application link on the source page \u2014 applicants apply via the info page.",
+    "Geography: \"U.S. citizens only\" \u2014 verify scope/counties (stub scope=national)."
+  ]
 }

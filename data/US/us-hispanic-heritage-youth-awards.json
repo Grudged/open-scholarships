@@ -25,7 +25,7 @@
       "high-school-senior"
     ],
     "fields_of_study": [],
-    "gpa_min": null,
+    "gpa_min": 3.0,
     "citizenship": [],
     "other": [
       "Latino high school seniors; regional and category awards"
@@ -41,7 +41,7 @@
   },
   "links": {
     "info_url": "https://hispanicheritage.org/programs/leadership/youth-awards/",
-    "apply_url": null
+    "apply_url": "https://hhfyouthawards.com"
   },
   "provenance": {
     "source_url": "https://hispanicheritage.org/programs/leadership/youth-awards/",
@@ -50,5 +50,9 @@
     "verification_method": "research-summary",
     "added": "2026-05-27"
   },
-  "status": "needs-review"
+  "status": "needs-review",
+  "review_flags": [
+    "Source shows a past deadline 2025-11-02 \u2014 confirm the current cycle.",
+    "Source basis looks like 'merit'; stub says 'identity' \u2014 verify."
+  ]
 }

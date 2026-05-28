@@ -15,7 +15,7 @@
   "deadline": {
     "type": "annual",
     "date": null,
-    "notes": "Verify the current cycle's deadline against the source."
+    "notes": "Spring 2026 Scholarship Cycle will open soon (auto-found \u2014 verify)"
   },
   "eligibility": {
     "residency": [
@@ -42,7 +42,7 @@
   },
   "links": {
     "info_url": "https://www.nsbe.org/scholarships",
-    "apply_url": null
+    "apply_url": "https://app.smarterselect.com/matching/1774/start_page"
   },
   "provenance": {
     "source_url": "https://www.nsbe.org/scholarships",
@@ -51,5 +51,8 @@
     "verification_method": "research-summary",
     "added": "2026-05-27"
   },
-  "status": "needs-review"
+  "status": "needs-review",
+  "review_flags": [
+    "Source basis looks like 'merit'; stub says 'identity' \u2014 verify."
+  ]
 }

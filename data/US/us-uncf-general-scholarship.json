@@ -15,7 +15,7 @@
   "deadline": {
     "type": "annual",
     "date": null,
-    "notes": "Verify the current cycle's deadline against the source."
+    "notes": "Multiple deadlines throughout the year; mentioned scholarships close in May (auto-found \u2014 verify)"
   },
   "eligibility": {
     "residency": [
@@ -43,7 +43,7 @@
   },
   "links": {
     "info_url": "https://uncf.org/scholarships",
-    "apply_url": null
+    "apply_url": "https://uncf.org/pages/Applying-for-Scholarships-and-Grants"
   },
   "provenance": {
     "source_url": "https://uncf.org/scholarships",
@@ -52,5 +52,8 @@
     "verification_method": "research-summary",
     "added": "2026-05-27"
   },
-  "status": "needs-review"
+  "status": "needs-review",
+  "review_flags": [
+    "Source basis looks like 'merit'; stub says 'identity' \u2014 verify."
+  ]
 }

@@ -6,7 +6,7 @@
   "type": "scholarship",
   "award": {
     "amount_min": null,
-    "amount_max": null,
+    "amount_max": 10000,
     "currency": "USD",
     "basis": "service",
     "renewable": null,
@@ -15,7 +15,7 @@
   "deadline": {
     "type": "annual",
     "date": null,
-    "notes": "Verify the current cycle's deadline against the source."
+    "notes": "Application deadline varies each year; check Scholar Applications page (auto-found \u2014 verify)"
   },
   "eligibility": {
     "residency": [
@@ -43,7 +43,7 @@
   },
   "links": {
     "info_url": "https://pattillmanfoundation.org/",
-    "apply_url": null
+    "apply_url": "https://pattillmanfoundation.org/apply-old/scholar-pillars/"
   },
   "provenance": {
     "source_url": "https://pattillmanfoundation.org/",
@@ -52,5 +52,8 @@
     "verification_method": "research-summary",
     "added": "2026-05-27"
   },
-  "status": "needs-review"
+  "status": "needs-review",
+  "review_flags": [
+    "Source basis looks like 'need'; stub says 'service' \u2014 verify."
+  ]
 }

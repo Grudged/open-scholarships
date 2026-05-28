@@ -2,3 +2,4 @@ fastapi>=0.115
 uvicorn[standard]>=0.32
 jsonschema>=4.21
 httpx>=0.27
+anthropic>=0.104  # tools/enrich.py — Claude Haiku structured extraction (replaces local Gemma)

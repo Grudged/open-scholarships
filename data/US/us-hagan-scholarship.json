@@ -6,7 +6,7 @@
   "type": "scholarship",
   "award": {
     "amount_min": null,
-    "amount_max": null,
+    "amount_max": 7500,
     "currency": "USD",
     "basis": "need",
     "renewable": null,
@@ -42,7 +42,7 @@
   },
   "links": {
     "info_url": "https://haganscholarship.org/",
-    "apply_url": null
+    "apply_url": "https://haganscholarships.org/application/"
   },
   "provenance": {
     "source_url": "https://haganscholarship.org/",
@@ -51,5 +51,8 @@
     "verification_method": "research-summary",
     "added": "2026-05-27"
   },
-  "status": "needs-review"
+  "status": "needs-review",
+  "review_flags": [
+    "Source basis looks like 'merit-need'; stub says 'need' \u2014 verify."
+  ]
 }

@@ -6,7 +6,7 @@
   "type": "scholarship",
   "award": {
     "amount_min": null,
-    "amount_max": null,
+    "amount_max": 500,
     "currency": "USD",
     "basis": "identity",
     "renewable": null,
@@ -25,7 +25,7 @@
       "undergraduate"
     ],
     "fields_of_study": [],
-    "gpa_min": null,
+    "gpa_min": 1.0,
     "citizenship": [],
     "other": [
       "Underrepresented-minority students in engineering at NACME partner schools"
@@ -41,7 +41,7 @@
   },
   "links": {
     "info_url": "https://www.nacme.org/scholarships",
-    "apply_url": null
+    "apply_url": "https://www.nacme.org/scholarship/504"
   },
   "provenance": {
     "source_url": "https://www.nacme.org/scholarships",
@@ -50,5 +50,8 @@
     "verification_method": "research-summary",
     "added": "2026-05-27"
   },
-  "status": "needs-review"
+  "status": "needs-review",
+  "review_flags": [
+    "Source basis looks like 'merit'; stub says 'identity' \u2014 verify."
+  ]
 }

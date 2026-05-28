@@ -15,7 +15,7 @@
   "deadline": {
     "type": "annual",
     "date": null,
-    "notes": "Verify the current cycle's deadline against the source."
+    "notes": "Application deadline approaching (referenced April 1, 2025) (auto-found \u2014 verify)"
   },
   "eligibility": {
     "residency": [
@@ -42,7 +42,7 @@
   },
   "links": {
     "info_url": "https://www.davisputter.org/",
-    "apply_url": null
+    "apply_url": "https://www.davisputter.org/apply"
   },
   "provenance": {
     "source_url": "https://www.davisputter.org/",

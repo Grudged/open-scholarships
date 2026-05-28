@@ -15,7 +15,7 @@
   "deadline": {
     "type": "annual",
     "date": null,
-    "notes": "Verify the current cycle's deadline against the source."
+    "notes": "Applications are closed (auto-found \u2014 verify)"
   },
   "eligibility": {
     "residency": [
@@ -51,5 +51,9 @@
     "verification_method": "research-summary",
     "added": "2026-05-27"
   },
-  "status": "needs-review"
+  "status": "needs-review",
+  "review_flags": [
+    "No distinct application link on the source page \u2014 applicants apply via the info page.",
+    "Geography: \"Southeast concentration; nationwide partner schools available\" \u2014 verify scope/counties (stub scope=national)."
+  ]
 }

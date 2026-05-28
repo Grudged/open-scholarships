@@ -6,7 +6,7 @@
   "type": "scholarship",
   "award": {
     "amount_min": null,
-    "amount_max": null,
+    "amount_max": 10000,
     "currency": "USD",
     "basis": "need",
     "renewable": null,
@@ -15,7 +15,7 @@
   "deadline": {
     "type": "annual",
     "date": null,
-    "notes": "Verify the current cycle's deadline against the source."
+    "notes": "Applications are now closed (auto-found \u2014 verify)"
   },
   "eligibility": {
     "residency": [
@@ -25,7 +25,7 @@
       "high-school-senior"
     ],
     "fields_of_study": [],
-    "gpa_min": null,
+    "gpa_min": 2.3,
     "citizenship": [],
     "other": [
       "Students pursuing computer science from underserved/underrepresented backgrounds",
@@ -51,5 +51,10 @@
     "verification_method": "research-summary",
     "added": "2026-05-27"
   },
-  "status": "needs-review"
+  "status": "needs-review",
+  "review_flags": [
+    "No distinct application link on the source page \u2014 applicants apply via the info page.",
+    "Geography: \"United States\" \u2014 verify scope/counties (stub scope=national).",
+    "Source basis looks like 'merit-need'; stub says 'need' \u2014 verify."
+  ]
 }

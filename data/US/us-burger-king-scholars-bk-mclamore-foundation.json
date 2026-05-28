@@ -15,7 +15,8 @@
   "deadline": {
     "type": "annual",
     "date": null,
-    "notes": "Verify the current cycle's deadline against the source."
+    "notes": "Verify the current cycle's deadline against the source.",
+    "opens": "2025-10-15"
   },
   "eligibility": {
     "residency": [
@@ -42,7 +43,7 @@
   },
   "links": {
     "info_url": "https://www.burgerkingscholars.com/",
-    "apply_url": null
+    "apply_url": "https://scholarshipamerica.org/scholarship/burgerking/?utm_source=CouponDrop&utm_medium=Coupon&utm_term=scholarship%20application%20burger%20king&utm_campaign=Nov%20Coupon%20Drop&_gl=1*t7h6sp*_ga*NzcwMDAxOTEzLjE3NTk5MzY4NjM.*_ga_GR8N6KG4K2*czE3NTk5MzY4NjIkbzEkZzEkdDE3NTk5MzcyMDYkajYwJGwwJGgw"
   },
   "provenance": {
     "source_url": "https://www.burgerkingscholars.com/",
@@ -51,5 +52,8 @@
     "verification_method": "research-summary",
     "added": "2026-05-27"
   },
-  "status": "needs-review"
+  "status": "needs-review",
+  "review_flags": [
+    "Source shows a past deadline 2025-12-15 \u2014 confirm the current cycle."
+  ]
 }

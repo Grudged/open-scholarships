@@ -52,5 +52,8 @@
     "verification_method": "research-summary",
     "added": "2026-05-27"
   },
-  "status": "needs-review"
+  "status": "needs-review",
+  "review_flags": [
+    "No distinct application link on the source page \u2014 applicants apply via the info page."
+  ]
 }

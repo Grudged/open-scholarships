@@ -6,7 +6,7 @@
   "type": "scholarship",
   "award": {
     "amount_min": null,
-    "amount_max": null,
+    "amount_max": 3000,
     "currency": "USD",
     "basis": "identity",
     "renewable": null,
@@ -15,7 +15,8 @@
   "deadline": {
     "type": "annual",
     "date": null,
-    "notes": "Verify the current cycle's deadline against the source."
+    "notes": "Verify the current cycle's deadline against the source.",
+    "opens": "2025-02-01"
   },
   "eligibility": {
     "residency": [
@@ -42,7 +43,7 @@
   },
   "links": {
     "info_url": "https://collegefund.org/students/scholarships/",
-    "apply_url": null
+    "apply_url": "https://webportalapp.com/sp/login/aicf_scholarships"
   },
   "provenance": {
     "source_url": "https://collegefund.org/students/scholarships/",
@@ -51,5 +52,9 @@
     "verification_method": "research-summary",
     "added": "2026-05-27"
   },
-  "status": "needs-review"
+  "status": "needs-review",
+  "review_flags": [
+    "Source shows a past deadline 2025-05-31 \u2014 confirm the current cycle.",
+    "Source basis looks like 'merit'; stub says 'identity' \u2014 verify."
+  ]
 }

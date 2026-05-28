@@ -6,7 +6,7 @@
   "type": "scholarship",
   "award": {
     "amount_min": null,
-    "amount_max": null,
+    "amount_max": 1500,
     "currency": "USD",
     "basis": "service",
     "renewable": null,
@@ -14,7 +14,7 @@
   },
   "deadline": {
     "type": "annual",
-    "date": null,
+    "date": "2026-05-31",
     "notes": "Verify the current cycle's deadline against the source."
   },
   "eligibility": {
@@ -51,5 +51,9 @@
     "verification_method": "research-summary",
     "added": "2026-05-27"
   },
-  "status": "needs-review"
+  "status": "needs-review",
+  "review_flags": [
+    "No distinct application link on the source page \u2014 applicants apply via the info page.",
+    "Source basis looks like 'merit'; stub says 'service' \u2014 verify."
+  ]
 }

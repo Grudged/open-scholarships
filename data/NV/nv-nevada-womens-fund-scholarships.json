@@ -14,8 +14,9 @@
   },
   "deadline": {
     "type": "annual",
-    "date": null,
-    "notes": "Verify the current cycle's deadline against the source."
+    "date": "2027-01-05",
+    "notes": "Verify the current cycle's deadline against the source.",
+    "opens": "2026-10-01"
   },
   "eligibility": {
     "residency": [
@@ -27,7 +28,7 @@
       "community-college"
     ],
     "fields_of_study": [],
-    "gpa_min": null,
+    "gpa_min": 3.0,
     "citizenship": [],
     "other": [
       "Students pursuing education in Nevada, with financial need and Nevada ties"
@@ -42,15 +43,20 @@
     "counties": []
   },
   "links": {
-    "info_url": "https://www.nevadawomensfund.org/",
+    "info_url": "https://www.nevadawomensfund.org/scholarships",
     "apply_url": null
   },
   "provenance": {
-    "source_url": "https://www.nevadawomensfund.org/",
+    "source_url": "https://www.nevadawomensfund.org/scholarships",
     "source_name": "Nevada Women's Fund",
     "last_verified": "2026-05-27",
     "verification_method": "research-summary",
     "added": "2026-05-27"
   },
-  "status": "needs-review"
+  "status": "needs-review",
+  "review_flags": [
+    "No distinct application link on the source page \u2014 applicants apply via the info page.",
+    "Geography: \"northern and rural Nevada, excludes Clark County\" \u2014 verify scope/counties (stub scope=statewide).",
+    "Source basis looks like 'merit-need'; stub says 'need' \u2014 verify."
+  ]
 }
