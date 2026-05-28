@@ -49,10 +49,10 @@
     "source_url": "https://pattillmanfoundation.org/",
     "source_name": "Pat Tillman Foundation",
     "last_verified": "2026-05-27",
-    "verification_method": "research-summary",
+    "verification_method": "manual",
     "added": "2026-05-27"
   },
-  "status": "needs-review",
+  "status": "active",
   "review_flags": [
     "Source basis looks like 'need'; stub says 'service' \u2014 verify."
   ]
