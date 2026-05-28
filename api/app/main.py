@@ -32,7 +32,24 @@ async def lifespan(app: FastAPI):
 app = FastAPI(
     title="Open Scholarships API",
     version=config.DATASET_VERSION,
-    description="Free, open (CC BY 4.0) directory of scholarships and student aid. Verified records only.",
+    description=(
+        "A free, openly-licensed (**CC BY 4.0**) directory of scholarships and student "
+        "financial aid in the United States.\n\n"
+        "Facts are gathered from **primary, official sources** (state agencies, public "
+        "universities, foundations) and every record carries the source it was verified "
+        "against. Only human-verified records are served.\n\n"
+        "- No key, no signup — CORS-open, returns JSON.\n"
+        "- Full dataset: `GET /scholarships.json`\n"
+        "- Filtered queries: `GET /api/scholarships` "
+        "(state · level · field · basis · type · sponsor_type · availability · "
+        "deadline · amount · free-text `q`)\n"
+        "- Source & data: [github.com/Grudged/open-scholarships]"
+        "(https://github.com/Grudged/open-scholarships)"
+    ),
+    contact={"name": "Grudged LLC", "url": "https://grudged.io"},
+    license_info={"name": config.DATA_LICENSE, "url": config.DATA_LICENSE_URL},
+    terms_of_service=f"{config.PUBLIC_BASE_URL}/",
+    servers=[{"url": config.PUBLIC_BASE_URL, "description": "Production"}],
     lifespan=lifespan,
 )
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["GET"], allow_headers=["*"])
