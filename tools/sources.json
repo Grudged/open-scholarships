@@ -42,8 +42,15 @@
     "max_pages": 3
   },
   {
-    "name": "Public Education Foundation (Nevada)",
-    "url": "https://thepef.org/scholarships/",
+    "name": "UNR External Scholarships",
+    "url": "https://www.unr.edu/financial-aid/scholarships/external-scholarships",
+    "state": "NV",
+    "default_sponsor_type": "foundation",
+    "max_pages": 3
+  },
+  {
+    "name": "Washoe County School District — Local/Nevada Scholarships",
+    "url": "https://reno.washoeschools.net/academics/collegecareercenter/local-nevada-scholarships",
     "state": "NV",
     "default_sponsor_type": "foundation",
     "max_pages": 3
