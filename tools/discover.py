@@ -2,17 +2,24 @@
 """Automated scholarship discovery.
 
 Crawls a curated set of TRUSTED official sources (tools/sources.json — .gov/.edu/foundation
-domains only, never the open web), extracts candidate scholarships with the local Gemma model,
-normalizes them to the schema, validates, dedupes against what we already have, and writes the
-new ones into the dataset as `status: needs-review` — i.e. straight into the Mission Control
-review queue. Nothing here publishes; only a human approve in MC flips a record to `active`.
+domains only, never the open web), extracts candidate scholarships with **Claude Haiku**
+(structured outputs), normalizes them to the schema, validates, dedupes against what we already
+have, and writes the new ones into the dataset as `status: needs-review` — i.e. straight into
+the Mission Control review queue. Nothing here publishes; only a human approve in MC flips a
+record to `active`.
+
+Extraction moved from local Gemma to Haiku for the same reason enrich.py did: Gemma's output
+goes degenerate on dense multi-scholarship directory pages (looping, invalid JSON), which made
+exactly the richest sources yield zero. Structured outputs guarantee schema-valid JSON.
 
 Scope is the trust boundary: crawling only within configured official domains is what keeps
 quality high and keeps scam/aggregator data out. The human approve step is the final gate.
 
+Requires ANTHROPIC_API_KEY in the environment (fails hard if missing).
+
     api/venv/bin/python tools/discover.py [--dry-run] [--source NAME] [--max-records N]
 
-Runs on Arch via a weekly timer; reaches Gemma on the Mac via MLX_URL.
+Runs on Arch via a weekly timer.
 """
 from __future__ import annotations
 
@@ -24,10 +31,13 @@ import subprocess
 import time
 from datetime import date
 from pathlib import Path
+from typing import Optional
 from urllib.parse import urljoin, urlparse
 
+import anthropic
 import httpx
 from jsonschema import Draft202012Validator
+from pydantic import BaseModel
 
 REPO = Path(__file__).resolve().parents[1]
 DATA = REPO / "data"
@@ -35,7 +45,7 @@ SCHEMA = json.loads((REPO / "schema" / "scholarship.schema.json").read_text())
 SOURCES = json.loads((REPO / "tools" / "sources.json").read_text())
 VALIDATOR = Draft202012Validator(SCHEMA)
 
-MLX_URL = os.getenv("MLX_URL", "http://192.168.0.79:8321").rstrip("/")  # Mac MLX, reachable from Arch
+MODEL = "claude-haiku-4-5"
 UA = "Mozilla/5.0 (compatible; OpenScholarshipsBot/0.1; +https://github.com/Grudged/open-scholarships)"
 LINK_RE = re.compile(r"scholarship|grant|aid|award|fellowship|financial", re.I)
 FETCH_DELAY = 1.0  # be polite
@@ -45,26 +55,49 @@ SPONSOR_ENUM = SCHEMA["properties"]["sponsor_type"]["enum"]
 TYPE_ENUM = SCHEMA["properties"]["type"]["enum"]
 BASIS_ENUM = SCHEMA["properties"]["award"]["properties"]["basis"]["enum"]
 
-EXTRACT_PROMPT = """From the official source page below, extract EVERY scholarship / grant / aid
-program it describes, as a JSON array. Use ONLY facts present on the page — NEVER guess amounts,
-GPAs, or deadlines (use null). Keep every field SHORT; do NOT copy navigation menus or headings.
-Each array item has these keys:
-  name, sponsor, sponsor_type (state|federal|institution|foundation|civic|employer|private|other;
-    a private/nonprofit foundation scholarship is "foundation", NOT "federal"),
-  type (scholarship|grant|waiver|fellowship|loan-forgiveness|prize),
-  amount_max (number or null),
-  basis (merit|need|merit-need|identity|field|service|other|null),
-  deadline (text or null),
-  education_level (array from: high-school-senior|undergraduate|community-college|graduate|vocational|any),
-  eligibility_notes (array of up to 5 short strings).
-If the page describes no specific named scholarship, return []. Output ONLY the JSON array.
+# Stable instructions live in a cached system prefix (enrich.py pattern); the page text — the big,
+# per-page part — goes in the user turn. Invalid enum values are tolerated here and coerced to
+# defaults downstream by to_record, so the schema stays the single source of truth.
+EXTRACT_SYSTEM = """From one official source page, extract EVERY scholarship / grant / aid program
+it describes. Use ONLY facts present on the page — NEVER guess amounts, GPAs, or deadlines (use
+null). Keep every field SHORT; do NOT copy navigation menus or headings.
+- sponsor_type: state|federal|institution|foundation|civic|employer|private|other. A
+  private/nonprofit foundation scholarship is "foundation", NOT "federal".
+- type: scholarship|grant|waiver|fellowship|loan-forgiveness|prize.
+- basis: merit|need|merit-need|identity|field|service|other, or null.
+- amount_max: the maximum award as a number, no $ or commas; null if not stated.
+- deadline: short text as stated on the page, or null.
+- education_level: from high-school-senior|undergraduate|community-college|graduate|vocational|any.
+- eligibility_notes: up to 5 short strings.
+If the page describes no specific named scholarship, return an empty list."""
 
-Source: {name}
-URL: {url}
 
-Page text:
-{text}
-"""
+class Candidate(BaseModel):
+    name: str
+    sponsor: Optional[str] = None
+    sponsor_type: Optional[str] = None
+    type: Optional[str] = None
+    amount_max: Optional[float] = None
+    basis: Optional[str] = None
+    deadline: Optional[str] = None
+    education_level: list[str] = []
+    eligibility_notes: list[str] = []
+
+
+class PageCandidates(BaseModel):
+    scholarships: list[Candidate] = []
+
+
+_client: anthropic.Anthropic | None = None
+
+
+def client() -> anthropic.Anthropic:
+    global _client
+    if _client is None:
+        if not os.environ.get("ANTHROPIC_API_KEY"):
+            raise SystemExit("ANTHROPIC_API_KEY not set — discover needs it for Claude extraction.")
+        _client = anthropic.Anthropic()
+    return _client
 
 
 def fetch(url: str):
@@ -119,34 +152,20 @@ def candidate_links(html: str, base: str, domain: str) -> list[str]:
     return list(dict.fromkeys(out))
 
 
-def gemma_extract(name: str, url: str, text: str) -> list[dict]:
-    body = {
-        "messages": [
-            {"role": "system", "content": "You extract structured data. Output only valid JSON."},
-            {"role": "user", "content": EXTRACT_PROMPT.format(name=name, url=url, text=text[:8000])},
-        ],
-        "temperature": 0.1,
-        "max_tokens": 3000,
-    }
+def claude_extract(name: str, url: str, text: str) -> list[dict]:
+    """Structured extraction via Claude Haiku. Returns candidate dicts, or [] on failure."""
     try:
-        r = httpx.post(f"{MLX_URL}/v1/chat/completions", json=body, timeout=180)
-        r.raise_for_status()
-        content = r.json()["choices"][0]["message"]["content"]
-    except (httpx.HTTPError, KeyError, ValueError):
+        resp = client().messages.parse(
+            model=MODEL,
+            max_tokens=8000,
+            system=[{"type": "text", "text": EXTRACT_SYSTEM, "cache_control": {"type": "ephemeral"}}],
+            messages=[{"role": "user", "content": f"Source: {name}\nURL: {url}\n\nPage text:\n{text[:12000]}"}],
+            output_format=PageCandidates,
+        )
+    except anthropic.APIError as e:
+        print(f"    (Claude error: {type(e).__name__})")
         return []
-    # Parse the first complete JSON value (array or single object) at/after the first bracket,
-    # ignoring surrounding prose or ```json fences. raw_decode tolerates trailing text and a
-    # single-object response (which we wrap into a list).
-    start = next((i for i, ch in enumerate(content) if ch in "[{"), None)
-    if start is None:
-        return []
-    try:
-        value, _ = json.JSONDecoder().raw_decode(content[start:])
-    except ValueError:
-        return []
-    if isinstance(value, dict):
-        return [value]
-    return value if isinstance(value, list) else []
+    return [c.model_dump() for c in resp.parsed_output.scholarships] if resp.parsed_output else []
 
 
 def _slug(s: str) -> str:
@@ -195,7 +214,7 @@ def to_record(item: dict, source: dict, page_url: str) -> dict | None:
         "links": {"info_url": page_url, "apply_url": None},
         "provenance": {
             "source_url": page_url, "source_name": source["name"],
-            "last_verified": date.today().isoformat(), "verification_method": "gemma-extract",
+            "last_verified": date.today().isoformat(), "verification_method": "claude-extract",
             "added": date.today().isoformat(),
         },
         "status": "needs-review",
@@ -237,7 +256,7 @@ def crawl_source(source: dict, seen_ids: set[str], dry: bool, budget: int) -> li
         h, resolved = (html, info) if url == seed and html else get_page(url, render)
         if not h:
             continue
-        items = gemma_extract(source["name"], resolved or url, page_text(h))
+        items = claude_extract(source["name"], resolved or url, page_text(h))
         for item in items:
             rec = to_record(item, source, resolved or url)
             if not rec:
@@ -276,8 +295,9 @@ def main():
     sources = SOURCES
     if args.source:
         sources = [s for s in SOURCES if args.source.lower() in s["name"].lower()]
+    client()  # fail hard on a missing key BEFORE crawling, not mid-run
     seen = existing_keys()
-    print(f"Discovery run — {len(seen)} existing records, {len(sources)} source(s), MLX={MLX_URL}"
+    print(f"Discovery run — {len(seen)} existing records, {len(sources)} source(s), model={MODEL}"
           + (" [DRY RUN]" if args.dry_run else ""))
 
     new: list[dict] = []

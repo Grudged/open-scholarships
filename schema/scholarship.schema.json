@@ -81,7 +81,7 @@
         "source_url": { "type": "string", "format": "uri", "description": "The primary/official page the facts were taken from." },
         "source_name": { "type": "string" },
         "last_verified": { "type": "string", "description": "ISO date the facts were last confirmed against source_url." },
-        "verification_method": { "enum": ["manual", "gemma-extract", "gemma-recheck", "research-summary"] },
+        "verification_method": { "enum": ["manual", "gemma-extract", "gemma-recheck", "claude-extract", "research-summary"] },
         "added": { "type": "string" }
       }
     },
