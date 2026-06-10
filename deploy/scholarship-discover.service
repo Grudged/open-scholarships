@@ -1,0 +1,12 @@
+[Unit]
+Description=Open Scholarships weekly discovery crawl
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=grudged
+WorkingDirectory=/home/grudged/open-scholarships
+EnvironmentFile=/etc/open-scholarships.env
+Environment=HOME=/home/grudged
+ExecStart=/home/grudged/open-scholarships/tools/run_discover.sh

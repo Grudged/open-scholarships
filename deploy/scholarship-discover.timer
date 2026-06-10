@@ -1,0 +1,9 @@
+[Unit]
+Description=Weekly scholarship discovery (Mon 6 AM PT)
+
+[Timer]
+OnCalendar=Mon *-*-* 06:00:00 America/Los_Angeles
+Persistent=true
+
+[Install]
+WantedBy=timers.target

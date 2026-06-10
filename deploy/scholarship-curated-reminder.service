@@ -1,0 +1,10 @@
+[Unit]
+Description=Monthly nudge: curated national scholarship batch is due
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=grudged
+EnvironmentFile=/etc/open-scholarships.env
+ExecStart=/bin/bash -c 'curl -s -m 10 "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" -d chat_id="${TELEGRAM_CHAT_ID}" --data-urlencode text="open-scholarships: monthly curated national batch due — research with Claude, seed via tools/seed_curated.py, review in Mission Control"'

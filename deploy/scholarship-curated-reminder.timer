@@ -1,0 +1,9 @@
+[Unit]
+Description=Monthly curated-batch reminder (1st, 9 AM PT)
+
+[Timer]
+OnCalendar=*-*-01 09:00:00 America/Los_Angeles
+Persistent=true
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,9 @@
+[Unit]
+Description=Weekly scholarship freshness check (Thu 6 AM PT)
+
+[Timer]
+OnCalendar=Thu *-*-* 06:00:00 America/Los_Angeles
+Persistent=true
+
+[Install]
+WantedBy=timers.target
