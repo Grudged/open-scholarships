@@ -22,6 +22,9 @@ well-sourced records** — and keeping existing ones fresh.
   local Gemma model (writes to `drafts/` for review; never auto-publishes).
 - `python tools/check_freshness.py [--write]` — flags dead links and passed deadlines.
 
+**Always `git pull` before local discovery testing** — approvals land on `main` from Mission
+Control, so a stale clone makes the dedupe check lie (the Mac clone was once 40 commits behind).
+
 ## Validate before you PR
 
 ```bash
