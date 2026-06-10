@@ -8,6 +8,7 @@ if [ ! -f /etc/open-scholarships.env ]; then
   echo "Missing /etc/open-scholarships.env — create it first (chmod 600):"
   echo "  TELEGRAM_BOT_TOKEN=..."
   echo "  TELEGRAM_CHAT_ID=..."
+  echo "  ANTHROPIC_API_KEY=..."
   exit 1
 fi
 

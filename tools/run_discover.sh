@@ -9,6 +9,7 @@ PY="$REPO/api/venv/bin/python"
 DB="${WAREHOUSE_DB:-/data/warehouse.db}"
 : "${TELEGRAM_BOT_TOKEN:?TELEGRAM_BOT_TOKEN unset}"
 : "${TELEGRAM_CHAT_ID:?TELEGRAM_CHAT_ID unset}"
+: "${ANTHROPIC_API_KEY:?ANTHROPIC_API_KEY unset}"
 
 alert() {
   curl -s -m 10 "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \

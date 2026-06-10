@@ -25,6 +25,10 @@ well-sourced records** — and keeping existing ones fresh.
 **Always `git pull` before local discovery testing** — approvals land on `main` from Mission
 Control, so a stale clone makes the dedupe check lie (the Mac clone was once 40 commits behind).
 
+**Run the first post-Haiku-swap discover manually and supervised** (not via the timer): UNR +
+Washoe hold 30+ scholarships Gemma never surfaced, so the first run dumps a backlog into the
+review queue — `--max-records 40` bounds it to one reviewable batch.
+
 ## Validate before you PR
 
 ```bash
