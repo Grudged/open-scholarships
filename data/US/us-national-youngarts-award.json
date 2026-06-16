@@ -48,10 +48,10 @@
     "source_url": "https://youngarts.org/apply/",
     "source_name": "National YoungArts Foundation",
     "last_verified": "2026-06-16",
-    "verification_method": "research-summary",
+    "verification_method": "manual",
     "added": "2026-06-16"
   },
-  "status": "needs-review",
+  "status": "active",
   "review_flags": [
     "No distinct application link on the source page \u2014 applicants apply via the info page.",
     "Geography: \"United States citizens, permanent residents, or those legally able to receive taxable income in the \" \u2014 verify scope/counties (stub scope=national)."
