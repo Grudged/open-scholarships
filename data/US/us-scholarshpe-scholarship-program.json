@@ -52,10 +52,10 @@
     "source_url": "https://shpe.org/engage/programs/scholarshpe/",
     "source_name": "Society of Hispanic Professional Engineers",
     "last_verified": "2026-06-16",
-    "verification_method": "research-summary",
+    "verification_method": "manual",
     "added": "2026-06-16"
   },
-  "status": "needs-review",
+  "status": "active",
   "review_flags": [
     "Source shows a past deadline 2026-02-16 \u2014 confirm the current cycle.",
     "Geography: \"United States and U.S. territories\" \u2014 verify scope/counties (stub scope=national).",
