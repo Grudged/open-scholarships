@@ -49,10 +49,10 @@
     "source_url": "https://breakthroughjuniorchallenge.org",
     "source_name": "Breakthrough Prize Foundation",
     "last_verified": "2026-06-16",
-    "verification_method": "research-summary",
+    "verification_method": "manual",
     "added": "2026-06-16"
   },
-  "status": "needs-review",
+  "status": "active",
   "review_flags": [
     "No distinct application link on the source page \u2014 applicants apply via the info page."
   ]
