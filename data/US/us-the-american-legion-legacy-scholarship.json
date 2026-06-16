@@ -1,0 +1,61 @@
+{
+  "id": "us-the-american-legion-legacy-scholarship",
+  "name": "The American Legion Legacy Scholarship",
+  "sponsor": "The American Legion",
+  "sponsor_type": "civic",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": 20000,
+    "currency": "USD",
+    "basis": "service",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "undergraduate",
+      "graduate",
+      "vocational"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Children of post-9/11 service members who died on active duty or veterans with a 50%+ VA disability rating",
+      "Need-based"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://www.legion.org/get-involved/scholarships/the-american-legion-legacy-scholarship",
+    "apply_url": "https://register.legion.org/legacy-scholarship-application"
+  },
+  "provenance": {
+    "source_url": "https://www.legion.org/get-involved/scholarships/the-american-legion-legacy-scholarship",
+    "source_name": "The American Legion",
+    "last_verified": "2026-06-16",
+    "verification_method": "research-summary",
+    "added": "2026-06-16"
+  },
+  "status": "needs-review",
+  "review_flags": [
+    "Source shows a past deadline 2026-03-25 \u2014 confirm the current cycle.",
+    "Source basis looks like 'need'; stub says 'service' \u2014 verify."
+  ]
+}

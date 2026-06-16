@@ -1,0 +1,61 @@
+{
+  "id": "us-allegra-ford-thomas-scholarship",
+  "name": "Allegra Ford Thomas Scholarship",
+  "sponsor": "National Center for Learning Disabilities",
+  "sponsor_type": "foundation",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": 5000,
+    "currency": "USD",
+    "basis": "identity",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "high-school-senior",
+      "community-college",
+      "vocational"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Graduating senior entering a 2-year community college, vocational, or technical program",
+      "Documented learning disability"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://ncld.org/scholarships-awards/allegra-ford-thomas-scholarship/",
+    "apply_url": "https://apply.mykaleidoscope.com/program/AnneAllegraFordThomas2026"
+  },
+  "provenance": {
+    "source_url": "https://ncld.org/scholarships-awards/allegra-ford-thomas-scholarship/",
+    "source_name": "National Center for Learning Disabilities",
+    "last_verified": "2026-06-16",
+    "verification_method": "research-summary",
+    "added": "2026-06-16"
+  },
+  "status": "needs-review",
+  "review_flags": [
+    "Source shows a past deadline 2026-05-10 \u2014 confirm the current cycle.",
+    "Source basis looks like 'merit-need'; stub says 'identity' \u2014 verify."
+  ]
+}

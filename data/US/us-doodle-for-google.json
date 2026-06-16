@@ -1,0 +1,60 @@
+{
+  "id": "us-doodle-for-google",
+  "name": "Doodle for Google",
+  "sponsor": "Google",
+  "sponsor_type": "employer",
+  "type": "prize",
+  "award": {
+    "amount_min": null,
+    "amount_max": 10000,
+    "currency": "USD",
+    "basis": "merit",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "high-school"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "U.S. K-12 students; citizen or permanent resident",
+      "National winner receives a college scholarship plus a school tech package"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://doodles.google.com/d4g/",
+    "apply_url": null
+  },
+  "provenance": {
+    "source_url": "https://doodles.google.com/d4g/",
+    "source_name": "Google",
+    "last_verified": "2026-06-16",
+    "verification_method": "research-summary",
+    "added": "2026-06-16"
+  },
+  "status": "needs-review",
+  "review_flags": [
+    "No distinct application link on the source page \u2014 applicants apply via the info page.",
+    "Source shows a past deadline 2024-12-17 \u2014 confirm the current cycle.",
+    "Geography: \"United States based schools, Puerto Rico, U.S. territories, freely associated states, or District of\" \u2014 verify scope/counties (stub scope=national)."
+  ]
+}

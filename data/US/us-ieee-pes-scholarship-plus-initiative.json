@@ -1,0 +1,60 @@
+{
+  "id": "us-ieee-pes-scholarship-plus-initiative",
+  "name": "IEEE PES Scholarship Plus Initiative",
+  "sponsor": "IEEE Power & Energy Society",
+  "sponsor_type": "foundation",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": 10000,
+    "currency": "USD",
+    "basis": "field",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "undergraduate"
+    ],
+    "fields_of_study": [],
+    "gpa_min": 3.0,
+    "citizenship": [],
+    "other": [
+      "Electrical engineering undergrads (3.0+ GPA, ABET program) committed to power & energy",
+      "U.S./Puerto Rico/Canada"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://www.ee-scholarship.org/",
+    "apply_url": "https://ieee.secure-platform.com/a/solicitations/1366/home"
+  },
+  "provenance": {
+    "source_url": "https://www.ee-scholarship.org/",
+    "source_name": "IEEE Power & Energy Society",
+    "last_verified": "2026-06-16",
+    "verification_method": "research-summary",
+    "added": "2026-06-16"
+  },
+  "status": "needs-review",
+  "review_flags": [
+    "Source shows a past deadline 2026-05-14 \u2014 confirm the current cycle.",
+    "Geography: \"U.S., Puerto Rico, or Canada\" \u2014 verify scope/counties (stub scope=national).",
+    "Source basis looks like 'merit'; stub says 'field' \u2014 verify."
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "us-ihs-scholarship-program",
+  "name": "IHS Scholarship Program",
+  "sponsor": "Indian Health Service",
+  "sponsor_type": "federal",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "basis": "field",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "undergraduate",
+      "graduate"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Member (or descendant, some tracks) of a federally recognized tribe/Alaska Native village",
+      "Health-profession programs; Health Professions track carries an IHS service commitment"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://www.ihs.gov/scholarship/scholarships/",
+    "apply_url": "https://www.ihs.gov/scholarship/apply/"
+  },
+  "provenance": {
+    "source_url": "https://www.ihs.gov/scholarship/scholarships/",
+    "source_name": "Indian Health Service",
+    "last_verified": "2026-06-16",
+    "verification_method": "research-summary",
+    "added": "2026-06-16"
+  },
+  "status": "needs-review",
+  "review_flags": [
+    "Geography: \"American Indian and Alaska Native students who are members or descendants of federally recognized, s\" \u2014 verify scope/counties (stub scope=national).",
+    "Source basis looks like 'merit'; stub says 'field' \u2014 verify."
+  ]
+}

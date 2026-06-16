@@ -1,0 +1,59 @@
+{
+  "id": "us-dr-pepper-tuition-giveaway",
+  "name": "Dr Pepper Tuition Giveaway",
+  "sponsor": "Dr Pepper (Keurig Dr Pepper)",
+  "sponsor_type": "employer",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "basis": "merit",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "undergraduate",
+      "community-college"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "U.S. students ages 18-24; no minimum GPA or major",
+      "Video contest; large per-winner tuition awards"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://www.drpeppertuition.com/",
+    "apply_url": null
+  },
+  "provenance": {
+    "source_url": "https://www.drpeppertuition.com/",
+    "source_name": "Dr Pepper (Keurig Dr Pepper)",
+    "last_verified": "2026-06-16",
+    "verification_method": "research-summary",
+    "added": "2026-06-16"
+  },
+  "status": "needs-review",
+  "review_flags": [
+    "No distinct application link on the source page \u2014 applicants apply via the info page."
+  ]
+}

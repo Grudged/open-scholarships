@@ -13,9 +13,9 @@
     "notes": null
   },
   "deadline": {
-    "type": "annual",
-    "date": "2026-05-31",
-    "notes": "Verify the current cycle's deadline against the source."
+    "type": "rolling",
+    "date": null,
+    "notes": "DoSomething runs rotating/monthly 'easy scholarship' campaigns rather than one fixed deadline \u2014 verify the current campaign and amount at the source."
   },
   "eligibility": {
     "residency": [
@@ -47,7 +47,7 @@
   "provenance": {
     "source_url": "https://www.dosomething.org/us/about/easy-scholarships",
     "source_name": "DoSomething.org",
-    "last_verified": "2026-05-27",
+    "last_verified": "2026-06-16",
     "verification_method": "manual",
     "added": "2026-05-27"
   },

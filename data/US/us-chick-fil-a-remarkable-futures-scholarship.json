@@ -1,0 +1,60 @@
+{
+  "id": "us-chick-fil-a-remarkable-futures-scholarship",
+  "name": "Chick-fil-A Remarkable Futures Scholarship",
+  "sponsor": "Chick-fil-A, Inc.",
+  "sponsor_type": "employer",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": 25000,
+    "currency": "USD",
+    "basis": "merit",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "high-school-senior",
+      "undergraduate",
+      "graduate"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Open to employed Chick-fil-A restaurant Team Members",
+      "Tiers of $1,000, $2,500, and $25,000"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://www.chick-fil-a.com/remarkable-futures-scholarships",
+    "apply_url": null
+  },
+  "provenance": {
+    "source_url": "https://www.chick-fil-a.com/remarkable-futures-scholarships",
+    "source_name": "Chick-fil-A, Inc.",
+    "last_verified": "2026-06-16",
+    "verification_method": "research-summary",
+    "added": "2026-06-16"
+  },
+  "status": "needs-review",
+  "review_flags": [
+    "No distinct application link on the source page \u2014 applicants apply via the info page."
+  ]
+}

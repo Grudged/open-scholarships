@@ -1,0 +1,58 @@
+{
+  "id": "us-vfw-voice-of-democracy-audio-essay-scholarship",
+  "name": "VFW Voice of Democracy Audio-Essay Scholarship",
+  "sponsor": "Veterans of Foreign Wars",
+  "sponsor_type": "civic",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": 35000,
+    "currency": "USD",
+    "basis": "merit",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": "2026-10-31",
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "high-school"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Audio-essay competition open to all U.S. students in grades 9-12 (no military affiliation required)",
+      "National first place is a large award; deadline Oct 31"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://www.vfw.org/community/youth-and-education/youth-scholarships",
+    "apply_url": null
+  },
+  "provenance": {
+    "source_url": "https://www.vfw.org/community/youth-and-education/youth-scholarships",
+    "source_name": "Veterans of Foreign Wars",
+    "last_verified": "2026-06-16",
+    "verification_method": "research-summary",
+    "added": "2026-06-16"
+  },
+  "status": "needs-review",
+  "review_flags": [
+    "No distinct application link on the source page \u2014 applicants apply via the info page."
+  ]
+}

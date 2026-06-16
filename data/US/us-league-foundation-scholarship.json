@@ -1,0 +1,58 @@
+{
+  "id": "us-league-foundation-scholarship",
+  "name": "LEAGUE Foundation Scholarship",
+  "sponsor": "LEAGUE Foundation",
+  "sponsor_type": "foundation",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "basis": "identity",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Opens annually in January and closes in April (auto-found \u2014 verify)"
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "high-school-senior"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Graduating U.S. senior who self-identifies as LGBTQ+ or a supporter",
+      "U.S. citizen/legal resident, 3.0+ GPA, accepted to an accredited U.S. college"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://www.leaguefoundation.org/",
+    "apply_url": "https://www.leaguefoundation.org/index.php/application"
+  },
+  "provenance": {
+    "source_url": "https://www.leaguefoundation.org/",
+    "source_name": "LEAGUE Foundation",
+    "last_verified": "2026-06-16",
+    "verification_method": "research-summary",
+    "added": "2026-06-16"
+  },
+  "status": "needs-review",
+  "review_flags": [
+    "Geography: \"US high school students\" \u2014 verify scope/counties (stub scope=national)."
+  ]
+}

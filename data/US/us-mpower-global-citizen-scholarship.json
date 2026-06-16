@@ -1,0 +1,60 @@
+{
+  "id": "us-mpower-global-citizen-scholarship",
+  "name": "MPOWER Global Citizen Scholarship",
+  "sponsor": "MPOWER Financing",
+  "sponsor_type": "private",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": 8000,
+    "currency": "USD",
+    "basis": "identity",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": "2026-12-31",
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "undergraduate",
+      "graduate"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "International students, DACA recipients, or U.S./Canadian permanent residents (citizens ineligible)",
+      "Enrolled in/accepted to a full-time degree at an MPOWER-supported U.S./Canada school"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://www.mpowerfinancing.com/scholarships/global-citizen",
+    "apply_url": "https://app.mpowerfinancing.com/eligibility"
+  },
+  "provenance": {
+    "source_url": "https://www.mpowerfinancing.com/scholarships/global-citizen",
+    "source_name": "MPOWER Financing",
+    "last_verified": "2026-06-16",
+    "verification_method": "research-summary",
+    "added": "2026-06-16"
+  },
+  "status": "needs-review",
+  "review_flags": [
+    "Geography: \"international and DACA students only; excludes U.S. citizens studying in U.S. and Canadian citizens \" \u2014 verify scope/counties (stub scope=national).",
+    "Source basis looks like 'merit'; stub says 'identity' \u2014 verify."
+  ]
+}

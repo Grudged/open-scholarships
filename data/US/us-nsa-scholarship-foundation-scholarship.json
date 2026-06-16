@@ -1,0 +1,62 @@
+{
+  "id": "us-nsa-scholarship-foundation-scholarship",
+  "name": "NSA Scholarship Foundation Scholarship",
+  "sponsor": "National Society of Accountants Scholarship Foundation",
+  "sponsor_type": "foundation",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": 2500,
+    "currency": "USD",
+    "basis": "field",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source.",
+    "opens": "2026-01-15"
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "undergraduate",
+      "graduate"
+    ],
+    "fields_of_study": [],
+    "gpa_min": 3.0,
+    "citizenship": [],
+    "other": [
+      "Declared accounting majors at accredited U.S. schools, 3.0+ GPA",
+      "U.S./Canadian citizens"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://nsacct.org/nsaf-scholarships/",
+    "apply_url": "https://nsacct.org/nsaf-scholarships/application/"
+  },
+  "provenance": {
+    "source_url": "https://nsacct.org/nsaf-scholarships/",
+    "source_name": "National Society of Accountants Scholarship Foundation",
+    "last_verified": "2026-06-16",
+    "verification_method": "research-summary",
+    "added": "2026-06-16"
+  },
+  "status": "needs-review",
+  "review_flags": [
+    "Source shows a past deadline 2026-05-01 \u2014 confirm the current cycle.",
+    "Geography: \"United States or Canada; Arizona legal residents exception\" \u2014 verify scope/counties (stub scope=national).",
+    "Source basis looks like 'merit-need'; stub says 'field' \u2014 verify."
+  ]
+}

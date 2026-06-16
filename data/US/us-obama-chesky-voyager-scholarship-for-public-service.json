@@ -1,0 +1,59 @@
+{
+  "id": "us-obama-chesky-voyager-scholarship-for-public-service",
+  "name": "Obama-Chesky Voyager Scholarship for Public Service",
+  "sponsor": "The Obama Foundation",
+  "sponsor_type": "foundation",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": 50000,
+    "currency": "USD",
+    "basis": "merit-need",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Applications are now closed (auto-found \u2014 verify)"
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "undergraduate"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Students entering junior year at a 4-year U.S. college pursuing public service; financial need required",
+      "U.S. citizen/PR/DACA; includes a funded 'Summer Voyage'"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://www.obama.org/programs/voyager-scholarship/",
+    "apply_url": null
+  },
+  "provenance": {
+    "source_url": "https://www.obama.org/programs/voyager-scholarship/",
+    "source_name": "The Obama Foundation",
+    "last_verified": "2026-06-16",
+    "verification_method": "research-summary",
+    "added": "2026-06-16"
+  },
+  "status": "needs-review",
+  "review_flags": [
+    "No distinct application link on the source page \u2014 applicants apply via the info page.",
+    "Source basis looks like 'service'; stub says 'merit-need' \u2014 verify."
+  ]
+}

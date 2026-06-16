@@ -1,0 +1,60 @@
+{
+  "id": "us-skillsusa-scholarships-and-grants",
+  "name": "SkillsUSA Scholarships and Grants",
+  "sponsor": "SkillsUSA",
+  "sponsor_type": "civic",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": 2500,
+    "currency": "USD",
+    "basis": "field",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Multiple deadlines: April 17, 2026 for most scholarships; June 30, 2026 for NAPA (auto-found \u2014 verify)"
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "high-school",
+      "vocational",
+      "community-college"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Active SkillsUSA members in career & technical education",
+      "Multiple national awards (NTHS/SkillsUSA, Marsha Daves, NAPA)"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://www.skillsusa.org/recognition/scholarships-and-grants/",
+    "apply_url": "https://www.skillsusa.org/wp-content/uploads/2024/12/What-Makes-a-Great-SkillsUSA-Scholarship-Application_mks.pdf"
+  },
+  "provenance": {
+    "source_url": "https://www.skillsusa.org/recognition/scholarships-and-grants/",
+    "source_name": "SkillsUSA",
+    "last_verified": "2026-06-16",
+    "verification_method": "research-summary",
+    "added": "2026-06-16"
+  },
+  "status": "needs-review",
+  "review_flags": [
+    "Source basis looks like 'merit'; stub says 'field' \u2014 verify."
+  ]
+}

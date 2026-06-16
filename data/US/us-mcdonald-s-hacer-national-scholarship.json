@@ -1,0 +1,59 @@
+{
+  "id": "us-mcdonald-s-hacer-national-scholarship",
+  "name": "McDonald's HACER National Scholarship",
+  "sponsor": "McDonald's",
+  "sponsor_type": "employer",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": 10000,
+    "currency": "USD",
+    "basis": "identity",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Application period is now closed (auto-found \u2014 verify)"
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "high-school-senior"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "U.S. seniors with at least one parent of Hispanic/Latino heritage",
+      "~$1M awarded annually nationwide"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://www.mcdonalds.com/us/en-us/community/hacer.html",
+    "apply_url": null
+  },
+  "provenance": {
+    "source_url": "https://www.mcdonalds.com/us/en-us/community/hacer.html",
+    "source_name": "McDonald's",
+    "last_verified": "2026-06-16",
+    "verification_method": "research-summary",
+    "added": "2026-06-16"
+  },
+  "status": "needs-review",
+  "review_flags": [
+    "No distinct application link on the source page \u2014 applicants apply via the info page.",
+    "Source basis looks like 'merit-need'; stub says 'identity' \u2014 verify."
+  ]
+}

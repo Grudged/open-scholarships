@@ -1,0 +1,61 @@
+{
+  "id": "us-national-technical-honor-society-scholarship",
+  "name": "National Technical Honor Society Scholarship",
+  "sponsor": "National Technical Honor Society",
+  "sponsor_type": "civic",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "basis": "merit",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "high-school-senior",
+      "vocational",
+      "community-college",
+      "undergraduate"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Active NTHS members in good standing (CTE students)",
+      "Apply via the NTHS member portal"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://nths.org/",
+    "apply_url": null
+  },
+  "provenance": {
+    "source_url": "https://nths.org/",
+    "source_name": "National Technical Honor Society",
+    "last_verified": "2026-06-16",
+    "verification_method": "research-summary",
+    "added": "2026-06-16"
+  },
+  "status": "needs-review",
+  "review_flags": [
+    "No distinct application link on the source page \u2014 applicants apply via the info page."
+  ]
+}

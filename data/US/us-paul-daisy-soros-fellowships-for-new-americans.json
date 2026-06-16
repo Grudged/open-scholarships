@@ -1,0 +1,58 @@
+{
+  "id": "us-paul-daisy-soros-fellowships-for-new-americans",
+  "name": "Paul & Daisy Soros Fellowships for New Americans",
+  "sponsor": "Paul & Daisy Soros Fellowships for New Americans",
+  "sponsor_type": "foundation",
+  "type": "fellowship",
+  "award": {
+    "amount_min": null,
+    "amount_max": 90000,
+    "currency": "USD",
+    "basis": "identity",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "graduate"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Immigrant or child of two immigrant parents (a 'New American'), age 30 or younger",
+      "Enrolling full-time in a U.S. graduate/professional degree program"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://pdsoros.org/",
+    "apply_url": "https://pdsoros.org/application-process/"
+  },
+  "provenance": {
+    "source_url": "https://pdsoros.org/",
+    "source_name": "Paul & Daisy Soros Fellowships for New Americans",
+    "last_verified": "2026-06-16",
+    "verification_method": "research-summary",
+    "added": "2026-06-16"
+  },
+  "status": "needs-review",
+  "review_flags": [
+    "Source basis looks like 'merit'; stub says 'identity' \u2014 verify."
+  ]
+}

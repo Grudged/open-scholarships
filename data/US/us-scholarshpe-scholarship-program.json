@@ -1,0 +1,64 @@
+{
+  "id": "us-scholarshpe-scholarship-program",
+  "name": "ScholarSHPE Scholarship Program",
+  "sponsor": "Society of Hispanic Professional Engineers",
+  "sponsor_type": "civic",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "basis": "field",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source.",
+    "opens": "2026-02-02"
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "high-school-senior",
+      "undergraduate",
+      "graduate",
+      "vocational"
+    ],
+    "fields_of_study": [],
+    "gpa_min": 2.5,
+    "citizenship": [],
+    "other": [
+      "Active SHPE member pursuing a STEM degree, 2.5+ GPA",
+      "One ScholarSHPE Common Application matches multiple awards"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://shpe.org/engage/programs/scholarshpe/",
+    "apply_url": "https://shpe.awardspring.com/Account/Register"
+  },
+  "provenance": {
+    "source_url": "https://shpe.org/engage/programs/scholarshpe/",
+    "source_name": "Society of Hispanic Professional Engineers",
+    "last_verified": "2026-06-16",
+    "verification_method": "research-summary",
+    "added": "2026-06-16"
+  },
+  "status": "needs-review",
+  "review_flags": [
+    "Source shows a past deadline 2026-02-16 \u2014 confirm the current cycle.",
+    "Geography: \"United States and U.S. territories\" \u2014 verify scope/counties (stub scope=national).",
+    "Source basis looks like 'merit'; stub says 'field' \u2014 verify."
+  ]
+}

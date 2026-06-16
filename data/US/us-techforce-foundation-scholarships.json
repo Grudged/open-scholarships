@@ -1,0 +1,60 @@
+{
+  "id": "us-techforce-foundation-scholarships",
+  "name": "TechForce Foundation Scholarships",
+  "sponsor": "TechForce Foundation",
+  "sponsor_type": "foundation",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": 3500,
+    "currency": "USD",
+    "basis": "merit-need",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Multiple cycles throughout the year (auto-found \u2014 verify)"
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "vocational",
+      "community-college",
+      "undergraduate"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Students in accredited vehicle/technician programs (auto, diesel, aviation, marine, welding, HVAC)",
+      "One general application; FAFSA/financial hardship required"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://techforce.org/scholarships/",
+    "apply_url": "https://techforce.org/app/sign-up"
+  },
+  "provenance": {
+    "source_url": "https://techforce.org/scholarships/",
+    "source_name": "TechForce Foundation",
+    "last_verified": "2026-06-16",
+    "verification_method": "research-summary",
+    "added": "2026-06-16"
+  },
+  "status": "needs-review",
+  "review_flags": [
+    "Source basis looks like 'need'; stub says 'merit-need' \u2014 verify."
+  ]
+}

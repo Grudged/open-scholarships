@@ -1,0 +1,60 @@
+{
+  "id": "us-korean-american-scholarship-foundation-scholarship",
+  "name": "Korean American Scholarship Foundation Scholarship",
+  "sponsor": "Korean American Scholarship Foundation",
+  "sponsor_type": "foundation",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": 5000,
+    "currency": "USD",
+    "basis": "identity",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "high-school",
+      "undergraduate",
+      "graduate"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Students of Korean heritage enrolled full-time in the U.S., 3.0+ GPA",
+      "Apply via the regional chapter covering your school"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://www.kasf.org/scholarships/",
+    "apply_url": "https://www.kasf.org/apply/"
+  },
+  "provenance": {
+    "source_url": "https://www.kasf.org/scholarships/",
+    "source_name": "Korean American Scholarship Foundation",
+    "last_verified": "2026-06-16",
+    "verification_method": "research-summary",
+    "added": "2026-06-16"
+  },
+  "status": "needs-review",
+  "review_flags": [
+    "Source basis looks like 'merit-need'; stub says 'identity' \u2014 verify."
+  ]
+}

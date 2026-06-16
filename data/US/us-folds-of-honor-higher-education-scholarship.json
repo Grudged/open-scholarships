@@ -1,0 +1,63 @@
+{
+  "id": "us-folds-of-honor-higher-education-scholarship",
+  "name": "Folds of Honor Higher Education Scholarship",
+  "sponsor": "Folds of Honor Foundation",
+  "sponsor_type": "foundation",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": 5000,
+    "currency": "USD",
+    "basis": "service",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source.",
+    "opens": "2025-02-01"
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "undergraduate",
+      "graduate",
+      "vocational"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Children and spouses of fallen or disabled U.S. service members and first responders",
+      "Application window Feb 1 - Mar 31"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://foldsofhonor.org/scholarships/military-scholarships/",
+    "apply_url": null
+  },
+  "provenance": {
+    "source_url": "https://foldsofhonor.org/scholarships/military-scholarships/",
+    "source_name": "Folds of Honor Foundation",
+    "last_verified": "2026-06-16",
+    "verification_method": "research-summary",
+    "added": "2026-06-16"
+  },
+  "status": "needs-review",
+  "review_flags": [
+    "No distinct application link on the source page \u2014 applicants apply via the info page.",
+    "Source shows a past deadline 2025-03-31 \u2014 confirm the current cycle.",
+    "Source basis looks like 'need'; stub says 'service' \u2014 verify."
+  ]
+}

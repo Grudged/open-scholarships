@@ -1,0 +1,61 @@
+{
+  "id": "us-imagine-america-high-school-scholarship",
+  "name": "Imagine America High School Scholarship",
+  "sponsor": "Imagine America Foundation",
+  "sponsor_type": "foundation",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": 1000,
+    "currency": "USD",
+    "basis": "need",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source.",
+    "opens": "2024-09-01"
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "high-school-senior",
+      "vocational"
+    ],
+    "fields_of_study": [],
+    "gpa_min": 2.5,
+    "citizenship": [],
+    "other": [
+      "Graduating seniors enrolling at a participating career/trade college",
+      "Each high school may nominate up to five seniors"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://imagine-america.org/scholarships/high-school-scholarships",
+    "apply_url": "https://iaf-portal.web.app"
+  },
+  "provenance": {
+    "source_url": "https://imagine-america.org/scholarships/high-school-scholarships",
+    "source_name": "Imagine America Foundation",
+    "last_verified": "2026-06-16",
+    "verification_method": "research-summary",
+    "added": "2026-06-16"
+  },
+  "status": "needs-review",
+  "review_flags": [
+    "Source shows a past deadline 2024-12-31 \u2014 confirm the current cycle.",
+    "Source basis looks like 'merit-need'; stub says 'need' \u2014 verify."
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "id": "us-maldef-law-school-scholarship-program",
+  "name": "MALDEF Law School Scholarship Program",
+  "sponsor": "Mexican American Legal Defense and Educational Fund",
+  "sponsor_type": "civic",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": 10000,
+    "currency": "USD",
+    "basis": "identity",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "graduate"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Open to any student enrolled at an accredited U.S. law school",
+      "Selected on commitment to advancing Latino civil rights"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://www.maldef.org/resources/leadership-programs/law-school-scholarship-program/",
+    "apply_url": "https://www.maldef.org/wp-content/uploads/2026/03/2026-2027-MALDEF-Law-School-Scholarship-Application-3.19.26.doc"
+  },
+  "provenance": {
+    "source_url": "https://www.maldef.org/resources/leadership-programs/law-school-scholarship-program/",
+    "source_name": "Mexican American Legal Defense and Educational Fund",
+    "last_verified": "2026-06-16",
+    "verification_method": "research-summary",
+    "added": "2026-06-16"
+  },
+  "status": "needs-review",
+  "review_flags": [
+    "Source basis looks like 'merit-need'; stub says 'identity' \u2014 verify."
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "id": "us-palantir-women-in-technology-scholarship",
+  "name": "Palantir Women in Technology Scholarship",
+  "sponsor": "Palantir Technologies",
+  "sponsor_type": "employer",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "basis": "field",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "undergraduate"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Undergraduate women majoring in computer science, software engineering, or a related technical field",
+      "Open to students at U.S./Canada/Mexico institutions"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://www.palantir.com/careers/students/scholarship/wit-north-america/",
+    "apply_url": null
+  },
+  "provenance": {
+    "source_url": "https://www.palantir.com/careers/students/scholarship/wit-north-america/",
+    "source_name": "Palantir Technologies",
+    "last_verified": "2026-06-16",
+    "verification_method": "research-summary",
+    "added": "2026-06-16"
+  },
+  "status": "needs-review",
+  "review_flags": [
+    "No distinct application link on the source page \u2014 applicants apply via the info page."
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "id": "us-acb-scholarship-program",
+  "name": "ACB Scholarship Program",
+  "sponsor": "American Council of the Blind",
+  "sponsor_type": "civic",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": 7500,
+    "currency": "USD",
+    "basis": "identity",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": "2027-02-14",
+    "notes": "Verify the current cycle's deadline against the source.",
+    "opens": "2026-11-01"
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "high-school-senior",
+      "undergraduate",
+      "graduate",
+      "vocational"
+    ],
+    "fields_of_study": [],
+    "gpa_min": 3.0,
+    "citizenship": [],
+    "other": [
+      "Legally blind students at a U.S. post-secondary institution",
+      "Most awards require a 3.0+ GPA"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://www.acb.org/scholarships",
+    "apply_url": "https://www.acb.org/scholarship"
+  },
+  "provenance": {
+    "source_url": "https://www.acb.org/scholarships",
+    "source_name": "American Council of the Blind",
+    "last_verified": "2026-06-16",
+    "verification_method": "research-summary",
+    "added": "2026-06-16"
+  },
+  "status": "needs-review",
+  "review_flags": [
+    "Geography: \"United States\" \u2014 verify scope/counties (stub scope=national).",
+    "Source basis looks like 'merit-need'; stub says 'identity' \u2014 verify."
+  ]
+}

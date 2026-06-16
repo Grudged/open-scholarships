@@ -1,0 +1,61 @@
+{
+  "id": "us-aopa-flight-training-scholarships",
+  "name": "AOPA Flight Training Scholarships",
+  "sponsor": "AOPA Foundation",
+  "sponsor_type": "foundation",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "basis": "field",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "high-school",
+      "undergraduate",
+      "vocational"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "AOPA members pursuing a pilot certificate or advanced rating",
+      "High schoolers 16-18, teachers, and adults eligible"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://www.aopa.org/training-and-safety/learn-to-fly/aviation-scholarships",
+    "apply_url": null
+  },
+  "provenance": {
+    "source_url": "https://www.aopa.org/training-and-safety/learn-to-fly/aviation-scholarships",
+    "source_name": "AOPA Foundation",
+    "last_verified": "2026-06-16",
+    "verification_method": "research-summary",
+    "added": "2026-06-16"
+  },
+  "status": "needs-review",
+  "review_flags": [
+    "No distinct application link on the source page \u2014 applicants apply via the info page.",
+    "Source basis looks like 'merit'; stub says 'field' \u2014 verify."
+  ]
+}

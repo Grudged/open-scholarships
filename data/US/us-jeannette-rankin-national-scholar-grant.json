@@ -1,0 +1,61 @@
+{
+  "id": "us-jeannette-rankin-national-scholar-grant",
+  "name": "Jeannette Rankin National Scholar Grant",
+  "sponsor": "Jeannette Rankin Foundation",
+  "sponsor_type": "foundation",
+  "type": "grant",
+  "award": {
+    "amount_min": null,
+    "amount_max": 2500,
+    "currency": "USD",
+    "basis": "need",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source.",
+    "opens": "2025-11-03"
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "undergraduate",
+      "community-college",
+      "vocational"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Women and nonbinary students age 35 or older with financial need",
+      "First associate's/bachelor's or technical-vocational training; renewable"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://rankinfoundation.org/national-scholar-grant/",
+    "apply_url": "https://rankinfoundation.org/volunteer-application/"
+  },
+  "provenance": {
+    "source_url": "https://rankinfoundation.org/national-scholar-grant/",
+    "source_name": "Jeannette Rankin Foundation",
+    "last_verified": "2026-06-16",
+    "verification_method": "research-summary",
+    "added": "2026-06-16"
+  },
+  "status": "needs-review",
+  "review_flags": [
+    "Source shows a past deadline 2026-02-13 \u2014 confirm the current cycle."
+  ]
+}

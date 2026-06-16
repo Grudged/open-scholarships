@@ -1,0 +1,59 @@
+{
+  "id": "us-acs-catalyst-scholarship",
+  "name": "ACS Catalyst Scholarship",
+  "sponsor": "American Chemical Society",
+  "sponsor_type": "foundation",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "basis": "field",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "high-school-senior",
+      "undergraduate"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Chemistry / chemical-sciences majors",
+      "U.S. citizen/PR, 3.0+ GPA, demonstrated financial need; renewable"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://www.acs.org/funding/scholarships-fellowships/catalyst-scholarship.html",
+    "apply_url": null
+  },
+  "provenance": {
+    "source_url": "https://www.acs.org/funding/scholarships-fellowships/catalyst-scholarship.html",
+    "source_name": "American Chemical Society",
+    "last_verified": "2026-06-16",
+    "verification_method": "research-summary",
+    "added": "2026-06-16"
+  },
+  "status": "needs-review",
+  "review_flags": [
+    "No distinct application link on the source page \u2014 applicants apply via the info page."
+  ]
+}

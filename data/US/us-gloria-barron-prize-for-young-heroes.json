@@ -1,0 +1,61 @@
+{
+  "id": "us-gloria-barron-prize-for-young-heroes",
+  "name": "Gloria Barron Prize for Young Heroes",
+  "sponsor": "Barron Prize",
+  "sponsor_type": "foundation",
+  "type": "prize",
+  "award": {
+    "amount_min": null,
+    "amount_max": 10000,
+    "currency": "USD",
+    "basis": "service",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "high-school"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Ages 8-18 leading a significant service project benefiting people or the environment",
+      "Open to U.S. and Canada residents"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://barronprize.org/apply/",
+    "apply_url": null
+  },
+  "provenance": {
+    "source_url": "https://barronprize.org/apply/",
+    "source_name": "Barron Prize",
+    "last_verified": "2026-06-16",
+    "verification_method": "research-summary",
+    "added": "2026-06-16"
+  },
+  "status": "needs-review",
+  "review_flags": [
+    "No distinct application link on the source page \u2014 applicants apply via the info page.",
+    "Source shows a past deadline 2026-04-15 \u2014 confirm the current cycle.",
+    "Geography: \"U.S. and Canada residents only; excludes U.S. territories\" \u2014 verify scope/counties (stub scope=national).",
+    "Source basis looks like 'merit'; stub says 'service' \u2014 verify."
+  ]
+}

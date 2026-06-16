@@ -1,0 +1,61 @@
+{
+  "id": "us-dod-smart-scholarship-for-service",
+  "name": "DoD SMART Scholarship-for-Service",
+  "sponsor": "U.S. Department of Defense",
+  "sponsor_type": "federal",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": 46000,
+    "currency": "USD",
+    "basis": "field",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Applications open annually from August 1 to the first Friday in December (auto-found \u2014 verify)",
+    "opens": "2026-08-01"
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "high-school-senior",
+      "undergraduate",
+      "graduate"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "STEM majors who accept post-graduation DoD civilian employment",
+      "Full tuition, annual stipend, health insurance, and a guaranteed job; U.S. citizens"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://www.smartscholarship.org/smart",
+    "apply_url": "https://www.smartscholarship.org/smart/en?id=kb_article&amp;sys_id=0383c5d6db2a03006bb8f4b40f961956"
+  },
+  "provenance": {
+    "source_url": "https://www.smartscholarship.org/smart",
+    "source_name": "U.S. Department of Defense",
+    "last_verified": "2026-06-16",
+    "verification_method": "research-summary",
+    "added": "2026-06-16"
+  },
+  "status": "needs-review",
+  "review_flags": [
+    "Source basis looks like 'merit'; stub says 'field' \u2014 verify."
+  ]
+}

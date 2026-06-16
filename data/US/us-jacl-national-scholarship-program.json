@@ -1,0 +1,61 @@
+{
+  "id": "us-jacl-national-scholarship-program",
+  "name": "JACL National Scholarship Program",
+  "sponsor": "Japanese American Citizens League",
+  "sponsor_type": "civic",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "basis": "identity",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "high-school-senior",
+      "undergraduate",
+      "graduate"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Must be an active National JACL member",
+      "Freshman, undergraduate, graduate, law, and creative/performing arts tracks"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://jacl.org/scholarships",
+    "apply_url": "https://docs.google.com/forms/d/e/1FAIpQLSeTn12EyxgD1hVHd3d0wtFBAZwSs5Tv9id98iIGEPMVKhGF9A/viewform?usp=header"
+  },
+  "provenance": {
+    "source_url": "https://jacl.org/scholarships",
+    "source_name": "Japanese American Citizens League",
+    "last_verified": "2026-06-16",
+    "verification_method": "research-summary",
+    "added": "2026-06-16"
+  },
+  "status": "needs-review",
+  "review_flags": [
+    "Source shows a past deadline 2026-04-03 \u2014 confirm the current cycle.",
+    "Source basis looks like 'merit'; stub says 'identity' \u2014 verify."
+  ]
+}

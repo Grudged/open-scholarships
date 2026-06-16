@@ -1,0 +1,62 @@
+{
+  "id": "us-patsy-takemoto-mink-education-support-award",
+  "name": "Patsy Takemoto Mink Education Support Award",
+  "sponsor": "Patsy Takemoto Mink Education Foundation",
+  "sponsor_type": "foundation",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": 5000,
+    "currency": "USD",
+    "basis": "need",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Awardees notified in late fall (auto-found \u2014 verify)"
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "undergraduate",
+      "graduate",
+      "community-college",
+      "vocational"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Low-income mothers (women age 17+) with minor children",
+      "Enrolled in an accredited U.S. postsecondary program"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://www.patsyminkfoundation.org/education-support-application",
+    "apply_url": null
+  },
+  "provenance": {
+    "source_url": "https://www.patsyminkfoundation.org/education-support-application",
+    "source_name": "Patsy Takemoto Mink Education Foundation",
+    "last_verified": "2026-06-16",
+    "verification_method": "research-summary",
+    "added": "2026-06-16"
+  },
+  "status": "needs-review",
+  "review_flags": [
+    "No distinct application link on the source page \u2014 applicants apply via the info page.",
+    "Geography: \"U.S. residents, excluding Hawaii and Alaska variations in income limits\" \u2014 verify scope/counties (stub scope=national)."
+  ]
+}

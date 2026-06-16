@@ -1,0 +1,58 @@
+{
+  "id": "us-cameron-impact-scholarship",
+  "name": "Cameron Impact Scholarship",
+  "sponsor": "Bryan Cameron Education Foundation",
+  "sponsor_type": "foundation",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "basis": "merit",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "high-school-senior"
+    ],
+    "fields_of_study": [],
+    "gpa_min": 3.7,
+    "citizenship": [],
+    "other": [
+      "Full-tuition merit award for ~15 seniors; 3.7+ unweighted GPA, U.S. citizen",
+      "Closes at the earlier of the deadline or 3,000 applications"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://www.bryancameroneducationfoundation.org/scholarship",
+    "apply_url": "https://www.bryancameroneducationfoundation.org/component/jsfsubmit/4"
+  },
+  "provenance": {
+    "source_url": "https://www.bryancameroneducationfoundation.org/scholarship",
+    "source_name": "Bryan Cameron Education Foundation",
+    "last_verified": "2026-06-16",
+    "verification_method": "research-summary",
+    "added": "2026-06-16"
+  },
+  "status": "needs-review",
+  "review_flags": [
+    "Source shows a past deadline 2026-05-01 \u2014 confirm the current cycle."
+  ]
+}

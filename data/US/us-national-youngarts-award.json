@@ -1,0 +1,59 @@
+{
+  "id": "us-national-youngarts-award",
+  "name": "National YoungArts Award",
+  "sponsor": "National YoungArts Foundation",
+  "sponsor_type": "foundation",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": 10000,
+    "currency": "USD",
+    "basis": "merit",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "2027 application opens Summer 2026 (auto-found \u2014 verify)"
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "high-school"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Grades 10-12 or ages 15-18; U.S. citizen, PR, or eligible to receive taxable U.S. income",
+      "National competition across 10 arts disciplines"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://youngarts.org/apply/",
+    "apply_url": null
+  },
+  "provenance": {
+    "source_url": "https://youngarts.org/apply/",
+    "source_name": "National YoungArts Foundation",
+    "last_verified": "2026-06-16",
+    "verification_method": "research-summary",
+    "added": "2026-06-16"
+  },
+  "status": "needs-review",
+  "review_flags": [
+    "No distinct application link on the source page \u2014 applicants apply via the info page.",
+    "Geography: \"United States citizens, permanent residents, or those legally able to receive taxable income in the \" \u2014 verify scope/counties (stub scope=national)."
+  ]
+}

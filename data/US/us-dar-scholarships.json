@@ -1,0 +1,60 @@
+{
+  "id": "us-dar-scholarships",
+  "name": "DAR Scholarships",
+  "sponsor": "Daughters of the American Revolution",
+  "sponsor_type": "civic",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "basis": "merit",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source.",
+    "opens": "2024-11-01"
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "undergraduate",
+      "graduate"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "~27 named scholarships, $1,000-$25,000; most do NOT require DAR membership",
+      "U.S. citizens; applications open Nov 1 - Jan 31"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://dar.academicworks.com/",
+    "apply_url": "https://dar.academicworks.com/%{profile_application_path}"
+  },
+  "provenance": {
+    "source_url": "https://dar.academicworks.com/",
+    "source_name": "Daughters of the American Revolution",
+    "last_verified": "2026-06-16",
+    "verification_method": "research-summary",
+    "added": "2026-06-16"
+  },
+  "status": "needs-review",
+  "review_flags": [
+    "Source shows a past deadline 2025-01-31 \u2014 confirm the current cycle."
+  ]
+}

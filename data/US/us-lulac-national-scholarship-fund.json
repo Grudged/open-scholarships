@@ -1,0 +1,63 @@
+{
+  "id": "us-lulac-national-scholarship-fund",
+  "name": "LULAC National Scholarship Fund",
+  "sponsor": "LULAC National Educational Service Centers",
+  "sponsor_type": "civic",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "basis": "identity",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Application currently closed (auto-found \u2014 verify)"
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "undergraduate",
+      "community-college",
+      "graduate",
+      "vocational"
+    ],
+    "fields_of_study": [],
+    "gpa_min": 3.0,
+    "citizenship": [],
+    "other": [
+      "U.S. citizen, permanent resident, or DACA recipient enrolled full-time",
+      "Requires a participating LULAC Council in your area"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://www.lnesc.org/scholarships/lulac/",
+    "apply_url": null
+  },
+  "provenance": {
+    "source_url": "https://www.lnesc.org/scholarships/lulac/",
+    "source_name": "LULAC National Educational Service Centers",
+    "last_verified": "2026-06-16",
+    "verification_method": "research-summary",
+    "added": "2026-06-16"
+  },
+  "status": "needs-review",
+  "review_flags": [
+    "No distinct application link on the source page \u2014 applicants apply via the info page.",
+    "Geography: \"Must have participating LULAC Council in applicant's area\" \u2014 verify scope/counties (stub scope=national).",
+    "Source basis looks like 'merit-need'; stub says 'identity' \u2014 verify."
+  ]
+}

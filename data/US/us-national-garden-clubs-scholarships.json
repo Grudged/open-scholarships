@@ -1,0 +1,61 @@
+{
+  "id": "us-national-garden-clubs-scholarships",
+  "name": "National Garden Clubs Scholarships",
+  "sponsor": "National Garden Clubs, Inc.",
+  "sponsor_type": "foundation",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "basis": "field",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "undergraduate",
+      "graduate"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Horticulture, environment, conservation, botany, forestry, plant/wildlife science, landscape design majors",
+      "U.S. citizen/PR, 3.25+ GPA, sophomore year and up"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://gardenclub.org/college-scholarships",
+    "apply_url": null
+  },
+  "provenance": {
+    "source_url": "https://gardenclub.org/college-scholarships",
+    "source_name": "National Garden Clubs, Inc.",
+    "last_verified": "2026-06-16",
+    "verification_method": "research-summary",
+    "added": "2026-06-16"
+  },
+  "status": "needs-review",
+  "review_flags": [
+    "No distinct application link on the source page \u2014 applicants apply via the info page.",
+    "Source shows a past deadline 2025-02-01 \u2014 confirm the current cycle.",
+    "Source basis looks like 'merit-need'; stub says 'field' \u2014 verify."
+  ]
+}

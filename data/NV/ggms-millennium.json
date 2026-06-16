@@ -46,13 +46,13 @@
     "counties": []
   },
   "links": {
-    "info_url": "https://www.nevadatreasurer.gov/ggms/ggms_home/",
+    "info_url": "https://nvigate.gov/programs/governor-guinn-millennium-scholarship/",
     "apply_url": "https://www.nevadatreasurer.gov/GGMS/Forms/Forms/"
   },
   "provenance": {
-    "source_url": "https://www.nevadatreasurer.gov/ggms/ggms_home/",
+    "source_url": "https://nvigate.gov/programs/governor-guinn-millennium-scholarship/",
     "source_name": "Nevada State Treasurer",
-    "last_verified": "2026-05-26",
+    "last_verified": "2026-06-16",
     "verification_method": "manual",
     "added": "2026-05-26"
   },

@@ -1,0 +1,59 @@
+{
+  "id": "us-tylenol-future-care-scholarship",
+  "name": "TYLENOL Future Care Scholarship",
+  "sponsor": "Kenvue (TYLENOL)",
+  "sponsor_type": "employer",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "basis": "field",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "undergraduate",
+      "graduate"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Medicine, nursing, pharmacy, or other patient-care healthcare majors with 1+ year remaining",
+      "U.S./PR/DC residents"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://www.tylenol.com/tylenol-future-care-scholarship",
+    "apply_url": null
+  },
+  "provenance": {
+    "source_url": "https://www.tylenol.com/tylenol-future-care-scholarship",
+    "source_name": "Kenvue (TYLENOL)",
+    "last_verified": "2026-06-16",
+    "verification_method": "research-summary",
+    "added": "2026-06-16"
+  },
+  "status": "needs-review",
+  "review_flags": [
+    "No distinct application link on the source page \u2014 applicants apply via the info page."
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "us-ayn-rand-institute-essay-contests",
+  "name": "Ayn Rand Institute Essay Contests",
+  "sponsor": "Ayn Rand Institute",
+  "sponsor_type": "foundation",
+  "type": "prize",
+  "award": {
+    "amount_min": null,
+    "amount_max": 25000,
+    "currency": "USD",
+    "basis": "merit",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Next Deadline TBD Coming soon (auto-found \u2014 verify)"
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "high-school",
+      "undergraduate",
+      "graduate"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Students enrolled in school, ages 13+",
+      "Novel-based essay contests (Anthem / The Fountainhead / Atlas Shrugged)"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://aynrand.org/students/essay-contests/",
+    "apply_url": null
+  },
+  "provenance": {
+    "source_url": "https://aynrand.org/students/essay-contests/",
+    "source_name": "Ayn Rand Institute",
+    "last_verified": "2026-06-16",
+    "verification_method": "research-summary",
+    "added": "2026-06-16"
+  },
+  "status": "needs-review",
+  "review_flags": [
+    "No distinct application link on the source page \u2014 applicants apply via the info page."
+  ]
+}

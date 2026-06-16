@@ -1,0 +1,60 @@
+{
+  "id": "us-john-f-kennedy-profile-in-courage-essay-contest",
+  "name": "John F. Kennedy Profile in Courage Essay Contest",
+  "sponsor": "John F. Kennedy Library Foundation",
+  "sponsor_type": "foundation",
+  "type": "prize",
+  "award": {
+    "amount_min": null,
+    "amount_max": 10000,
+    "currency": "USD",
+    "basis": "merit",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source.",
+    "opens": "2025-09-01"
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "high-school"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "U.S. high school students grades 9-12 (incl. home school and citizens abroad)",
+      "Essay on an act of political courage by a U.S. elected official"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://www.jfklibrary.org/learn/education/profile-in-courage-essay-contest",
+    "apply_url": null
+  },
+  "provenance": {
+    "source_url": "https://www.jfklibrary.org/learn/education/profile-in-courage-essay-contest",
+    "source_name": "John F. Kennedy Library Foundation",
+    "last_verified": "2026-06-16",
+    "verification_method": "research-summary",
+    "added": "2026-06-16"
+  },
+  "status": "needs-review",
+  "review_flags": [
+    "No distinct application link on the source page \u2014 applicants apply via the info page.",
+    "Source shows a past deadline 2026-01-12 \u2014 confirm the current cycle."
+  ]
+}

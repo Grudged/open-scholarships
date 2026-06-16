@@ -1,0 +1,58 @@
+{
+  "id": "us-bigfuture-scholarships",
+  "name": "BigFuture Scholarships",
+  "sponsor": "College Board",
+  "sponsor_type": "foundation",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": 40000,
+    "currency": "USD",
+    "basis": "other",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Deadlines vary by class year (Class of 2027, 2028, 2030); see dashboard for spec (auto-found \u2014 verify)"
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "high-school"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "No essay, GPA, or test-score requirement; earn entries by completing college-planning steps",
+      "Monthly drawings open to U.S./territory students"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://bigfuture.collegeboard.org/pay-for-college/bigfuture-scholarships",
+    "apply_url": "https://bigfuture.collegeboard.org/plan-for-college/apply-to-college"
+  },
+  "provenance": {
+    "source_url": "https://bigfuture.collegeboard.org/pay-for-college/bigfuture-scholarships",
+    "source_name": "College Board",
+    "last_verified": "2026-06-16",
+    "verification_method": "research-summary",
+    "added": "2026-06-16"
+  },
+  "status": "needs-review",
+  "review_flags": [
+    "Source basis looks like 'merit'; stub says 'other' \u2014 verify."
+  ]
+}

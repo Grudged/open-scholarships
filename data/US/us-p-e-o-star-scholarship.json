@@ -1,0 +1,58 @@
+{
+  "id": "us-p-e-o-star-scholarship",
+  "name": "P.E.O. STAR Scholarship",
+  "sponsor": "P.E.O. International",
+  "sponsor_type": "civic",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": 2500,
+    "currency": "USD",
+    "basis": "merit",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "high-school-senior"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Women in their final year of high school with strong leadership and academics",
+      "Plan to attend an accredited U.S./Canada institution; chapter-recommended"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://www.peointernational.org/educational-support/star-scholarship/",
+    "apply_url": "https://www.peointernational.org/educational-support/star-scholarship/eligibility-and-application-process/"
+  },
+  "provenance": {
+    "source_url": "https://www.peointernational.org/educational-support/star-scholarship/",
+    "source_name": "P.E.O. International",
+    "last_verified": "2026-06-16",
+    "verification_method": "research-summary",
+    "added": "2026-06-16"
+  },
+  "status": "needs-review",
+  "review_flags": [
+    "Geography: \"U.S. or Canada\" \u2014 verify scope/counties (stub scope=national)."
+  ]
+}

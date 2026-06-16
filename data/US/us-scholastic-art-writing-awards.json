@@ -1,0 +1,58 @@
+{
+  "id": "us-scholastic-art-writing-awards",
+  "name": "Scholastic Art & Writing Awards",
+  "sponsor": "Alliance for Young Artists & Writers",
+  "sponsor_type": "foundation",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "basis": "merit",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Fall entry opening; deadlines determined by region (auto-found \u2014 verify)"
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "high-school"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "U.S./Canada students grades 7-12; regional then national judging",
+      "National Medalists eligible for scholarships; fee waivers available"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://artandwriting.org/awards/how-to-enter/",
+    "apply_url": null
+  },
+  "provenance": {
+    "source_url": "https://artandwriting.org/awards/how-to-enter/",
+    "source_name": "Alliance for Young Artists & Writers",
+    "last_verified": "2026-06-16",
+    "verification_method": "research-summary",
+    "added": "2026-06-16"
+  },
+  "status": "needs-review",
+  "review_flags": [
+    "No distinct application link on the source page \u2014 applicants apply via the info page."
+  ]
+}

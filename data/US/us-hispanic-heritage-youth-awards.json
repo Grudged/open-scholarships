@@ -15,7 +15,7 @@
   "deadline": {
     "type": "annual",
     "date": null,
-    "notes": "Verify the current cycle's deadline against the source."
+    "notes": "Applications between cycles \u2014 2027 cohort deadline 'coming soon'; apply link (hhfyouthawards.com) confirmed live, verify the open date at the source."
   },
   "eligibility": {
     "residency": [
@@ -46,7 +46,7 @@
   "provenance": {
     "source_url": "https://hispanicheritage.org/programs/leadership/youth-awards/",
     "source_name": "Hispanic Heritage Foundation",
-    "last_verified": "2026-05-27",
+    "last_verified": "2026-06-16",
     "verification_method": "manual",
     "added": "2026-05-27"
   },

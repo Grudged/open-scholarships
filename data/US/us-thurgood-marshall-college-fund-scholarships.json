@@ -1,0 +1,56 @@
+{
+  "id": "us-thurgood-marshall-college-fund-scholarships",
+  "name": "Thurgood Marshall College Fund Scholarships",
+  "sponsor": "Thurgood Marshall College Fund",
+  "sponsor_type": "foundation",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "basis": "merit-need",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "undergraduate",
+      "graduate"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "For students at TMCF member HBCUs/PBIs and other eligible accredited schools",
+      "One general application auto-matches to open scholarships"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://tmcf.org/scholarships/open-scholarships/",
+    "apply_url": "https://tmcf.org/scholarships/application-process/"
+  },
+  "provenance": {
+    "source_url": "https://tmcf.org/scholarships/open-scholarships/",
+    "source_name": "Thurgood Marshall College Fund",
+    "last_verified": "2026-06-16",
+    "verification_method": "research-summary",
+    "added": "2026-06-16"
+  },
+  "status": "needs-review"
+}

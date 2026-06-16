@@ -1,0 +1,61 @@
+{
+  "id": "us-cobell-scholarship",
+  "name": "Cobell Scholarship",
+  "sponsor": "Indigenous Education, Inc.",
+  "sponsor_type": "foundation",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "basis": "identity",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Multiple application windows vary by program (e.g., Undergraduate: December 15 t (auto-found \u2014 verify)"
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "undergraduate",
+      "community-college",
+      "graduate",
+      "vocational"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Enrolled member of a U.S. federally recognized tribe or Alaska Native Corporation",
+      "Undergraduate, graduate, vocational/trade, and summer tracks"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://cobellscholar.org/our-scholarships/",
+    "apply_url": "https://cobellscholar.org/application-process/"
+  },
+  "provenance": {
+    "source_url": "https://cobellscholar.org/our-scholarships/",
+    "source_name": "Indigenous Education, Inc.",
+    "last_verified": "2026-06-16",
+    "verification_method": "research-summary",
+    "added": "2026-06-16"
+  },
+  "status": "needs-review",
+  "review_flags": [
+    "Geography: \"Enrolled members of U.S. Federally-recognized American Indian Tribes and Alaska Native Corporations \" \u2014 verify scope/counties (stub scope=national)."
+  ]
+}

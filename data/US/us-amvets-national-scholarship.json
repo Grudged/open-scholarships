@@ -1,0 +1,59 @@
+{
+  "id": "us-amvets-national-scholarship",
+  "name": "AMVETS National Scholarship",
+  "sponsor": "AMVETS (American Veterans)",
+  "sponsor_type": "civic",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": 12000,
+    "currency": "USD",
+    "basis": "service",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "undergraduate"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Veterans, active-duty, Guard/Reserve, and their spouses, children, and grandchildren",
+      "Application window Jan 1 - Apr 30"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://amvets.org/scholarships/",
+    "apply_url": "https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fapply.mykaleidoscope.com%2Fscholarships%2FVSP2024&amp;data=05%7C02%7Cbayodele%40AMVETS.org%7Ccd81916475164c2c263208dcc8360c74%7Ce8e48e19e1484140b951097b8b2e190c%7C0%7C0%7C638605381672930846%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=pdYPPG8rNm76aLOw1Vij%2BNA6wTuoOJ3miq%2FbUNjlSOo%3D&amp;reserved=0 (https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fapply.mykaleidoscope.com%2Fscholarships%2FVSP2024&amp;data=05%7C02%7Cbayodele%40AMVETS.org%7Ccd81916475164c2c263208dcc8360c74%7Ce8e48e19e1484140b951097b8b2e190c%7C0%7C0%7C638605381672930846%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=pdYPPG8rNm76aLOw1Vij%2BNA6wTuoOJ3miq%2FbUNjlSOo%3D&amp;reserved=0)"
+  },
+  "provenance": {
+    "source_url": "https://amvets.org/scholarships/",
+    "source_name": "AMVETS (American Veterans)",
+    "last_verified": "2026-06-16",
+    "verification_method": "research-summary",
+    "added": "2026-06-16"
+  },
+  "status": "needs-review",
+  "review_flags": [
+    "Geography: \"United States\" \u2014 verify scope/counties (stub scope=national).",
+    "Source basis looks like 'need'; stub says 'service' \u2014 verify."
+  ]
+}

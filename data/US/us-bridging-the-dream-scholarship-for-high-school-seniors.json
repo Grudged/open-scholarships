@@ -1,0 +1,55 @@
+{
+  "id": "us-bridging-the-dream-scholarship-for-high-school-seniors",
+  "name": "Bridging the Dream Scholarship for High School Seniors",
+  "sponsor": "The Sallie Mae Fund",
+  "sponsor_type": "employer",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": null,
+    "currency": "USD",
+    "basis": "merit-need",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "high-school-senior"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Pell-eligible seniors heading to a 2-/4-year college or technical program",
+      "Minimum 2.75 GPA"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://www.salliemae.com/about/scholarship-opportunities/bridging-the-dream-scholarship-for-high-school-seniors/",
+    "apply_url": "https://www.salliemae.com/student-loans/get-ready-to-borrow/understand-the-student-loan-application-process/"
+  },
+  "provenance": {
+    "source_url": "https://www.salliemae.com/about/scholarship-opportunities/bridging-the-dream-scholarship-for-high-school-seniors/",
+    "source_name": "The Sallie Mae Fund",
+    "last_verified": "2026-06-16",
+    "verification_method": "research-summary",
+    "added": "2026-06-16"
+  },
+  "status": "needs-review"
+}

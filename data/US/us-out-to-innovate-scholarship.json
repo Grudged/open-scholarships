@@ -1,0 +1,55 @@
+{
+  "id": "us-out-to-innovate-scholarship",
+  "name": "Out to Innovate Scholarship",
+  "sponsor": "Out to Innovate (NOGLSTP)",
+  "sponsor_type": "foundation",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": 2500,
+    "currency": "USD",
+    "basis": "identity",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": "2026-06-30",
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "undergraduate"
+    ],
+    "fields_of_study": [],
+    "gpa_min": 2.75,
+    "citizenship": [],
+    "other": [
+      "LGBTQ+ undergraduate in a STEM or STEM-teaching major",
+      "Completed 2+ years of post-high-school education, 2.75+ GPA"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://www.outtoinnovate.org/scholarships",
+    "apply_url": "https://www.outtoinnovate.org/apply-for-a-scholarship-for-the-2026-2027-academic-year-deadline-june-30-2026-"
+  },
+  "provenance": {
+    "source_url": "https://www.outtoinnovate.org/scholarships",
+    "source_name": "Out to Innovate (NOGLSTP)",
+    "last_verified": "2026-06-16",
+    "verification_method": "research-summary",
+    "added": "2026-06-16"
+  },
+  "status": "needs-review"
+}

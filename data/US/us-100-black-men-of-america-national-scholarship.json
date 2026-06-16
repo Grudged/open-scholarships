@@ -1,0 +1,59 @@
+{
+  "id": "us-100-black-men-of-america-national-scholarship",
+  "name": "100 Black Men of America National Scholarship",
+  "sponsor": "100 Black Men of America, Inc.",
+  "sponsor_type": "civic",
+  "type": "scholarship",
+  "award": {
+    "amount_min": null,
+    "amount_max": 5000,
+    "currency": "USD",
+    "basis": "merit-need",
+    "renewable": null,
+    "notes": null
+  },
+  "deadline": {
+    "type": "annual",
+    "date": null,
+    "notes": "Verify the current cycle's deadline against the source."
+  },
+  "eligibility": {
+    "residency": [
+      "US"
+    ],
+    "education_level": [
+      "high-school-senior",
+      "undergraduate"
+    ],
+    "fields_of_study": [],
+    "gpa_min": null,
+    "citizenship": [],
+    "other": [
+      "Graduating seniors or full-time undergrads, 2.5+ GPA, U.S. citizen/PR",
+      "Financial need + community service; awards paid to the institution"
+    ],
+    "tags": [
+      "national"
+    ]
+  },
+  "geo": {
+    "state": null,
+    "scope": "national",
+    "counties": []
+  },
+  "links": {
+    "info_url": "https://100blackmen.org/four-for-the-future/education/national-scholarship-program/",
+    "apply_url": "https://100blackmen.org/2024-2025-national-scholarship-application/"
+  },
+  "provenance": {
+    "source_url": "https://100blackmen.org/four-for-the-future/education/national-scholarship-program/",
+    "source_name": "100 Black Men of America, Inc.",
+    "last_verified": "2026-06-16",
+    "verification_method": "research-summary",
+    "added": "2026-06-16"
+  },
+  "status": "needs-review",
+  "review_flags": [
+    "Source basis looks like 'merit'; stub says 'merit-need' \u2014 verify."
+  ]
+}
