@@ -51,10 +51,10 @@
     "source_url": "https://www.smartscholarship.org/smart",
     "source_name": "U.S. Department of Defense",
     "last_verified": "2026-06-16",
-    "verification_method": "research-summary",
+    "verification_method": "manual",
     "added": "2026-06-16"
   },
-  "status": "needs-review",
+  "status": "active",
   "review_flags": [
     "Source basis looks like 'merit'; stub says 'field' \u2014 verify."
   ]
