@@ -49,10 +49,10 @@
     "source_url": "https://www.ihs.gov/scholarship/scholarships/",
     "source_name": "Indian Health Service",
     "last_verified": "2026-06-16",
-    "verification_method": "research-summary",
+    "verification_method": "manual",
     "added": "2026-06-16"
   },
-  "status": "needs-review",
+  "status": "active",
   "review_flags": [
     "Geography: \"American Indian and Alaska Native students who are members or descendants of federally recognized, s\" \u2014 verify scope/counties (stub scope=national).",
     "Source basis looks like 'merit'; stub says 'field' \u2014 verify."
