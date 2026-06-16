@@ -48,10 +48,10 @@
     "source_url": "https://www.ee-scholarship.org/",
     "source_name": "IEEE Power & Energy Society",
     "last_verified": "2026-06-16",
-    "verification_method": "research-summary",
+    "verification_method": "manual",
     "added": "2026-06-16"
   },
-  "status": "needs-review",
+  "status": "active",
   "review_flags": [
     "Source shows a past deadline 2026-05-14 \u2014 confirm the current cycle.",
     "Geography: \"U.S., Puerto Rico, or Canada\" \u2014 verify scope/counties (stub scope=national).",
