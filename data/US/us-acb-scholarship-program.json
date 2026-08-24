@@ -51,11 +51,11 @@
   "provenance": {
     "source_url": "https://www.acb.org/scholarships",
     "source_name": "American Council of the Blind",
-    "last_verified": "2026-06-16",
+    "last_verified": "2026-08-24",
     "verification_method": "manual",
     "added": "2026-06-16"
   },
-  "status": "needs-review",
+  "status": "active",
   "review_flags": [
     "Geography: \"United States\" \u2014 verify scope/counties (stub scope=national).",
     "Source basis looks like 'merit-need'; stub says 'identity' \u2014 verify."
