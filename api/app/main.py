@@ -68,7 +68,15 @@ def _availability(rec: dict) -> str:
     can't go stale. open = accepting applications now; upcoming = opens on a future date;
     closed = this cycle's deadline has passed (annual/fixed awards still recur — they stay served,
     just aren't open right now); rolling = always open; unknown = no dates on record (see
-    deadline.notes for any free-text cycle info)."""
+    deadline.notes for any free-text cycle info).
+
+    `open` REQUIRES a close date still in the future. A past `opens` with no close date is
+    `unknown`, not `open` — we know the window started at some point and have no idea whether it
+    is still accepting. Reading a bare past `opens` as "apply now" made the API tell students to
+    apply to 13 of its 18 supposedly-open awards, several of whose windows had shut over a year
+    earlier (one 721 days). An honest `unknown` sends the reader to `deadline.notes` and the
+    source; a wrong `open` sends them to a dead form.
+    """
     dl = rec.get("deadline") or {}
     today = date.today().isoformat()
     opens, closes = dl.get("opens"), dl.get("date")
@@ -78,7 +86,8 @@ def _availability(rec: dict) -> str:
         return "upcoming"
     if closes and closes < today:
         return "closed"
-    if (opens and opens <= today) or (closes and closes >= today):
+    if closes and closes >= today:
+        # A future close date is the only positive evidence that it is open now.
         return "open"
     return "unknown"
 
