@@ -41,6 +41,11 @@ def main() -> None:
     for path in sorted(DATA.rglob("*.json")):
         rec = json.loads(path.read_text())
         prov, links, dl = rec.get("provenance", {}), rec.get("links", {}), rec.get("deadline", {})
+        stale_cutoff = (date.today() - timedelta(days=330)).isoformat()
+        lv = prov.get("last_verified")
+
+        # HARD: evidence the record is actively wrong. Only these justify --write pulling a
+        # record out of the public dataset.
         problems = []
         if alive(prov.get("source_url")) is False:
             problems.append("dead source_url")
@@ -48,15 +53,26 @@ def main() -> None:
             problems.append("dead apply_url")
         if dl.get("date") and dl["date"] < today:
             problems.append(f"deadline passed ({dl['date']})")
-        # Exact dates must be re-verified each cycle — flag any date not confirmed in ~11 months,
-        # so a stale "accurate" date can't quietly outlive its source. (Deadlines shift yearly.)
-        lv = prov.get("last_verified")
-        if dl.get("date") and lv and lv < (date.today() - timedelta(days=330)).isoformat():
-            problems.append(f"deadline date not re-verified since {lv} (annual recheck)")
-        if problems:
+
+        # SOFT: needs a human to look, but the record is not known-wrong. Printed, never written.
+        notices = []
+        # Every date check above is gated on a CLOSE date — and most records have none, so they
+        # were unreachable by this tool and aged forever without ever being flagged. These two
+        # cover that blind spot.
+        if lv and lv < stale_cutoff:
+            notices.append(f"not re-verified since {lv} (annual recheck)")
+        opens = dl.get("opens")
+        if opens and not dl.get("date") and opens < stale_cutoff:
+            notices.append(f"opens date {opens} is from a prior cycle and there is no close date")
+
+        if problems or notices:
             issues += 1
-            print(f"[{rec['id']}] {', '.join(problems)}")
-            if args.write and rec.get("status") == "active":
+            label = ", ".join(problems + [f"(soft) {n}" for n in notices])
+            print(f"[{rec['id']}] {label}")
+            # Soft notices must NEVER flip status. Most of the dataset carries no close date, so
+            # writing on the 330-day recheck would move ~90% of records to needs-review at once —
+            # and the public API serves active-only, so that empties the commons in one command.
+            if args.write and problems and rec.get("status") == "active":
                 rec["status"] = "needs-review"
                 path.write_text(json.dumps(rec, indent=2) + "\n")
                 print(f"    -> set {rec['id']} to needs-review")
