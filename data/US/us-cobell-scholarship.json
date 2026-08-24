@@ -44,11 +44,11 @@
     "counties": []
   },
   "links": {
-    "info_url": "https://cobellscholar.org/our-scholarships/",
-    "apply_url": "https://cobellscholar.org/application-process/"
+    "info_url": "https://www.cobellscholar.org/",
+    "apply_url": null
   },
   "provenance": {
-    "source_url": "https://cobellscholar.org/our-scholarships/",
+    "source_url": "https://www.cobellscholar.org/",
     "source_name": "Indigenous Education, Inc.",
     "last_verified": "2026-08-24",
     "verification_method": "manual",
@@ -56,6 +56,7 @@
   },
   "status": "needs-review",
   "review_flags": [
-    "Geography: \"Enrolled members of U.S. Federally-recognized American Indian Tribes and Alaska Native Corporations \" \u2014 verify scope/counties (stub scope=national)."
+    "Geography: \"Enrolled members of U.S. Federally-recognized American Indian Tribes and Alaska Native Corporations \" \u2014 verify scope/counties (stub scope=national).",
+    "Site restructured: /our-scholarships and /application-process both 404. Repointed to the working org root; re-add the deep links once the new paths are confirmed."
   ]
 }

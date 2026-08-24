@@ -43,7 +43,7 @@
   },
   "links": {
     "info_url": "https://100blackmen.org/four-for-the-future/education/national-scholarship-program/",
-    "apply_url": "https://100blackmen.org/2024-2025-national-scholarship-application/"
+    "apply_url": null
   },
   "provenance": {
     "source_url": "https://100blackmen.org/four-for-the-future/education/national-scholarship-program/",
@@ -54,6 +54,7 @@
   },
   "status": "needs-review",
   "review_flags": [
-    "Source basis looks like 'merit'; stub says 'merit-need' \u2014 verify."
+    "Source basis looks like 'merit'; stub says 'merit-need' \u2014 verify.",
+    "Apply link pointed at the 2024-2025 cycle page, which now 404s. Cleared \u2014 find the current cycle's application link on the info page and re-add it."
   ]
 }

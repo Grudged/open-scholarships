@@ -46,7 +46,7 @@
   },
   "links": {
     "info_url": "https://www.acb.org/scholarships",
-    "apply_url": "https://www.acb.org/scholarship"
+    "apply_url": null
   },
   "provenance": {
     "source_url": "https://www.acb.org/scholarships",
@@ -58,6 +58,7 @@
   "status": "needs-review",
   "review_flags": [
     "Geography: \"United States\" \u2014 verify scope/counties (stub scope=national).",
-    "Source basis looks like 'merit-need'; stub says 'identity' \u2014 verify."
+    "Source basis looks like 'merit-need'; stub says 'identity' \u2014 verify.",
+    "Apply link was /scholarship (404); the live page is /scholarships. Cleared rather than guessed \u2014 confirm whether ACB has a distinct application URL."
   ]
 }

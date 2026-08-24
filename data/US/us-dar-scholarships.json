@@ -44,7 +44,7 @@
   },
   "links": {
     "info_url": "https://dar.academicworks.com/",
-    "apply_url": "https://dar.academicworks.com/%{profile_application_path}"
+    "apply_url": null
   },
   "provenance": {
     "source_url": "https://dar.academicworks.com/",
@@ -55,7 +55,7 @@
   },
   "status": "needs-review",
   "review_flags": [
-    "Source shows a past deadline 2025-01-31 \u2014 confirm the current cycle.",
-    "Geography: \"United States\" \u2014 verify scope/counties (stub scope=national)."
+    "Geography: \"United States\" \u2014 verify scope/counties (stub scope=national).",
+    "Apply link was the literal AcademicWorks template placeholder %{profile_application_path}, not a real URL \u2014 an extraction artifact. Cleared; the info portal at dar.academicworks.com is the way in."
   ]
 }
