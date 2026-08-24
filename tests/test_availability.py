@@ -15,7 +15,10 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO / "api"))
 
-from app.main import _availability  # noqa: E402
+# Import the rule directly, NOT through app.main — main.py imports FastAPI, and validate.yml is a
+# lean data gate that installs only jsonschema + pytest. Importing the app here is what turned CI
+# red on the first attempt.
+from app.availability import availability as _availability  # noqa: E402
 
 TODAY = date.today()
 PAST = (TODAY - timedelta(days=400)).isoformat()

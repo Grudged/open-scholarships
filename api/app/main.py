@@ -17,6 +17,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 
 from . import config
+from .availability import availability
 from .loader import get_records, query
 
 SITE_DIR = Path(os.getenv("OS_SITE_DIR", str(config.REPO_ROOT / "site")))
@@ -63,33 +64,8 @@ async def license_headers(request, call_next):
     return resp
 
 
-def _availability(rec: dict) -> str:
-    """Cycle availability, computed fresh from the deadline window vs today — never stored, so it
-    can't go stale. open = accepting applications now; upcoming = opens on a future date;
-    closed = this cycle's deadline has passed (annual/fixed awards still recur — they stay served,
-    just aren't open right now); rolling = always open; unknown = no dates on record (see
-    deadline.notes for any free-text cycle info).
-
-    `open` REQUIRES a close date still in the future. A past `opens` with no close date is
-    `unknown`, not `open` — we know the window started at some point and have no idea whether it
-    is still accepting. Reading a bare past `opens` as "apply now" made the API tell students to
-    apply to 13 of its 18 supposedly-open awards, several of whose windows had shut over a year
-    earlier (one 721 days). An honest `unknown` sends the reader to `deadline.notes` and the
-    source; a wrong `open` sends them to a dead form.
-    """
-    dl = rec.get("deadline") or {}
-    today = date.today().isoformat()
-    opens, closes = dl.get("opens"), dl.get("date")
-    if dl.get("type") == "rolling":
-        return "rolling"
-    if opens and opens > today:
-        return "upcoming"
-    if closes and closes < today:
-        return "closed"
-    if closes and closes >= today:
-        # A future close date is the only positive evidence that it is open now.
-        return "open"
-    return "unknown"
+# The rule itself lives in availability.py so CI can test it without installing FastAPI.
+_availability = availability
 
 
 def _public(rec: dict) -> dict:
