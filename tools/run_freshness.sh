@@ -48,5 +48,9 @@ if [ "$FLIPPED" -gt 0 ]; then
     alert "flagged $FLIPPED stale record(s) but git push failed — flips stranded on the Arch clone"
     exit 1
   fi
+  # Say something when records actually LEAVE the public dataset. Alerting on failure alone is
+  # why this went quiet for months: a run that succeeded and pulled scholarships out of the
+  # commons looked exactly like a run that found nothing.
+  alert "pulled $FLIPPED record(s) with dead links out of the public set — they're in the Mission Control review queue now (${ISSUES:-0} total need attention)"
 fi
 heartbeat "${ISSUES:-0}" "$FLIPPED" "" 0

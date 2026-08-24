@@ -18,17 +18,37 @@ DATA = REPO / "data"
 UA = "Mozilla/5.0 (compatible; OpenScholarshipsBot/0.1; +https://github.com/Grudged/open-scholarships)"
 
 
-def alive(url: str | None) -> bool | None:
-    """True/False if reachable, None if no URL to check."""
+def link_state(url: str | None) -> str:
+    """'ok' | 'gone' | 'blocked' | 'unreachable' | 'none'.
+
+    **Blocked is not gone.** A 403/429 means a WAF refused to let us look, not that the page
+    stopped existing — LULAC and Tylenol both 403 this checker while serving fine in a browser.
+    Treating those as dead links is what made the tool cry wolf, and acting on it would pull
+    live scholarships out of the commons.
+
+    We keep identifying ourselves honestly in the User-Agent and do NOT spoof a browser to get
+    past a WAF. Evading the block is the adversarial line this project already decided not to
+    cross when the crawler was retired; the honest answer is "we couldn't check", and a human
+    can open it in a browser.
+    """
     if not url:
-        return None
+        return "none"
     try:
         r = httpx.head(url, headers={"User-Agent": UA}, follow_redirects=True, timeout=20)
         if r.status_code >= 400:  # some servers reject HEAD — retry with GET
             r = httpx.get(url, headers={"User-Agent": UA}, follow_redirects=True, timeout=20)
-        return r.status_code < 400
+        code = r.status_code
+        if code < 400:
+            return "ok"
+        if code in (401, 403, 429):
+            return "blocked"
+        if code >= 500:
+            return "unreachable"   # server-side trouble, often transient
+        return "gone"              # 404/410 and other hard client errors
     except httpx.HTTPError:
-        return False
+        return "unreachable"
+
+
 
 
 def main() -> None:
@@ -45,20 +65,30 @@ def main() -> None:
         lv = prov.get("last_verified")
 
         # HARD: evidence the record is actively wrong. Only these justify --write pulling a
-        # record out of the public dataset.
+        # record out of the public dataset — so only a link that is GONE counts, never one we
+        # were merely blocked from checking.
         problems = []
-        if alive(prov.get("source_url")) is False:
-            problems.append("dead source_url")
-        if links.get("apply_url") and alive(links["apply_url"]) is False:
-            problems.append("dead apply_url")
-        if dl.get("date") and dl["date"] < today:
-            problems.append(f"deadline passed ({dl['date']})")
-
+        notices_links = []
+        for label, url in (("source_url", prov.get("source_url")),
+                           ("apply_url", links.get("apply_url"))):
+            state = link_state(url)
+            if state == "gone":
+                problems.append(f"dead {label}")
+            elif state == "blocked":
+                notices_links.append(f"{label} blocked to bots — open it in a browser to confirm")
+            elif state == "unreachable":
+                notices_links.append(f"{label} unreachable (timeout/5xx) — may be transient")
         # SOFT: needs a human to look, but the record is not known-wrong. Printed, never written.
-        notices = []
-        # Every date check above is gated on a CLOSE date — and most records have none, so they
-        # were unreachable by this tool and aged forever without ever being flagged. These two
-        # cover that blind spot.
+        notices = list(notices_links)
+        # A passed deadline is NOT grounds for removal. _availability() computes `closed` for
+        # exactly this case and the design is explicit that annual awards recur and stay served —
+        # "closed for this cycle" != "gone". This used to be a hard problem, so --write would have
+        # pulled recurring awards out of the commons on the very rule that says to keep them.
+        if dl.get("date") and dl["date"] < today:
+            notices.append(f"deadline passed ({dl['date']}) — reads as 'closed', still served")
+        # Every date check this tool had was gated on a CLOSE date — and most records have none,
+        # so they were unreachable by it and aged forever without ever being flagged. The two
+        # below cover that blind spot; they are the only checks that can see a dateless record.
         if lv and lv < stale_cutoff:
             notices.append(f"not re-verified since {lv} (annual recheck)")
         opens = dl.get("opens")
