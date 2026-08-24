@@ -6,7 +6,7 @@
   "type": "scholarship",
   "award": {
     "amount_min": null,
-    "amount_max": null,
+    "amount_max": 5000,
     "currency": "USD",
     "basis": "merit-need",
     "renewable": null,
@@ -15,7 +15,8 @@
   "deadline": {
     "type": "annual",
     "date": null,
-    "notes": "Verify the current cycle's deadline against the source."
+    "notes": "Verify the current cycle's deadline against the source.",
+    "opens": "2026-01-05"
   },
   "eligibility": {
     "residency": [
@@ -27,7 +28,7 @@
       "graduate"
     ],
     "fields_of_study": [],
-    "gpa_min": null,
+    "gpa_min": 3.0,
     "citizenship": [],
     "other": [
       "Students of Hispanic heritage",
@@ -53,5 +54,9 @@
     "verification_method": "manual",
     "added": "2026-05-27"
   },
-  "status": "active"
+  "status": "active",
+  "review_flags": [
+    "No distinct application link on the source page \u2014 applicants apply via the info page.",
+    "Source shows a past deadline 2026-02-15 \u2014 confirm the current cycle."
+  ]
 }

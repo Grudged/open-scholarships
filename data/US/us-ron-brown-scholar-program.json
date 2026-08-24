@@ -6,7 +6,7 @@
   "type": "scholarship",
   "award": {
     "amount_min": null,
-    "amount_max": null,
+    "amount_max": 40000,
     "currency": "USD",
     "basis": "identity",
     "renewable": null,
@@ -15,7 +15,7 @@
   "deadline": {
     "type": "annual",
     "date": null,
-    "notes": "Verify the current cycle's deadline against the source."
+    "notes": "2025 Application is now open; specific deadline date not provided on page (auto-found \u2014 verify)"
   },
   "eligibility": {
     "residency": [
@@ -50,5 +50,9 @@
     "verification_method": "manual",
     "added": "2026-05-27"
   },
-  "status": "active"
+  "status": "active",
+  "review_flags": [
+    "No distinct application link on the source page \u2014 applicants apply via the info page.",
+    "Source basis looks like 'merit'; stub says 'identity' \u2014 verify."
+  ]
 }

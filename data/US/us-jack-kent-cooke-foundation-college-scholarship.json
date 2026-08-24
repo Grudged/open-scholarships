@@ -6,7 +6,7 @@
   "type": "scholarship",
   "award": {
     "amount_min": null,
-    "amount_max": null,
+    "amount_max": 55000,
     "currency": "USD",
     "basis": "merit-need",
     "renewable": null,
@@ -14,7 +14,7 @@
   },
   "deadline": {
     "type": "annual",
-    "date": null,
+    "date": "2026-11-11",
     "notes": "Verify the current cycle's deadline against the source."
   },
   "eligibility": {
@@ -41,7 +41,7 @@
   },
   "links": {
     "info_url": "https://www.jkcf.org/our-scholarships/college-scholarship-program/",
-    "apply_url": null
+    "apply_url": "https://www.jkcf.org/our-scholarships/college-scholarship-program/how-to-apply/"
   },
   "provenance": {
     "source_url": "https://www.jkcf.org/our-scholarships/college-scholarship-program/",

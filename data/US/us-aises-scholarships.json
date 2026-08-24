@@ -15,7 +15,8 @@
   "deadline": {
     "type": "annual",
     "date": null,
-    "notes": "Multiple scholarships with varying deadlines (April 30, May 30, August 15) (auto-found \u2014 verify)"
+    "notes": "Multiple scholarships with varying deadlines (April 30, May 30, August 15) (auto-found \u2014 verify)",
+    "opens": "2025-12-15"
   },
   "eligibility": {
     "residency": [
@@ -53,6 +54,8 @@
   },
   "status": "active",
   "review_flags": [
+    "Source shows a past deadline 2026-04-30 \u2014 confirm the current cycle.",
+    "Geography: \"Indigenous peoples (enrolled members of federally-recognized US tribes, Alaska Native Villages, Nati\" \u2014 verify scope/counties (stub scope=national).",
     "Source basis looks like 'merit'; stub says 'identity' \u2014 verify."
   ]
 }

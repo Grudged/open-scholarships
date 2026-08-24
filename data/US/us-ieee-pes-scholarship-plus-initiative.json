@@ -15,7 +15,8 @@
   "deadline": {
     "type": "annual",
     "date": null,
-    "notes": "Verify the current cycle's deadline against the source."
+    "notes": "Verify the current cycle's deadline against the source.",
+    "opens": "2025-01-20"
   },
   "eligibility": {
     "residency": [
@@ -53,8 +54,8 @@
   },
   "status": "active",
   "review_flags": [
-    "Source shows a past deadline 2026-05-14 \u2014 confirm the current cycle.",
-    "Geography: \"U.S., Puerto Rico, or Canada\" \u2014 verify scope/counties (stub scope=national).",
+    "Source shows a past deadline 2025-05-14 \u2014 confirm the current cycle.",
+    "Geography: \"USA, Canada, Puerto Rico; IEEE Regions 1-7\" \u2014 verify scope/counties (stub scope=national).",
     "Source basis looks like 'merit'; stub says 'field' \u2014 verify."
   ]
 }

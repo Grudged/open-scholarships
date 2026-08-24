@@ -15,7 +15,7 @@
   "deadline": {
     "type": "annual",
     "date": null,
-    "notes": "Applications are now closed (auto-found \u2014 verify)"
+    "notes": "Applications for 2025\u20132026 are closed; sign up for newsletter for next cycle (auto-found \u2014 verify)"
   },
   "eligibility": {
     "residency": [
@@ -54,7 +54,6 @@
   "status": "active",
   "review_flags": [
     "No distinct application link on the source page \u2014 applicants apply via the info page.",
-    "Geography: \"United States\" \u2014 verify scope/counties (stub scope=national).",
-    "Source basis looks like 'merit-need'; stub says 'need' \u2014 verify."
+    "Geography: \"United States\" \u2014 verify scope/counties (stub scope=national)."
   ]
 }

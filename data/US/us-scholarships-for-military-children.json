@@ -42,7 +42,7 @@
   },
   "links": {
     "info_url": "https://militaryscholar.org/",
-    "apply_url": null
+    "apply_url": "http://www.militaryscholar.org"
   },
   "provenance": {
     "source_url": "https://militaryscholar.org/",
@@ -53,6 +53,6 @@
   },
   "status": "active",
   "review_flags": [
-    "No distinct application link on the source page \u2014 applicants apply via the info page."
+    "Source basis looks like 'identity'; stub says 'other' \u2014 verify."
   ]
 }

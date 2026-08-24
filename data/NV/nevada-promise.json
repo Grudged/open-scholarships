@@ -16,7 +16,7 @@
   "deadline": {
     "type": "annual",
     "date": null,
-    "notes": "Time-sensitive \u2014 application opens in the senior year of high school and includes training meetings and community-service requirements. Verify the current cycle's deadlines."
+    "notes": "August through October (auto-found \u2014 verify)"
   },
   "eligibility": {
     "residency": [
@@ -55,5 +55,9 @@
     "verification_method": "manual",
     "added": "2026-05-26"
   },
-  "status": "active"
+  "status": "active",
+  "review_flags": [
+    "Geography: \"Nevada high school graduates only\" \u2014 verify scope/counties (stub scope=statewide).",
+    "Source basis looks like 'merit'; stub says 'other' \u2014 verify."
+  ]
 }

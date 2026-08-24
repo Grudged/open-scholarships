@@ -6,7 +6,7 @@
   "type": "scholarship",
   "award": {
     "amount_min": null,
-    "amount_max": null,
+    "amount_max": 25000,
     "currency": "USD",
     "basis": "merit",
     "renewable": null,
@@ -55,6 +55,7 @@
   },
   "status": "active",
   "review_flags": [
-    "Source shows a past deadline 2025-01-31 \u2014 confirm the current cycle."
+    "Source shows a past deadline 2025-01-31 \u2014 confirm the current cycle.",
+    "Geography: \"United States\" \u2014 verify scope/counties (stub scope=national)."
   ]
 }

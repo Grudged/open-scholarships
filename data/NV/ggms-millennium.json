@@ -28,7 +28,7 @@
       "community-college"
     ],
     "fields_of_study": [],
-    "gpa_min": null,
+    "gpa_min": 3.25,
     "citizenship": [],
     "other": [
       "Graduate from a Nevada high school and meet the GPA / core-coursework requirements (verify current thresholds)",
@@ -56,5 +56,8 @@
     "verification_method": "manual",
     "added": "2026-05-26"
   },
-  "status": "active"
+  "status": "active",
+  "review_flags": [
+    "Geography: \"Nevada residents only\" \u2014 verify scope/counties (stub scope=statewide)."
+  ]
 }

@@ -6,7 +6,7 @@
   "type": "scholarship",
   "award": {
     "amount_min": null,
-    "amount_max": null,
+    "amount_max": 2500,
     "currency": "USD",
     "basis": "merit",
     "renewable": null,
@@ -41,7 +41,7 @@
   },
   "links": {
     "info_url": "https://www.nationalmerit.org/",
-    "apply_url": null
+    "apply_url": "https://osa.nationalmerit.org/"
   },
   "provenance": {
     "source_url": "https://www.nationalmerit.org/",

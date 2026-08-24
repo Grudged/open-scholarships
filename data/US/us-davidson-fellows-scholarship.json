@@ -6,7 +6,7 @@
   "type": "scholarship",
   "award": {
     "amount_min": null,
-    "amount_max": null,
+    "amount_max": 100000,
     "currency": "USD",
     "basis": "merit",
     "renewable": null,
@@ -15,7 +15,7 @@
   "deadline": {
     "type": "annual",
     "date": null,
-    "notes": "Verify the current cycle's deadline against the source."
+    "notes": "2027 application will open in Fall 2026 (auto-found \u2014 verify)"
   },
   "eligibility": {
     "residency": [
@@ -42,7 +42,7 @@
   },
   "links": {
     "info_url": "https://www.davidsongifted.org/gifted-programs/fellows-scholarship/",
-    "apply_url": null
+    "apply_url": "https://www.davidsongifted.org/gifted-programs/fellows-scholarship/eligibility/how-to-apply/"
   },
   "provenance": {
     "source_url": "https://www.davidsongifted.org/gifted-programs/fellows-scholarship/",
@@ -51,5 +51,8 @@
     "verification_method": "manual",
     "added": "2026-05-27"
   },
-  "status": "active"
+  "status": "active",
+  "review_flags": [
+    "Geography: \"U.S. citizens or Permanent Residents residing in the United States, or stationed overseas due to act\" \u2014 verify scope/counties (stub scope=national)."
+  ]
 }

@@ -6,7 +6,7 @@
   "type": "scholarship",
   "award": {
     "amount_min": null,
-    "amount_max": null,
+    "amount_max": 10000,
     "currency": "USD",
     "basis": "identity",
     "renewable": null,
@@ -15,7 +15,7 @@
   "deadline": {
     "type": "annual",
     "date": null,
-    "notes": "Spring 2026 Scholarship Cycle will open soon (auto-found \u2014 verify)"
+    "notes": "Fall 2026 Scholarship Cycle will open soon; Spring/Summer GPA Verification Windo (auto-found \u2014 verify)"
   },
   "eligibility": {
     "residency": [
@@ -26,7 +26,7 @@
       "graduate"
     ],
     "fields_of_study": [],
-    "gpa_min": null,
+    "gpa_min": 2.0,
     "citizenship": [],
     "other": [
       "NSBE members pursuing engineering and technical degrees"

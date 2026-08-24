@@ -14,8 +14,9 @@
   },
   "deadline": {
     "type": "annual",
-    "date": null,
-    "notes": "2027 application opens Summer 2026 (auto-found \u2014 verify)"
+    "date": "2026-10-06",
+    "notes": "2027 application opens Summer 2026 (auto-found \u2014 verify)",
+    "opens": "2026-07-21"
   },
   "eligibility": {
     "residency": [
@@ -53,7 +54,6 @@
   },
   "status": "active",
   "review_flags": [
-    "No distinct application link on the source page \u2014 applicants apply via the info page.",
-    "Geography: \"United States citizens, permanent residents, or those legally able to receive taxable income in the \" \u2014 verify scope/counties (stub scope=national)."
+    "No distinct application link on the source page \u2014 applicants apply via the info page."
   ]
 }

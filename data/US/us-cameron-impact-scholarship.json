@@ -14,8 +14,9 @@
   },
   "deadline": {
     "type": "annual",
-    "date": null,
-    "notes": "Verify the current cycle's deadline against the source."
+    "date": "2027-05-01",
+    "notes": "Verify the current cycle's deadline against the source.",
+    "opens": "2027-02-01"
   },
   "eligibility": {
     "residency": [
@@ -51,8 +52,5 @@
     "verification_method": "manual",
     "added": "2026-06-16"
   },
-  "status": "active",
-  "review_flags": [
-    "Source shows a past deadline 2026-05-01 \u2014 confirm the current cycle."
-  ]
+  "status": "active"
 }

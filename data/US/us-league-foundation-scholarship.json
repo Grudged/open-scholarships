@@ -15,7 +15,7 @@
   "deadline": {
     "type": "annual",
     "date": null,
-    "notes": "Opens annually in January and closes in April (auto-found \u2014 verify)"
+    "notes": "Opens in January, closes in April annually (auto-found \u2014 verify)"
   },
   "eligibility": {
     "residency": [

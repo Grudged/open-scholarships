@@ -6,7 +6,7 @@
   "type": "scholarship",
   "award": {
     "amount_min": null,
-    "amount_max": null,
+    "amount_max": 20000,
     "currency": "USD",
     "basis": "need",
     "renewable": null,
@@ -15,7 +15,8 @@
   "deadline": {
     "type": "annual",
     "date": null,
-    "notes": "Verify the current cycle's deadline against the source."
+    "notes": "Verify the current cycle's deadline against the source.",
+    "opens": "2025-12-15"
   },
   "eligibility": {
     "residency": [
@@ -25,7 +26,7 @@
       "high-school-senior"
     ],
     "fields_of_study": [],
-    "gpa_min": null,
+    "gpa_min": 2.4,
     "citizenship": [],
     "other": [
       "Students in approved college-readiness programs; grit-focused",
@@ -42,7 +43,7 @@
   },
   "links": {
     "info_url": "https://www.dellscholars.org/scholarship/",
-    "apply_url": null
+    "apply_url": "https://apply.dellscholars.org/Account/Login?ReturnUrl=%2F"
   },
   "provenance": {
     "source_url": "https://www.dellscholars.org/scholarship/",
@@ -51,5 +52,8 @@
     "verification_method": "manual",
     "added": "2026-05-27"
   },
-  "status": "active"
+  "status": "active",
+  "review_flags": [
+    "Source shows a past deadline 2026-02-15 \u2014 confirm the current cycle."
+  ]
 }

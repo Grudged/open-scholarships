@@ -41,7 +41,7 @@
   },
   "links": {
     "info_url": "https://www.jackierobinson.org/apply/",
-    "apply_url": null
+    "apply_url": "https://jackierobinson.org/apply/application-faqs/"
   },
   "provenance": {
     "source_url": "https://www.jackierobinson.org/apply/",
@@ -50,5 +50,10 @@
     "verification_method": "manual",
     "added": "2026-05-27"
   },
-  "status": "active"
+  "status": "active",
+  "review_flags": [
+    "Source shows a past deadline 2026-01-07 \u2014 confirm the current cycle.",
+    "Geography: \"United States\" \u2014 verify scope/counties (stub scope=national).",
+    "Source basis looks like 'merit-need'; stub says 'identity' \u2014 verify."
+  ]
 }

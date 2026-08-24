@@ -15,7 +15,7 @@
   "deadline": {
     "type": "annual",
     "date": null,
-    "notes": "Verify the current cycle's deadline against the source."
+    "notes": "Multiple scholarships with varying deadlines (e.g., 9/1/2026, 9/11/2026, 10/2/20 (auto-found \u2014 verify)"
   },
   "eligibility": {
     "residency": [
@@ -52,6 +52,7 @@
   },
   "status": "active",
   "review_flags": [
+    "Source GPA min 3.0 differs from stub 1.0 \u2014 verify.",
     "Source basis looks like 'merit'; stub says 'identity' \u2014 verify."
   ]
 }

@@ -15,7 +15,7 @@
   "deadline": {
     "type": "annual",
     "date": null,
-    "notes": "Awardees notified in late fall (auto-found \u2014 verify)"
+    "notes": "2026-27 cycle closed August 1, 2026; 2027-28 information available May 2027 (auto-found \u2014 verify)"
   },
   "eligibility": {
     "residency": [
@@ -57,6 +57,6 @@
   "status": "active",
   "review_flags": [
     "No distinct application link on the source page \u2014 applicants apply via the info page.",
-    "Geography: \"U.S. residents, excluding Hawaii and Alaska variations in income limits\" \u2014 verify scope/counties (stub scope=national)."
+    "Geography: \"U.S. residents only\" \u2014 verify scope/counties (stub scope=national)."
   ]
 }

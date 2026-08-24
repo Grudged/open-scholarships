@@ -14,7 +14,7 @@
   },
   "deadline": {
     "type": "annual",
-    "date": null,
+    "date": "2027-01-15",
     "notes": "Verify the current cycle's deadline against the source.",
     "opens": "2025-11-15"
   },
@@ -55,7 +55,6 @@
   },
   "status": "active",
   "review_flags": [
-    "Source shows a past deadline 2026-01-15 \u2014 confirm the current cycle.",
     "Source basis looks like 'need'; stub says 'identity' \u2014 verify."
   ]
 }

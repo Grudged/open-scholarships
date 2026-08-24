@@ -15,7 +15,7 @@
   "deadline": {
     "type": "annual",
     "date": null,
-    "notes": "Multiple deadlines throughout the year; mentioned scholarships close in May (auto-found \u2014 verify)"
+    "notes": "General deadline information not specified; various programs have different dead (auto-found \u2014 verify)"
   },
   "eligibility": {
     "residency": [
@@ -54,6 +54,6 @@
   },
   "status": "active",
   "review_flags": [
-    "Source basis looks like 'merit'; stub says 'identity' \u2014 verify."
+    "Source basis looks like 'need'; stub says 'identity' \u2014 verify."
   ]
 }

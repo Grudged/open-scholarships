@@ -14,7 +14,7 @@
   },
   "deadline": {
     "type": "annual",
-    "date": null,
+    "date": "2026-10-01",
     "notes": "Verify the current cycle's deadline against the source."
   },
   "eligibility": {
@@ -42,7 +42,7 @@
   },
   "links": {
     "info_url": "https://www.questbridge.org/high-school-students/national-college-match",
-    "apply_url": null
+    "apply_url": "https://www.questbridge.org/apply-to-college"
   },
   "provenance": {
     "source_url": "https://www.questbridge.org/high-school-students/national-college-match",

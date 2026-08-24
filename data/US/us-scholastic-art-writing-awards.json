@@ -15,7 +15,7 @@
   "deadline": {
     "type": "annual",
     "date": null,
-    "notes": "Fall entry opening; deadlines determined by region (auto-found \u2014 verify)"
+    "notes": "Opens in fall; deadlines determined by region and begin in December (auto-found \u2014 verify)"
   },
   "eligibility": {
     "residency": [
@@ -42,7 +42,7 @@
   },
   "links": {
     "info_url": "https://artandwriting.org/awards/how-to-enter/",
-    "apply_url": null
+    "apply_url": "https://portal.artandwriting.org"
   },
   "provenance": {
     "source_url": "https://artandwriting.org/awards/how-to-enter/",
@@ -51,8 +51,5 @@
     "verification_method": "manual",
     "added": "2026-06-16"
   },
-  "status": "active",
-  "review_flags": [
-    "No distinct application link on the source page \u2014 applicants apply via the info page."
-  ]
+  "status": "active"
 }

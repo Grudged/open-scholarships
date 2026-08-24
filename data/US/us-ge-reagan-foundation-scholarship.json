@@ -6,7 +6,7 @@
   "type": "scholarship",
   "award": {
     "amount_min": null,
-    "amount_max": null,
+    "amount_max": 40000,
     "currency": "USD",
     "basis": "merit",
     "renewable": null,
@@ -15,7 +15,8 @@
   "deadline": {
     "type": "annual",
     "date": null,
-    "notes": "Verify the current cycle's deadline against the source."
+    "notes": "Verify the current cycle's deadline against the source.",
+    "opens": "2025-10-13"
   },
   "eligibility": {
     "residency": [
@@ -25,7 +26,7 @@
       "high-school-senior"
     ],
     "fields_of_study": [],
-    "gpa_min": null,
+    "gpa_min": 3.0,
     "citizenship": [],
     "other": [
       "Leadership, drive, integrity, citizenship; financial need considered"
@@ -41,7 +42,7 @@
   },
   "links": {
     "info_url": "https://www.reaganfoundation.org/education/scholarship-programs/ge-reagan-foundation-scholarship-program/",
-    "apply_url": null
+    "apply_url": "https://www.usnews.com/education/best-colleges/paying-for-college/articles/applying-for-large-dollar-scholarships-heres-what-to-know"
   },
   "provenance": {
     "source_url": "https://www.reaganfoundation.org/education/scholarship-programs/ge-reagan-foundation-scholarship-program/",
@@ -50,5 +51,8 @@
     "verification_method": "manual",
     "added": "2026-05-27"
   },
-  "status": "active"
+  "status": "active",
+  "review_flags": [
+    "Source shows a past deadline 2026-01-05 \u2014 confirm the current cycle."
+  ]
 }

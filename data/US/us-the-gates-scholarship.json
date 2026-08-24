@@ -14,8 +14,9 @@
   },
   "deadline": {
     "type": "annual",
-    "date": null,
-    "notes": "Verify the current cycle's deadline against the source."
+    "date": "2026-09-15",
+    "notes": "Verify the current cycle's deadline against the source.",
+    "opens": "2026-07-15"
   },
   "eligibility": {
     "residency": [
@@ -25,7 +26,7 @@
       "high-school-senior"
     ],
     "fields_of_study": [],
-    "gpa_min": null,
+    "gpa_min": 3.3,
     "citizenship": [],
     "other": [
       "Pell-eligible high school seniors from minority backgrounds",
@@ -51,5 +52,8 @@
     "verification_method": "manual",
     "added": "2026-05-27"
   },
-  "status": "active"
+  "status": "active",
+  "review_flags": [
+    "No distinct application link on the source page \u2014 applicants apply via the info page."
+  ]
 }

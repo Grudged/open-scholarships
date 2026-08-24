@@ -55,7 +55,7 @@
   "review_flags": [
     "No distinct application link on the source page \u2014 applicants apply via the info page.",
     "Source shows a past deadline 2026-04-15 \u2014 confirm the current cycle.",
-    "Geography: \"U.S. and Canada residents only; excludes U.S. territories\" \u2014 verify scope/counties (stub scope=national).",
+    "Geography: \"U.S. and Canada residents; U.S. territories not eligible\" \u2014 verify scope/counties (stub scope=national).",
     "Source basis looks like 'merit'; stub says 'service' \u2014 verify."
   ]
 }
