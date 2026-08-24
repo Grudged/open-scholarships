@@ -7,6 +7,12 @@ and the rule that decides whether we say "apply now" has no business requiring u
 from __future__ import annotations
 
 from datetime import date
+from typing import Literal
+
+# The complete set, exported so the API can reject a typo'd filter instead of quietly
+# returning zero results — which reads as "no scholarships" rather than "you misspelled it".
+AvailabilityState = Literal["open", "upcoming", "closed", "rolling", "unknown"]
+STATES: tuple[str, ...] = ("open", "upcoming", "closed", "rolling", "unknown")
 
 
 def availability(rec: dict) -> str:

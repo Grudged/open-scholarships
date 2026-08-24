@@ -17,7 +17,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 
 from . import config
-from .availability import availability
+from .availability import AvailabilityState, availability
 from .loader import get_records, query
 
 SITE_DIR = Path(os.getenv("OS_SITE_DIR", str(config.REPO_ROOT / "site")))
@@ -64,6 +64,21 @@ async def license_headers(request, call_next):
     return resp
 
 
+def readonly(path: str, **kw):
+    """Register a read-only endpoint for GET and, quietly, HEAD.
+
+    FastAPI (unlike plain Starlette) does not add HEAD alongside GET, so every endpoint here
+    answered 405 to uptime monitors and link checkers. HEAD is registered separately with
+    include_in_schema=False: documenting it would double every operation in the OpenAPI spec
+    and collide the generated operation ids, and that spec is the artifact API directories
+    ingest. Monitors get their 200; the published contract stays about GET.
+    """
+    def decorator(fn):
+        app.head(path, include_in_schema=False)(fn)
+        return app.get(path, **kw)(fn)
+    return decorator
+
+
 # The rule itself lives in availability.py so CI can test it without installing FastAPI.
 _availability = availability
 
@@ -94,24 +109,24 @@ def _meta() -> dict:
     }
 
 
-@app.get("/healthz")
+@readonly("/healthz")
 def healthz():
     return {"status": "ok", "count": len(_active()), "booted_at": app.state.booted_at}
 
 
-@app.get("/meta")
-@app.get("/meta.json")
+@readonly("/meta")
+@readonly("/meta.json")
 def meta():
     return _meta()
 
 
-@app.get("/scholarships.json")
+@readonly("/scholarships.json")
 def bundle():
     return {"meta": _meta(), "results": _active()}
 
 
-@app.get("/scholarships")
-@app.get("/api/scholarships")
+@readonly("/scholarships")
+@readonly("/api/scholarships")
 def list_scholarships(
     state: str | None = None,
     level: str | None = Query(None, description="education_level value, e.g. high-school-senior"),
@@ -119,7 +134,7 @@ def list_scholarships(
     basis: str | None = None,
     type: str | None = None,
     sponsor_type: str | None = None,
-    availability: str | None = Query(None, description="filter by computed cycle status: open | upcoming | closed | rolling | unknown"),
+    availability: AvailabilityState | None = Query(None, description="filter by computed cycle status: open | upcoming | closed | rolling | unknown"),
     deadline_after: str | None = Query(None, description="ISO date; undated (rolling) records always match"),
     amount_min: float | None = None,
     q: str | None = Query(None, description="free-text over name/summary/sponsor"),
@@ -142,7 +157,12 @@ def list_scholarships(
     }
 
 
-@app.get("/scholarships/{scholarship_id}")
+# Both prefixes, because the collection is served at both. An integrator who finds
+# /api/scholarships will reach for /api/scholarships/{id} next, and that used to 404 — the worst
+# first impression an API can make on someone evaluating it.
+# Declared AFTER the collection routes so "/api/scholarships" can't be swallowed as an id.
+@readonly("/scholarships/{scholarship_id}")
+@readonly("/api/scholarships/{scholarship_id}")
 def get_scholarship(scholarship_id: str):
     for r in get_records():
         if r["id"] == scholarship_id and r.get("status") == "active":
@@ -150,7 +170,7 @@ def get_scholarship(scholarship_id: str):
     raise HTTPException(status_code=404, detail="scholarship not found")
 
 
-@app.get("/")
+@readonly("/")
 def docs_page():
     index = SITE_DIR / "index.html"
     if index.exists():
