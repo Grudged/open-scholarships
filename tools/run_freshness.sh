@@ -16,8 +16,17 @@ alert() {
 }
 
 heartbeat() { # $1 found  $2 flipped  $3 errors  $4 exit_code
-  sqlite3 "$DB" "CREATE TABLE IF NOT EXISTS scholarship_runs (ts TEXT, script TEXT, found INTEGER, new_records INTEGER, errors TEXT, exit_code INTEGER);
-INSERT INTO scholarship_runs VALUES ('$(date -Iseconds)', 'freshness', ${1:-0}, ${2:-0}, '$3', $4);" || true
+  # Two invocations, not one. The first run failed with "no such table" because the combined
+  # CREATE+INSERT did not get the table in place, and the whole thing was swallowed by `|| true`
+  # — a heartbeat that silently never writes looks exactly like a healthy one, which is the
+  # failure mode this heartbeat exists to prevent. Failures now say so in the journal without
+  # failing the run. busy_timeout because the collectors write this DB constantly.
+  sqlite3 "$DB" "PRAGMA busy_timeout=10000;
+CREATE TABLE IF NOT EXISTS scholarship_runs (ts TEXT, script TEXT, found INTEGER, new_records INTEGER, errors TEXT, exit_code INTEGER);" \
+    || echo "heartbeat: could not ensure scholarship_runs table"
+  sqlite3 "$DB" "PRAGMA busy_timeout=10000;
+INSERT INTO scholarship_runs VALUES ('$(date -Iseconds)', 'freshness', ${1:-0}, ${2:-0}, '$3', $4);" \
+    || echo "heartbeat: could not record run (found=${1:-0} flipped=${2:-0} rc=$4)"
 }
 
 cd "$REPO"
